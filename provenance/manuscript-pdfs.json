@@ -1,0 +1,100 @@
+{
+  "adaptive_supplemental_attempts": 740,
+  "artifacts": [
+    {
+      "bytes": 807642,
+      "pages": 246,
+      "path": "paper/dual-nsa-cold-start.pdf",
+      "privacy": {
+        "audit_sha256": "db2ed989d6f18c9cbb93de8113c875158f5c33d7322533784c20bf6ed3481d66",
+        "embedded_files": 0,
+        "external_file_actions": 0,
+        "javascript_actions": 0,
+        "launch_actions": 0,
+        "metadata_page_text_object_strings_and_uri_actions_checked": true,
+        "private_pattern_findings": 0,
+        "status": "PASS"
+      },
+      "quality": {
+        "audit_sha256": "f7c64b286a467b67cc12b6ecaeca9d88c6ebd854dc85f248673987f8d1838de0",
+        "status": "PASS"
+      },
+      "sha256": "a2c01d42f640eb30dd9a43f74f6423b210b10ca4dc76713258dc9133b4d178ff"
+    },
+    {
+      "bytes": 319210,
+      "extract_of": "paper/dual-nsa-cold-start.pdf",
+      "internal_and_external_links_verified": true,
+      "page_text_and_rendered_pixels_match": true,
+      "pages": 12,
+      "path": "paper/dual-nsa-cold-start-first-12-pages.pdf",
+      "privacy": {
+        "audit_sha256": "9e5d09daeea30041dd70f7de0ffd03385f715deadd05a8259d92d7df0db92e88",
+        "embedded_files": 0,
+        "external_file_actions": 0,
+        "javascript_actions": 0,
+        "launch_actions": 0,
+        "metadata_page_text_object_strings_and_uri_actions_checked": true,
+        "private_pattern_findings": 0,
+        "status": "PASS"
+      },
+      "quality": {
+        "audit_sha256": "cde865b9bea0e43a0ee84a5433e45dd88c75eb9216013efa32065acee700b3f6",
+        "status": "PASS"
+      },
+      "sha256": "ade1bb3fdd04aba43896370d458967da4a727b9cb9e1ae3b8da42a334b70a95a",
+      "source_pages": [
+        1,
+        12
+      ]
+    }
+  ],
+  "authorization_scope": "Final full manuscript PDF and exact first-12-pages excerpt",
+  "authors": [
+    "Kishor Datta Gupta",
+    "Dipankar Dasgupta"
+  ],
+  "benchmark_base_commit": "c38f3bb80ca7adf8a096949e5f024ae2195cceff",
+  "created_utc": "2026-10-13T04:48:20.668266+00:00",
+  "main_dataset_tables": {
+    "pages": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "retained_normal_training_percent": [
+      100,
+      25,
+      10,
+      5
+    ],
+    "tables": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "manuscript_source_sha256": "9f8ed461ec73556e3fcde40566648ef002170088f784e620a6bbd1c0041004fc",
+  "primary_records": 57120,
+  "privacy_scan_limits": "Zero findings support the listed checks; they are not a proof against every conceivable sensitive datum.",
+  "publication_document_changes": {
+    "README.md": {
+      "after_sha256": "2700bb3f4f33d2da2bad1c6421ee954cfab64a5f29088fda60a29c43d8c335f0",
+      "before_sha256": "123d19eb345db94fb713bf65fa543bb3c6db65e41c8d76574aba98297449e5c9"
+    },
+    "provenance/PORTABILITY_AND_PRIVACY.md": {
+      "after_sha256": "d2d2bea7c4895428c06a084086e682066baa74ed7d02848524711391b2062078",
+      "before_sha256": "0e3fa24e2be2c59a8e412a658983497474d0855c2422d784b7091bab383da928"
+    },
+    "provenance/extreme-retention-extension-manifest.json": {
+      "after_sha256": "d935cc0e6dda549b0a8e1a552460b0146fba7a2ec501097158a899feac23fcc8",
+      "before_sha256": "48c33a7ff40ff497bb0fbbabb1c8311261615f87e0dc8384741bd968eb669128"
+    }
+  },
+  "schema_version": 1,
+  "scientific_benchmark_and_result_bytes_modified": false,
+  "source_and_private_project_references_published": false,
+  "title": "Dual Negative Selection for Anomaly Detection at Cold Start: A Normal-Only Comparison with PyOD"
+}

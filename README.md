@@ -9,6 +9,17 @@ Repository: <https://github.com/kishordgupta/pyod-nsa-normal-only-benchmark>
 
 Authors: Kishor Datta Gupta and Dipankar Dasgupta.
 
+## Manuscript
+
+- [Main paper: first 12 pages](paper/dual-nsa-cold-start-first-12-pages.pdf)
+- [Full paper with results appendix: 246 pages](paper/dual-nsa-cold-start.pdf)
+
+The 12-page paper contains the normal-only benchmark, four dataset comparisons
+with Dual NSA rank percentages and Total rows, the discussion, and references.
+It reproduces the full paper's first 12 pages exactly. Tables 2–5 on pages 5–8
+compare the 100%, 25%, 10%, and 5% retained normal training settings. The full
+paper also contains the extensive results appendix.
+
 ## What the experiment found
 
 Dual NSA became more competitive as the normal training pool shrank after
