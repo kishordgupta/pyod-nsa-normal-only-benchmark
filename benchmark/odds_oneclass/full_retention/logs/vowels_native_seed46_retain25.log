@@ -1,0 +1,198 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset vowels --results benchmark/odds_oneclass/full_retention/raw/vowels_native_seed46_retain25.jsonl --seed 46 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.25 --method-timeout 15.0 --method-filter all
+vowels       native NSA/fixed                success            0.7869449378330373
+vowels       native NSA/variable             success            0.8901420959147424
+vowels       native NSA/coverage             success            0.8901420959147424
+vowels       native NSA/grid                 success            0.888809946714032
+vowels       native NSA/hierarchical         success            0.3149200710479574
+vowels       native NSA/voronoi              requires_2d_or_3d  None
+vowels       native NSA/deterministic        requires_2d        None
+vowels       native NSA/suppressed           success            0.9245115452930729
+vowels       native NSA/dual                 success            0.9670515097690942
+vowels       native NSA/annealed             success            0.22104795737122557
+vowels       native NSA/binary/hamming       success            0.5521758436944938
+vowels       native NSA/binary/rcontiguous   error              None
+vowels       native NSA/binary/rchunk        success            0.7068383658969806
+vowels       native ECOD                     success            0.6080817051509769
+vowels       native ABOD                     success            0.9644760213143873
+vowels       native COPOD                    success            0.5115452930728241
+vowels       native MAD                      requires_1d        None
+vowels       native SOS                      success            0.5682060390763766
+vowels       native QMCD                     success            0.7093250444049733
+vowels       native KDE                      success            0.9759325044404974
+vowels       native Sampling                 success            0.9426287744227354
+vowels       native GMM                      success            0.9691829484902309
+vowels       native PCA                      success            0.6724689165186502
+vowels       native KPCA                     success            0.9753108348134991
+vowels       native MCD                      success            0.9229129662522202
+vowels       native CD                       success            0.961190053285968
+vowels       native OCSVM                    success            0.844404973357016
+vowels       native LMDD                     success            0.5957371225577264
+vowels       native LOF                      success            0.9314387211367673
+vowels       native COF                      success            0.9025754884547069
+vowels       native CBLOF                    timeout            None
+vowels       native LOCI                     timeout            None
+vowels       native HBOS                     timeout            None
+vowels       native HDBSCAN                  success            0.6285079928952043
+vowels       native KNN                      success            0.9581705150976909
+vowels       native SOD                      timeout            None
+Exception ignored on calling ctypes callback function: <function ExecutionEngine._raw_object_cache_notify at 0x1124efd80>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/llvmlite/binding/executionengine.py", line 178, in _raw_object_cache_notify
+    def _raw_object_cache_notify(self, data):
+
+  File "benchmark/odds_oneclass/runner.py", line 46, in _on_alarm
+    raise FitTimeout("per-method wall-time budget exceeded")
+FitTimeout: per-method wall-time budget exceeded
+vowels       native ROD                      success            0.6526642984014209
+vowels       native IForest                  success            0.8430728241563055
+vowels       native INNE                     success            0.9431616341030195
+vowels       native DIF                      success            0.727886323268206
+vowels       native FeatureBagging           success            0.9311722912966253
+vowels       native LSCP                     timeout            None
+vowels       native LODA                     success            0.6787744227353463
+vowels       native SUOD                     timeout            None
+vowels       native XGBOD                    requires_labeled_outliers None
+Exception ignored on calling ctypes callback function: <function ExecutionEngine._raw_object_cache_notify at 0x1124efd80>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/llvmlite/binding/executionengine.py", line 178, in _raw_object_cache_notify
+    def _raw_object_cache_notify(self, data):
+
+  File "benchmark/odds_oneclass/runner.py", line 46, in _on_alarm
+    raise FitTimeout("per-method wall-time budget exceeded")
+FitTimeout: per-method wall-time budget exceeded
+vowels       native AutoEncoder              success            0.8693605683836589
+vowels       native VAE                      success            0.6997335701598579
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+vowels       native SO_GAAL                  success            0.07957371225577267
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+vowels       native MO_GAAL                  success            0.18712255772646538
+vowels       native DeepSVDD                 success            0.858436944937833
+vowels       native AnoGAN                   timeout            None
+vowels       native ALAD                     success            0.3511545293072824
+Epoch 10/50, Loss: 9.56895580291748
+Epoch 20/50, Loss: 10.315635681152344
+Epoch 30/50, Loss: 6.025161838531494
+Epoch 40/50, Loss: 6.610864353179932
+Epoch 50/50, Loss: 6.16188611984253
+vowels       native AE1SVM                   success            0.7275310834813499
+vowels       native DevNet                   requires_labeled_outliers None
+vowels       native RGraph                   timeout            None
+vowels       native LUNAR                    success            0.9676731793960923

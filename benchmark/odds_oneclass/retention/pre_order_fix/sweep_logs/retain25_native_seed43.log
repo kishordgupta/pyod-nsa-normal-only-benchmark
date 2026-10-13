@@ -1,0 +1,4 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/scheduler.py --data-dir vendor/pyod/notebooks/data --representation native --seed 43 --train-fraction 0.25 --train-cap 600 --test-cap 2000 --method-timeout 15 --workers 3 --runner-script selected_runner.py
+glass: exit=0, results=benchmark/odds_oneclass/retention/raw/glass_native_seed43_retain25.jsonl, log=benchmark/odds_oneclass/retention/logs/glass_native_seed43_retain25.log
+cardio: exit=0, results=benchmark/odds_oneclass/retention/raw/cardio_native_seed43_retain25.jsonl, log=benchmark/odds_oneclass/retention/logs/cardio_native_seed43_retain25.log
+arrhythmia: exit=0, results=benchmark/odds_oneclass/retention/raw/arrhythmia_native_seed43_retain25.jsonl, log=benchmark/odds_oneclass/retention/logs/arrhythmia_native_seed43_retain25.log

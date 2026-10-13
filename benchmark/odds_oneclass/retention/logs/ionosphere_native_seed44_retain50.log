@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset ionosphere --results benchmark/odds_oneclass/retention/raw/ionosphere_native_seed44_retain50.jsonl --seed 44 --representation native --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.5
+ionosphere   native NSA/fixed                success            0.09978213507625272
+ionosphere   native NSA/variable             success            0.45054466230936824
+ionosphere   native NSA/coverage             success            0.45054466230936824
+ionosphere   native NSA/grid                 success            0.48627450980392156
+ionosphere   native NSA/hierarchical         success            0.09237472766884532
+ionosphere   native NSA/voronoi              requires_2d_or_3d  None
+ionosphere   native NSA/deterministic        requires_2d        None
+ionosphere   native NSA/suppressed           success            0.44880174291938996
+ionosphere   native NSA/dual                 success            0.8749455337690631
+ionosphere   native NSA/annealed             success            0.15076252723311548
+ionosphere   native NSA/binary/hamming       success            0.5016339869281046
+ionosphere   native NSA/binary/rcontiguous   success            0.6151416122004357
+ionosphere   native NSA/binary/rchunk        success            0.5762527233115469
+ionosphere   native IForest                  success            0.9021786492374728
+ionosphere   native ECOD                     success            0.7901960784313726
+ionosphere   native OCSVM                    success            0.973202614379085
+ionosphere   native KNN                      success            0.9631808278867102
+ionosphere   native ABOD                     success            0.9664488017429194

@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset satimage-2 --results benchmark/odds_oneclass/sensitivity/raw/satimage-2_pca2_seed43.jsonl --seed 43 --representation pca2 --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all
+satimage-2   pca2   NSA/fixed                success            0.6022688933873144
+satimage-2   pca2   NSA/variable             success            0.8864077260458839
+satimage-2   pca2   NSA/coverage             success            0.8421052631578948
+satimage-2   pca2   NSA/grid                 success            0.8865131578947368
+satimage-2   pca2   NSA/hierarchical         success            0.6137609649122808
+satimage-2   pca2   NSA/voronoi              success            0.9282852564102565
+satimage-2   pca2   NSA/deterministic        success            0.5684041835357625
+satimage-2   pca2   NSA/suppressed           success            0.8799974696356275
+satimage-2   pca2   NSA/dual                 success            0.9454495614035088
+satimage-2   pca2   NSA/annealed             success            0.6424595141700404
+satimage-2   pca2   NSA/binary/hamming       error              None
+satimage-2   pca2   NSA/binary/rcontiguous   error              None
+satimage-2   pca2   NSA/binary/rchunk        error              None
+satimage-2   pca2   IForest                  success            0.96075826585695
+satimage-2   pca2   ECOD                     success            0.8708459851551958
+satimage-2   pca2   OCSVM                    success            0.9785129892037787
+satimage-2   pca2   KNN                      success            0.978449730094467
+satimage-2   pca2   ABOD                     success            0.9745065789473685

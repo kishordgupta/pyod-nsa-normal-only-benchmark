@@ -1,0 +1,194 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset vowels --results benchmark/odds_oneclass/full_retention/raw/vowels_pca2_seed45_retain25.jsonl --seed 45 --representation pca2 --train-cap 600 --test-cap 2000 --train-fraction 0.25 --method-timeout 15.0 --method-filter all
+vowels       pca2   NSA/fixed                success            0.43206039076376557
+vowels       pca2   NSA/variable             success            0.8531083481349913
+vowels       pca2   NSA/coverage             success            0.8126998223801065
+vowels       pca2   NSA/grid                 success            0.8456483126110125
+vowels       pca2   NSA/hierarchical         success            0.7341030195381884
+vowels       pca2   NSA/voronoi              success            0.8599467140319716
+vowels       pca2   NSA/deterministic        success            0.4852575488454706
+vowels       pca2   NSA/suppressed           success            0.769271758436945
+vowels       pca2   NSA/dual                 success            0.8459147424511546
+vowels       pca2   NSA/annealed             success            0.491740674955595
+vowels       pca2   NSA/binary/hamming       error              None
+vowels       pca2   NSA/binary/rcontiguous   error              None
+vowels       pca2   NSA/binary/rchunk        error              None
+vowels       pca2   ECOD                     success            0.2753996447602131
+vowels       pca2   ABOD                     success            0.7612788632326821
+vowels       pca2   COPOD                    success            0.35079928952042627
+vowels       pca2   MAD                      requires_1d        None
+vowels       pca2   SOS                      success            0.6145648312611012
+vowels       pca2   QMCD                     success            0.8238010657193606
+vowels       pca2   KDE                      success            0.680550621669627
+vowels       pca2   Sampling                 success            0.5767317939609236
+vowels       pca2   GMM                      success            0.2724689165186501
+vowels       pca2   PCA                      success            0.2951154529307283
+vowels       pca2   KPCA                     success            0.7160746003552397
+vowels       pca2   MCD                      success            0.33641207815275315
+vowels       pca2   CD                       success            0.258348134991119
+vowels       pca2   OCSVM                    success            0.7683836589698045
+vowels       pca2   LMDD                     success            0.2439609236234458
+vowels       pca2   LOF                      success            0.7867673179396092
+vowels       pca2   COF                      success            0.7204262877442275
+vowels       pca2   CBLOF                    success            0.7326820603907637
+vowels       pca2   LOCI                     timeout            None
+vowels       pca2   HBOS                     success            0.7427619893428064
+vowels       pca2   HDBSCAN                  success            0.6626110124333926
+vowels       pca2   KNN                      success            0.8063055062166963
+Exception ignored in: <function _on_type_disposal at 0x1120a76a0>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/numba/core/types/abstract.py", line 28, in _on_type_disposal
+    def _on_type_disposal(wr, _pop=_typecache.pop):
+    
+  File "benchmark/odds_oneclass/runner.py", line 46, in _on_alarm
+    raise FitTimeout("per-method wall-time budget exceeded")
+FitTimeout: per-method wall-time budget exceeded
+vowels       pca2   SOD                      success            0.6534635879218473
+vowels       pca2   ROD                      success            0.38330373001776197
+vowels       pca2   IForest                  success            0.6606571936056838
+vowels       pca2   INNE                     success            0.7495559502664298
+vowels       pca2   DIF                      success            0.6792184724689165
+vowels       pca2   FeatureBagging           success            0.7814387211367673
+vowels       pca2   LSCP                     success            0.7644760213143872
+vowels       pca2   LODA                     success            0.591429840142096
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.5s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.4s finished
+RandomForestRegressor()
+
+vowels       pca2   SUOD                     timeout            None
+vowels       pca2   XGBOD                    requires_labeled_outliers None
+vowels       pca2   AutoEncoder              success            0.47424511545293074
+vowels       pca2   VAE                      success            0.28925399644760214
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+vowels       pca2   SO_GAAL                  success            0.4352575488454707
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+vowels       pca2   MO_GAAL                  success            0.21829484902309054
+vowels       pca2   DeepSVDD                 success            0.736145648312611
+vowels       pca2   AnoGAN                   success            0.2789520426287744
+vowels       pca2   ALAD                     success            0.46554174067495563
+Epoch 10/50, Loss: 6.816436862945556
+Epoch 20/50, Loss: 5.854375410079956
+Epoch 30/50, Loss: 5.152109622955322
+Epoch 40/50, Loss: 4.9275823593139645
+Epoch 50/50, Loss: 4.848803424835205
+vowels       pca2   AE1SVM                   success            0.3288632326820604
+vowels       pca2   DevNet                   requires_labeled_outliers None
+vowels       pca2   RGraph                   timeout            None
+vowels       pca2   LUNAR                    success            0.8420071047957371

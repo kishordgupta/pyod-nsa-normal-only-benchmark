@@ -1,0 +1,188 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset cardio --results benchmark/odds_oneclass/full_retention/raw/cardio_pca2_seed44.jsonl --seed 44 --representation pca2 --train-cap 600 --test-cap 2000 --train-fraction 1.0 --method-timeout 15.0 --method-filter all
+cardio       pca2   NSA/fixed                success            0.893923723335488
+cardio       pca2   NSA/variable             success            0.916289592760181
+cardio       pca2   NSA/coverage             success            0.9191769015298427
+cardio       pca2   NSA/grid                 success            0.9161172161172161
+cardio       pca2   NSA/hierarchical         success            0.9107519931049343
+cardio       pca2   NSA/voronoi              success            0.9158371040723983
+cardio       pca2   NSA/deterministic        success            0.9205774617539324
+cardio       pca2   NSA/suppressed           success            0.8928032751562163
+cardio       pca2   NSA/dual                 success            0.9145658263305322
+cardio       pca2   NSA/annealed             success            0.9198879551820729
+cardio       pca2   NSA/binary/hamming       error              None
+cardio       pca2   NSA/binary/rcontiguous   error              None
+cardio       pca2   NSA/binary/rchunk        error              None
+cardio       pca2   ECOD                     success            0.8958952811893988
+cardio       pca2   ABOD                     success            0.9033613445378152
+cardio       pca2   COPOD                    success            0.8203404438698557
+cardio       pca2   MAD                      requires_1d        None
+cardio       pca2   SOS                      success            0.5313294548588666
+cardio       pca2   QMCD                     success            0.8311570782159018
+cardio       pca2   KDE                      success            0.9059469941822882
+cardio       pca2   Sampling                 success            0.8884076707606119
+cardio       pca2   GMM                      success            0.9010127127774187
+cardio       pca2   PCA                      success            0.9170437405731523
+cardio       pca2   KPCA                     success            0.9015729368670545
+cardio       pca2   MCD                      success            0.8997629821159233
+cardio       pca2   CD                       success            0.8535014005602242
+cardio       pca2   OCSVM                    success            0.858974358974359
+cardio       pca2   LMDD                     success            0.7270200387847447
+cardio       pca2   LOF                      success            0.8727321697909933
+cardio       pca2   COF                      success            0.6318465847877612
+cardio       pca2   CBLOF                    success            0.8522085757379875
+cardio       pca2   LOCI                     timeout            None
+cardio       pca2   HBOS                     success            0.8888493859082094
+cardio       pca2   HDBSCAN                  success            0.8575091575091576
+cardio       pca2   KNN                      success            0.8936005171299289
+cardio       pca2   SOD                      success            0.5514328808446456
+cardio       pca2   ROD                      success            0.7462615815556992
+cardio       pca2   IForest                  success            0.9069812540400776
+cardio       pca2   INNE                     success            0.9034044386985565
+cardio       pca2   DIF                      success            0.8710191769015299
+cardio       pca2   FeatureBagging           success            0.8898082309847015
+cardio       pca2   LSCP                     success            0.8998060762766645
+cardio       pca2   LODA                     success            0.895970695970696
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.3s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+RandomForestRegressor()
+
+
+cardio       pca2   SUOD                     success            0.9076492135315665
+cardio       pca2   XGBOD                    requires_labeled_outliers None
+cardio       pca2   AutoEncoder              success            0.8691014867485456
+cardio       pca2   VAE                      success            0.9077354018530489
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+cardio       pca2   SO_GAAL                  success            0.7706205559146735
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+cardio       pca2   MO_GAAL                  success            0.825296272355096
+cardio       pca2   DeepSVDD                 success            0.789614307261366
+cardio       pca2   AnoGAN                   success            0.7310924369747899
+cardio       pca2   ALAD                     success            0.5421676362852834
+Epoch 10/50, Loss: 6.01182746887207
+Epoch 20/50, Loss: 4.1088877100693555
+Epoch 30/50, Loss: 3.06915471428319
+Epoch 40/50, Loss: 2.3860335318665755
+Epoch 50/50, Loss: 2.6168402935329236
+cardio       pca2   AE1SVM                   success            0.8672484378366732
+cardio       pca2   DevNet                   requires_labeled_outliers None
+cardio       pca2   RGraph                   timeout            None
+cardio       pca2   LUNAR                    success            0.8511743158801982

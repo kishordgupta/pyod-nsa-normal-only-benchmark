@@ -1,0 +1,182 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset optdigits --results benchmark/odds_oneclass/full_retention/raw/optdigits_pca2_seed46_retain75.jsonl --seed 46 --representation pca2 --train-cap 600 --test-cap 2000 --train-fraction 0.75 --method-timeout 15.0 --method-filter all
+optdigits    pca2   NSA/fixed                success            0.11231501295699362
+optdigits    pca2   NSA/variable             success            0.1266805717329866
+optdigits    pca2   NSA/coverage             success            0.147384673727551
+optdigits    pca2   NSA/grid                 success            0.1266805717329866
+optdigits    pca2   NSA/hierarchical         success            0.12435102166120397
+optdigits    pca2   NSA/voronoi              success            0.16479309441901202
+optdigits    pca2   NSA/deterministic        success            0.1890547263681592
+optdigits    pca2   NSA/suppressed           success            0.20158734458379607
+optdigits    pca2   NSA/dual                 success            0.31597908822493703
+optdigits    pca2   NSA/annealed             success            0.1885761753844209
+optdigits    pca2   NSA/binary/hamming       error              None
+optdigits    pca2   NSA/binary/rcontiguous   error              None
+optdigits    pca2   NSA/binary/rchunk        error              None
+optdigits    pca2   ECOD                     success            0.21824633637619525
+optdigits    pca2   ABOD                     success            0.5598414461268973
+optdigits    pca2   COPOD                    success            0.25649429801988244
+optdigits    pca2   MAD                      requires_1d        None
+optdigits    pca2   SOS                      success            0.451806304232016
+optdigits    pca2   QMCD                     success            0.24292331446217186
+optdigits    pca2   KDE                      success            0.4829301767026934
+optdigits    pca2   Sampling                 success            0.58209858150265
+optdigits    pca2   GMM                      success            0.14717700065913625
+optdigits    pca2   PCA                      success            0.519607046437504
+optdigits    pca2   KPCA                     success            0.4476709013914095
+optdigits    pca2   MCD                      success            0.32536952262282054
+optdigits    pca2   CD                       success            0.21485133317080657
+optdigits    pca2   OCSVM                    success            0.4566369603886195
+optdigits    pca2   LMDD                     success            0.14632824985778908
+optdigits    pca2   LOF                      success            0.532076459806232
+optdigits    pca2   COF                      success            0.41028071981291364
+optdigits    pca2   CBLOF                    success            0.4449530929743298
+optdigits    pca2   LOCI                     timeout            None
+optdigits    pca2   HBOS                     success            0.31526577638125164
+optdigits    pca2   HDBSCAN                  success            0.4791830322073841
+optdigits    pca2   KNN                      success            0.5392998708815271
+optdigits    pca2   SOD                      success            0.46858719108631075
+optdigits    pca2   ROD                      success            0.3656219808399021
+optdigits    pca2   IForest                  success            0.3860416610233768
+optdigits    pca2   INNE                     success            0.38836669646323735
+optdigits    pca2   DIF                      success            0.43607732661556103
+optdigits    pca2   FeatureBagging           success            0.4652418488320647
+optdigits    pca2   LSCP                     success            0.45789202806295204
+optdigits    pca2   LODA                     success            0.37405531327030905
+optdigits    pca2   SUOD                     error              None
+optdigits    pca2   XGBOD                    requires_labeled_outliers None
+optdigits    pca2   AutoEncoder              success            0.23811071683325655
+optdigits    pca2   VAE                      success            0.32949589619958286
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+optdigits    pca2   SO_GAAL                  success            0.27547381062022014
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+optdigits    pca2   MO_GAAL                  success            0.33382994284475986
+optdigits    pca2   DeepSVDD                 success            0.86059719551065
+optdigits    pca2   AnoGAN                   success            0.19105922294155356
+optdigits    pca2   ALAD                     success            0.4544879955937192
+Epoch 10/50, Loss: 6.526305977503458
+Epoch 20/50, Loss: 5.046251873175303
+Epoch 30/50, Loss: 3.726716152826945
+Epoch 40/50, Loss: 3.055298169453939
+Epoch 50/50, Loss: 2.9317378282546995
+optdigits    pca2   AE1SVM                   success            0.4291157641917455
+optdigits    pca2   DevNet                   requires_labeled_outliers None
+optdigits    pca2   RGraph                   timeout            None
+optdigits    pca2   LUNAR                    success            0.5207718214733953

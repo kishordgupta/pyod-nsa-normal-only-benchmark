@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "validation_date": "2026-10-12",
+  "original_evidence_unchanged": true,
+  "copied_evidence_files_sha256_verified": 2623,
+  "numeric_and_protocol_fields_unchanged": {
+    "initial_benchmark_records": 1904,
+    "sensitivity_records": 1224,
+    "historical_retention_records": 5508,
+    "fresh_full_retention_records": 38080
+  },
+  "runner_and_model_factory_byte_identical": true,
+  "dataset_download_test": {
+    "source": "immutable raw.githubusercontent.com URLs from recorded PyOD data commit",
+    "files_downloaded_and_sha256_verified": 17,
+    "downloaded_files_removed_after_test": true
+  },
+  "vendored_source_execution_smoke": {
+    "dataset": "glass",
+    "representation": "pca2",
+    "seed": 42,
+    "normal_training_fraction_retained": 0.25,
+    "training_outliers": 0,
+    "nsa_configurations": 13,
+    "statuses_auroc_ap_score_cardinality_and_split_hashes_exactly_reproduced": true,
+    "successful_configurations": 10,
+    "binary_configuration_errors_reproduced": 3,
+    "elapsed_times_expected_to_differ": true
+  },
+  "clean_copy_analysis": {
+    "public_manifests_and_public_raw_log_snapshot_views_used": true,
+    "original_absolute_machine_paths_used_by_analysis": false,
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 20261012,
+    "regenerated_csv_tables_byte_identical": 12,
+    "split_identity_watchdog_and_restart_checks_passed": true,
+    "zero_outliers_in_all_training_partitions": true
+  },
+  "dataset_rank_reproduction": {
+    "csv_byte_identical": true,
+    "datasets": 17,
+    "field_size": 36,
+    "dual_macro_auroc": 0.7602785236718412
+  },
+  "source_metadata_relocation_test": {
+    "vendored_source_import_resolved": true,
+    "source_commit": "0d6c901652f82c813da45875873ef4a8560cf049",
+    "source_tree": "57ec5c9ea2800b559019adf0457d7e5b858fc153",
+    "full_grid_record_count": 38080
+  },
+  "limitations": "Execution checks reused the observed benchmark Python environment while importing the independent vendored public source. A new empty virtual environment installation was not repeated. Frozen dependency availability and timing are platform-dependent. Complete candidate public-tree privacy review is performed again before publication."
+}

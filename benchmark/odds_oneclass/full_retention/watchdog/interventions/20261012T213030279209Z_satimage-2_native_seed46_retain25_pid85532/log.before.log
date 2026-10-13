@@ -1,0 +1,40 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset satimage-2 --results benchmark/odds_oneclass/full_retention/raw/satimage-2_native_seed46_retain25.jsonl --seed 46 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.25 --method-timeout 15.0 --method-filter all
+satimage-2   native NSA/fixed                success            0.044302462887989204
+satimage-2   native NSA/variable             success            0.0646508097165992
+satimage-2   native NSA/coverage             success            0.0646508097165992
+satimage-2   native NSA/grid                 success            0.08343876518218624
+satimage-2   native NSA/hierarchical         success            0.0270748987854251
+satimage-2   native NSA/voronoi              requires_2d_or_3d  None
+satimage-2   native NSA/deterministic        requires_2d        None
+satimage-2   native NSA/suppressed           success            0.0646508097165992
+satimage-2   native NSA/dual                 success            0.994622975708502
+satimage-2   native NSA/annealed             success            0.039705634278002694
+satimage-2   native NSA/binary/hamming       success            0.24401147098515522
+satimage-2   native NSA/binary/rcontiguous   success            0.399491818488529
+satimage-2   native NSA/binary/rchunk        success            0.2772857624831309
+satimage-2   native ECOD                     success            0.9494137989203779
+satimage-2   native ABOD                     success            0.9963942307692308
+satimage-2   native COPOD                    success            0.9587128879892038
+satimage-2   native MAD                      requires_1d        None
+satimage-2   native SOS                      error              None
+satimage-2   native QMCD                     success            0.4343159581646423
+satimage-2   native KDE                      success            0.9986715587044535
+satimage-2   native Sampling                 success            0.9985450404858299
+satimage-2   native GMM                      success            0.9894568151147098
+satimage-2   native PCA                      success            0.9592189608636977
+satimage-2   native KPCA                     success            0.9986082995951417
+satimage-2   native MCD                      success            0.9820765856950068
+satimage-2   native CD                       success            0.9798414304993253
+satimage-2   native OCSVM                    success            0.9928938933873145
+satimage-2   native LMDD                     timeout            None
+satimage-2   native LOF                      success            0.9970268218623481
+satimage-2   native COF                      timeout            None
+satimage-2   native CBLOF                    timeout            None
+Exception ignored in: <function BaseContext._insert_global.<locals>.on_disposal at 0x11250d800>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/numba/core/typing/context.py", line 585, in on_disposal
+    def on_disposal(wr, pop=self._globals.pop):
+
+  File "benchmark/odds_oneclass/runner.py", line 46, in _on_alarm
+    raise FitTimeout("per-method wall-time budget exceeded")
+FitTimeout: per-method wall-time budget exceeded

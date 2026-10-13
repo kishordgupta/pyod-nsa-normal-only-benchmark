@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset letter --results benchmark/odds_oneclass/retention/raw/letter_pca2_seed43_retain50.jsonl --seed 43 --representation pca2 --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.5
+letter       pca2   NSA/fixed                success            0.3359166666666667
+letter       pca2   NSA/variable             success            0.46429166666666666
+letter       pca2   NSA/coverage             success            0.38295833333333335
+letter       pca2   NSA/grid                 success            0.46587499999999993
+letter       pca2   NSA/hierarchical         success            0.37704166666666666
+letter       pca2   NSA/voronoi              success            0.45829166666666665
+letter       pca2   NSA/deterministic        success            0.42254166666666665
+letter       pca2   NSA/suppressed           success            0.4723333333333334
+letter       pca2   NSA/dual                 success            0.49749999999999994
+letter       pca2   NSA/annealed             success            0.36379166666666674
+letter       pca2   NSA/binary/hamming       error              None
+letter       pca2   NSA/binary/rcontiguous   error              None
+letter       pca2   NSA/binary/rchunk        error              None
+letter       pca2   IForest                  success            0.558
+letter       pca2   ECOD                     success            0.37070833333333336
+letter       pca2   OCSVM                    success            0.6276666666666667
+letter       pca2   KNN                      success            0.6625833333333334
+letter       pca2   ABOD                     success            0.6213333333333333

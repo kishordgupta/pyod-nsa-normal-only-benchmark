@@ -1,0 +1,181 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset ionosphere --results benchmark/odds_oneclass/full_retention/raw/ionosphere_native_seed46_retain25.jsonl --seed 46 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.25 --method-timeout 15.0 --method-filter all
+ionosphere   native NSA/fixed                success            0.049891067538126346
+ionosphere   native NSA/variable             success            0.20610021786492375
+ionosphere   native NSA/coverage             success            0.20610021786492375
+ionosphere   native NSA/grid                 success            0.20980392156862746
+ionosphere   native NSA/hierarchical         success            0.048583877995642705
+ionosphere   native NSA/voronoi              requires_2d_or_3d  None
+ionosphere   native NSA/deterministic        requires_2d        None
+ionosphere   native NSA/suppressed           success            0.18496732026143792
+ionosphere   native NSA/dual                 success            0.9494553376906318
+ionosphere   native NSA/annealed             success            0.04596949891067538
+ionosphere   native NSA/binary/hamming       success            0.5765795206971677
+ionosphere   native NSA/binary/rcontiguous   success            0.5892156862745098
+ionosphere   native NSA/binary/rchunk        success            0.5074074074074073
+ionosphere   native ECOD                     success            0.7647058823529411
+ionosphere   native ABOD                     success            0.9832244008714597
+ionosphere   native COPOD                    success            0.8193899782135077
+ionosphere   native MAD                      requires_1d        None
+ionosphere   native SOS                      success            0.7758169934640522
+ionosphere   native QMCD                     success            0.17559912854030502
+ionosphere   native KDE                      success            0.989760348583878
+ionosphere   native Sampling                 success            0.9847494553376906
+ionosphere   native GMM                      success            0.9403050108932461
+ionosphere   native PCA                      success            0.9490196078431372
+ionosphere   native KPCA                     success            0.9912854030501089
+ionosphere   native MCD                      success            0.910239651416122
+ionosphere   native CD                       success            0.9529411764705882
+ionosphere   native OCSVM                    success            0.984313725490196
+ionosphere   native LMDD                     success            0.7214596949891068
+ionosphere   native LOF                      success            0.9305010893246188
+ionosphere   native COF                      success            0.8784313725490196
+ionosphere   native CBLOF                    success            0.9823529411764705
+ionosphere   native LOCI                     timeout            None
+ionosphere   native HBOS                     success            0.7832244008714597
+ionosphere   native HDBSCAN                  success            0.6943355119825708
+ionosphere   native KNN                      success            0.9697167755991286
+ionosphere   native SOD                      timeout            None
+ionosphere   native ROD                      timeout            None
+ionosphere   native IForest                  success            0.8376906318082789
+ionosphere   native INNE                     success            0.990958605664488
+ionosphere   native DIF                      success            0.9050108932461873
+ionosphere   native FeatureBagging           success            0.9396514161220044
+ionosphere   native LSCP                     success            0.9444444444444444
+ionosphere   native LODA                     success            0.6616557734204793
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    1.5s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.4s finished
+RandomForestRegressor()
+
+ionosphere   native SUOD                     timeout            None
+ionosphere   native XGBOD                    requires_labeled_outliers None
+ionosphere   native AutoEncoder              success            0.9629629629629629
+ionosphere   native VAE                      success            0.9468409586056643
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+ionosphere   native SO_GAAL                  success            0.6671023965141611
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+ionosphere   native MO_GAAL                  success            0.618082788671024
+ionosphere   native DeepSVDD                 success            0.9734204793028323
+ionosphere   native AnoGAN                   success            0.8958605664488017
+ionosphere   native ALAD                     success            0.592156862745098
+ionosphere   native AE1SVM                   error              None
+ionosphere   native DevNet                   requires_labeled_outliers None
+ionosphere   native RGraph                   success            0.6527233115468409
+ionosphere   native LUNAR                    success            0.9762527233115468

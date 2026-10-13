@@ -1,0 +1,2 @@
+dataset,seed,representation,retention_pct,method,status,intermediate_auroc,ap,source_file,source_line,interpretation
+satellite,43,native,75,SOD,timeout,0.5957047153749353,,satellite_native_seed43_retain75.jsonl,36,timeout during metrics; not a scored AUROC/AP pair

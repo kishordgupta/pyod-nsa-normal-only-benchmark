@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset satellite --results benchmark/odds_oneclass/retention/raw/satellite_native_seed43_retain50.jsonl --seed 43 --representation native --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.5
+satellite    native NSA/fixed                success            0.4290704345251314
+satellite    native NSA/variable             success            0.3523819768302613
+satellite    native NSA/coverage             success            0.3523819768302613
+satellite    native NSA/grid                 success            0.38202309571396853
+satellite    native NSA/hierarchical         success            0.2632897512769265
+satellite    native NSA/voronoi              requires_2d_or_3d  None
+satellite    native NSA/deterministic        requires_2d        None
+satellite    native NSA/suppressed           success            0.35229638574283806
+satellite    native NSA/dual                 success            0.6905512066030055
+satellite    native NSA/annealed             success            0.2399176012288104
+satellite    native NSA/binary/hamming       success            0.32146508808942187
+satellite    native NSA/binary/rcontiguous   success            0.5798709425198014
+satellite    native NSA/binary/rchunk        success            0.6060086100007402
+satellite    native IForest                  success            0.8086079187948774
+satellite    native ECOD                     success            0.607232909541787
+satellite    native OCSVM                    success            0.7826217706714043
+satellite    native KNN                      success            0.8658082111925383
+satellite    native ABOD                     success            0.8463605281664075

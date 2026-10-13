@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset arrhythmia --results benchmark/odds_oneclass/retention/raw/arrhythmia_pca2_seed42_retain75.jsonl --seed 42 --representation pca2 --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.75
+arrhythmia   pca2   NSA/fixed                success            0.6558312655086849
+arrhythmia   pca2   NSA/variable             success            0.6401985111662531
+arrhythmia   pca2   NSA/coverage             success            0.6153846153846153
+arrhythmia   pca2   NSA/grid                 success            0.6369727047146402
+arrhythmia   pca2   NSA/hierarchical         success            0.6501240694789082
+arrhythmia   pca2   NSA/voronoi              success            0.7054590570719603
+arrhythmia   pca2   NSA/deterministic        success            0.6607940446650125
+arrhythmia   pca2   NSA/suppressed           success            0.6573200992555832
+arrhythmia   pca2   NSA/dual                 success            0.6585607940446649
+arrhythmia   pca2   NSA/annealed             success            0.637468982630273
+arrhythmia   pca2   NSA/binary/hamming       error              None
+arrhythmia   pca2   NSA/binary/rcontiguous   error              None
+arrhythmia   pca2   NSA/binary/rchunk        error              None
+arrhythmia   pca2   IForest                  success            0.7446650124069479
+arrhythmia   pca2   ECOD                     success            0.6875930521091811
+arrhythmia   pca2   OCSVM                    success            0.6978908188585607
+arrhythmia   pca2   KNN                      success            0.7220843672456576
+arrhythmia   pca2   ABOD                     success            0.7364764267990075

@@ -1,0 +1,40 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset letter --results benchmark/odds_oneclass/full_retention/raw/letter_native_seed46_retain25.jsonl --seed 46 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.25 --method-timeout 15.0 --method-filter all
+letter       native NSA/fixed                success            0.492
+letter       native NSA/variable             success            0.6822083333333333
+letter       native NSA/coverage             success            0.6822083333333333
+letter       native NSA/grid                 success            0.7000833333333333
+letter       native NSA/hierarchical         success            0.5015833333333333
+letter       native NSA/voronoi              requires_2d_or_3d  None
+letter       native NSA/deterministic        requires_2d        None
+letter       native NSA/suppressed           success            0.6865833333333333
+letter       native NSA/dual                 success            0.6210833333333333
+letter       native NSA/annealed             success            0.5242916666666666
+letter       native NSA/binary/hamming       success            0.5083541666666667
+letter       native NSA/binary/rcontiguous   success            0.6001041666666667
+letter       native NSA/binary/rchunk        success            0.55275
+letter       native ECOD                     success            0.6012916666666668
+letter       native ABOD                     success            0.8163750000000001
+letter       native COPOD                    success            0.5939166666666666
+letter       native MAD                      requires_1d        None
+letter       native SOS                      success            0.8000833333333334
+letter       native QMCD                     success            0.641
+letter       native KDE                      success            0.8545
+letter       native Sampling                 success            0.7332916666666667
+letter       native GMM                      success            0.8585833333333334
+letter       native PCA                      success            0.5718333333333333
+letter       native KPCA                     success            0.8431666666666666
+letter       native MCD                      success            0.8365833333333333
+letter       native CD                       success            0.8328333333333333
+letter       native OCSVM                    success            0.6431666666666668
+letter       native LMDD                     timeout            None
+letter       native LOF                      success            0.740375
+letter       native COF                      success            0.8295833333333333
+letter       native CBLOF                    timeout            None
+Exception ignored on calling ctypes callback function: <function ExecutionEngine._raw_object_cache_notify at 0x10feafd80>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/llvmlite/binding/executionengine.py", line 178, in _raw_object_cache_notify
+    def _raw_object_cache_notify(self, data):
+
+  File "benchmark/odds_oneclass/runner.py", line 46, in _on_alarm
+    raise FitTimeout("per-method wall-time budget exceeded")
+FitTimeout: per-method wall-time budget exceeded

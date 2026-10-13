@@ -1,0 +1,822 @@
+{
+  "baseline_count": 43,
+  "code_sha256": {
+    "full_retention_sweep.py": "768442acbb86cd3b28a477c1a86c231e86e8888308e562271da4e20dfa1baff2",
+    "loader.py": "cc32d4e0ba892b66f6e3d6592f96be05b851f0778a1809ecb0530e2e2a8d2586",
+    "model_factory.py": "a0725371f0e13ed201f79d3883eb0622e9fd5d7c98f815801d43b8db97078c7c",
+    "runner.py": "e2c12c8064372b97cdc9d0ec0ea303ab710b8dfbd0a288c9138b64172c0a44ff"
+  },
+  "created_utc": "2026-10-12T19:29:28.342235+00:00",
+  "data_dir": "vendor/pyod/notebooks/data",
+  "dataset_manifest_sha256": "532ed7f3a11415db6eec12fa8b7823bff6e91022efe76193718550de474ef103",
+  "datasets": [
+    {
+      "filename": "arrhythmia.mat",
+      "name": "arrhythmia",
+      "sha256": "e4d47e499591ae31e5d7f0cd983367092353eac240f48e14c9b36457edb3460d"
+    },
+    {
+      "filename": "cardio.mat",
+      "name": "cardio",
+      "sha256": "5e568b6a73711012c481fa6cc984ab9c68e9a4fa44d6aeb3b43efa381c3f695b"
+    },
+    {
+      "filename": "glass.mat",
+      "name": "glass",
+      "sha256": "2c506e6e1e2ca1e82a905d10a90773151ff812c4bd969c71a12db5b2bb6e7921"
+    },
+    {
+      "filename": "ionosphere.mat",
+      "name": "ionosphere",
+      "sha256": "8ac5dfa6f47db4acdfe10615489b7f7dd015d79d5b381ce641e72baca3cfefb0"
+    },
+    {
+      "filename": "letter.mat",
+      "name": "letter",
+      "sha256": "f4a229b0e2a6b0c9157ce27fa760bcbac0f948cd690b2f5d51c120e5450f2195"
+    },
+    {
+      "filename": "lympho.mat",
+      "name": "lympho",
+      "sha256": "031b907ecb50347720b08b38f8139d05635adeca9335a064d89d5569c27a5834"
+    },
+    {
+      "filename": "mnist.mat",
+      "name": "mnist",
+      "sha256": "9479e221f236684c09f3e11c7ad124725d34ecd301b9450425e8b113368413a6"
+    },
+    {
+      "filename": "musk.mat",
+      "name": "musk",
+      "sha256": "50bbf414caceb66cfe6f6b1eb7c1ff7c6eb1e6d87173f7bb597ba55cd3dc5493"
+    },
+    {
+      "filename": "optdigits.mat",
+      "name": "optdigits",
+      "sha256": "30c664cd6f3740a173277a27cd1028d471b06f0835a9902c9712749cec58c1c4"
+    },
+    {
+      "filename": "pendigits.mat",
+      "name": "pendigits",
+      "sha256": "7bc32ac83b3d583443acea8b1342a54aaa59eaedb9996af405322f473f3c22bc"
+    },
+    {
+      "filename": "pima.mat",
+      "name": "pima",
+      "sha256": "b6a5be8d548b9293d6958beceb1c77055591714d25d40d957eba87808456468f"
+    },
+    {
+      "filename": "satellite.mat",
+      "name": "satellite",
+      "sha256": "6feac3112b9c14e1c3e60afc437f2f3d29dc1000119c9f950c628078778d6aa0"
+    },
+    {
+      "filename": "satimage-2.mat",
+      "name": "satimage-2",
+      "sha256": "95c37a07cea2cb201f6900d14f521510e10b6b2f0074c06ac46d3157440ec67b"
+    },
+    {
+      "filename": "shuttle.mat",
+      "name": "shuttle",
+      "sha256": "b6e396c92354d5dcf5036901e36dc58e2913f2d1a5e138c35a2bedf9c69db899"
+    },
+    {
+      "filename": "vertebral.mat",
+      "name": "vertebral",
+      "sha256": "84b50b055f118f54b5c976650ccd284ab7c1adee822f8b3eb517c7e2c890d15e"
+    },
+    {
+      "filename": "vowels.mat",
+      "name": "vowels",
+      "sha256": "51d5397bad1ceeda22b7cd44fd58125c5d603c9c2edb53aa59933330e259ac7b"
+    },
+    {
+      "filename": "wbc.mat",
+      "name": "wbc",
+      "sha256": "afe6b26953cc196b9a480318c903e0edef22529c2f61bd02082438c6e70630a7"
+    }
+  ],
+  "expected_cells": 680,
+  "expected_records": 38080,
+  "fit_seconds_note": "Includes lazy model import and construction as well as fit, and is not isolated fit time.",
+  "fractions_retained": [
+    1.0,
+    0.75,
+    0.5,
+    0.25
+  ],
+  "method_count": 56,
+  "method_meta": {
+    "ABOD": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.abod.ABOD",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "AE1SVM": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.ae1svm.AE1SVM",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": [
+        "torch"
+      ]
+    },
+    "ALAD": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.alad.ALAD",
+      "compute_overrides": {
+        "epochs": 50
+      },
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": [
+        "torch"
+      ]
+    },
+    "AnoGAN": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.anogan.AnoGAN",
+      "compute_overrides": {
+        "epochs": 50,
+        "epochs_query": 5
+      },
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": [
+        "torch"
+      ]
+    },
+    "AutoEncoder": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.auto_encoder.AutoEncoder",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": [
+        "torch"
+      ]
+    },
+    "CBLOF": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.cblof.CBLOF",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "CD": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.cd.CD",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "COF": {
+      "applicability": "applicable",
+      "batch_dependent": true,
+      "class_path": "pyod.models.cof.COF",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "batch-dependent",
+      "reason": "",
+      "requires": []
+    },
+    "COPOD": {
+      "applicability": "applicable",
+      "batch_dependent": true,
+      "class_path": "pyod.models.copod.COPOD",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "batch-dependent",
+      "reason": "",
+      "requires": []
+    },
+    "DIF": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.dif.DIF",
+      "compute_overrides": {
+        "n_ensemble": 10
+      },
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": [
+        "torch"
+      ]
+    },
+    "DeepSVDD": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.deep_svdd.DeepSVDD",
+      "compute_overrides": {
+        "epochs": 50
+      },
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": [
+        "torch"
+      ]
+    },
+    "DevNet": {
+      "applicability": "requires_labeled_outliers",
+      "batch_dependent": false,
+      "class_path": "pyod.models.devnet.DevNet",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "fit(X, y) requires outlier labels and a positive class; clean-normal training supplies neither.",
+      "requires": [
+        "torch"
+      ]
+    },
+    "ECOD": {
+      "applicability": "applicable",
+      "batch_dependent": true,
+      "class_path": "pyod.models.ecod.ECOD",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "batch-dependent",
+      "reason": "",
+      "requires": []
+    },
+    "FeatureBagging": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.feature_bagging.FeatureBagging",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": [
+        "combo"
+      ]
+    },
+    "GMM": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.gmm.GMM",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "HBOS": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.hbos.HBOS",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "HDBSCAN": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.hdbscan.HDBSCAN",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "Requires sklearn.cluster.HDBSCAN in the installed scikit-learn.",
+      "requires": [
+        "sklearn.cluster.HDBSCAN"
+      ]
+    },
+    "IForest": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.iforest.IForest",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "INNE": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.inne.INNE",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "KDE": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.kde.KDE",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "KNN": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.knn.KNN",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "KPCA": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.kpca.KPCA",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "LMDD": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.lmdd.LMDD",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "LOCI": {
+      "applicability": "applicable",
+      "batch_dependent": true,
+      "class_path": "pyod.models.loci.LOCI",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "batch-dependent",
+      "reason": "",
+      "requires": []
+    },
+    "LODA": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.loda.LODA",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "LOF": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.lof.LOF",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "LSCP": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.lscp.LSCP",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "LUNAR": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.lunar.LUNAR",
+      "compute_overrides": {
+        "n_epochs": 50
+      },
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": [
+        "torch"
+      ]
+    },
+    "MAD": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.mad.MAD",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "Univariate only; inapplicable to the native and PCA(2) panels.",
+      "requires": []
+    },
+    "MCD": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.mcd.MCD",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "MO_GAAL": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.mo_gaal.MO_GAAL",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": [
+        "torch"
+      ]
+    },
+    "NSA/annealed": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.nsa.NSA",
+      "compute_overrides": {},
+      "family": "NSA",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": [],
+      "strategy": "annealed"
+    },
+    "NSA/binary/hamming": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.nsa.NSA",
+      "compute_overrides": {},
+      "family": "NSA",
+      "inference_mode": "inductive",
+      "reason": "Hamming uses default match_threshold=1 (0 in 1D); contiguous/chunk use a fixed, label-free 40%-of-feature matching length, matching the upstream example's 12/30 ratio.",
+      "requires": [],
+      "strategy": "binary"
+    },
+    "NSA/binary/rchunk": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.nsa.NSA",
+      "compute_overrides": {},
+      "family": "NSA",
+      "inference_mode": "inductive",
+      "reason": "Hamming uses default match_threshold=1 (0 in 1D); contiguous/chunk use a fixed, label-free 40%-of-feature matching length, matching the upstream example's 12/30 ratio.",
+      "requires": [],
+      "strategy": "binary"
+    },
+    "NSA/binary/rcontiguous": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.nsa.NSA",
+      "compute_overrides": {},
+      "family": "NSA",
+      "inference_mode": "inductive",
+      "reason": "Hamming uses default match_threshold=1 (0 in 1D); contiguous/chunk use a fixed, label-free 40%-of-feature matching length, matching the upstream example's 12/30 ratio.",
+      "requires": [],
+      "strategy": "binary"
+    },
+    "NSA/coverage": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.nsa.NSA",
+      "compute_overrides": {},
+      "family": "NSA",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": [],
+      "strategy": "coverage"
+    },
+    "NSA/deterministic": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.nsa.NSA",
+      "compute_overrides": {},
+      "family": "NSA",
+      "inference_mode": "inductive",
+      "reason": "Deterministic lattice implementation accepts only 2 features.",
+      "requires": [],
+      "strategy": "deterministic"
+    },
+    "NSA/dual": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.nsa.NSA",
+      "compute_overrides": {},
+      "family": "NSA",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": [],
+      "strategy": "dual"
+    },
+    "NSA/fixed": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.nsa.NSA",
+      "compute_overrides": {},
+      "family": "NSA",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": [],
+      "strategy": "fixed"
+    },
+    "NSA/grid": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.nsa.NSA",
+      "compute_overrides": {},
+      "family": "NSA",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": [],
+      "strategy": "grid"
+    },
+    "NSA/hierarchical": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.nsa.NSA",
+      "compute_overrides": {},
+      "family": "NSA",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": [],
+      "strategy": "hierarchical"
+    },
+    "NSA/suppressed": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.nsa.NSA",
+      "compute_overrides": {},
+      "family": "NSA",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": [],
+      "strategy": "suppressed"
+    },
+    "NSA/variable": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.nsa.NSA",
+      "compute_overrides": {},
+      "family": "NSA",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": [],
+      "strategy": "variable"
+    },
+    "NSA/voronoi": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.nsa.NSA",
+      "compute_overrides": {},
+      "family": "NSA",
+      "inference_mode": "inductive",
+      "reason": "Voronoi implementation accepts only 2 or 3 features.",
+      "requires": [],
+      "strategy": "voronoi"
+    },
+    "OCSVM": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.ocsvm.OCSVM",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "PCA": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.pca.PCA",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "QMCD": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.qmcd.QMCD",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "RGraph": {
+      "applicability": "applicable",
+      "batch_dependent": true,
+      "class_path": "pyod.models.rgraph.RGraph",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "batch-dependent",
+      "reason": "",
+      "requires": []
+    },
+    "ROD": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.rod.ROD",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "SOD": {
+      "applicability": "applicable",
+      "batch_dependent": true,
+      "class_path": "pyod.models.sod.SOD",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "batch-dependent",
+      "reason": "",
+      "requires": []
+    },
+    "SOS": {
+      "applicability": "applicable",
+      "batch_dependent": true,
+      "class_path": "pyod.models.sos.SOS",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "batch-dependent",
+      "reason": "",
+      "requires": []
+    },
+    "SO_GAAL": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.so_gaal.SO_GAAL",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": [
+        "torch"
+      ]
+    },
+    "SUOD": {
+      "applicability": "applicable",
+      "batch_dependent": true,
+      "class_path": "pyod.models.suod.SUOD",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "batch-dependent",
+      "reason": "",
+      "requires": [
+        "suod",
+        "combo"
+      ]
+    },
+    "Sampling": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.sampling.Sampling",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": []
+    },
+    "VAE": {
+      "applicability": "applicable",
+      "batch_dependent": false,
+      "class_path": "pyod.models.vae.VAE",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "",
+      "requires": [
+        "torch"
+      ]
+    },
+    "XGBOD": {
+      "applicability": "requires_labeled_outliers",
+      "batch_dependent": false,
+      "class_path": "pyod.models.xgbod.XGBOD",
+      "compute_overrides": {},
+      "family": "baseline",
+      "inference_mode": "inductive",
+      "reason": "fit(X, y) requires outlier labels and a positive class; clean-normal training supplies neither.",
+      "requires": [
+        "xgboost"
+      ]
+    }
+  },
+  "method_timeout_seconds": 15.0,
+  "methods": [
+    "NSA/fixed",
+    "NSA/variable",
+    "NSA/coverage",
+    "NSA/grid",
+    "NSA/hierarchical",
+    "NSA/voronoi",
+    "NSA/deterministic",
+    "NSA/suppressed",
+    "NSA/dual",
+    "NSA/annealed",
+    "NSA/binary/hamming",
+    "NSA/binary/rcontiguous",
+    "NSA/binary/rchunk",
+    "ECOD",
+    "ABOD",
+    "COPOD",
+    "MAD",
+    "SOS",
+    "QMCD",
+    "KDE",
+    "Sampling",
+    "GMM",
+    "PCA",
+    "KPCA",
+    "MCD",
+    "CD",
+    "OCSVM",
+    "LMDD",
+    "LOF",
+    "COF",
+    "CBLOF",
+    "LOCI",
+    "HBOS",
+    "HDBSCAN",
+    "KNN",
+    "SOD",
+    "ROD",
+    "IForest",
+    "INNE",
+    "DIF",
+    "FeatureBagging",
+    "LSCP",
+    "LODA",
+    "SUOD",
+    "XGBOD",
+    "AutoEncoder",
+    "VAE",
+    "SO_GAAL",
+    "MO_GAAL",
+    "DeepSVDD",
+    "AnoGAN",
+    "ALAD",
+    "AE1SVM",
+    "DevNet",
+    "RGraph",
+    "LUNAR"
+  ],
+  "nsa_configuration_count": 13,
+  "packages": {
+    "combo": "0.1.3",
+    "numpy": "2.5.3",
+    "pyod": "3.6.5",
+    "pythresh": "1.1.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "suod": "0.1.4",
+    "torch": "2.14.0",
+    "xgboost": "3.4.1"
+  },
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "protocol": "60/40 stratified ODDS split; discard all train-partition anomalies; cap original normal fit at 600 and mixed test at 2000; draw nested retained normal subsets; fit scaler and optional PCA2 on retained normals only; model.fit receives X only; held-out mixed test supplies labels for AUROC/AP only",
+  "protocol_version": "retention-v2-parent-order",
+  "python": "<PYTHON_ENV>/bin/python",
+  "python_version": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "representations": [
+    "native",
+    "pca2"
+  ],
+  "result_naming": "{dataset}_{representation}_seed{seed}.jsonl at 100%; append _retain{percent} otherwise",
+  "schema_version": 1,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "source_git_commit": "0d6c901652f82c813da45875873ef4a8560cf049",
+  "source_git_status": "",
+  "source_git_tree": "57ec5c9ea2800b559019adf0457d7e5b858fc153",
+  "source_nsa_sha256": "93588460fe272758e22e641ede0dbf27455aaca70a48746f36014f04cff62496",
+  "source_repo": "vendor/pyod",
+  "test_cap": 2000,
+  "train_cap": 600
+}

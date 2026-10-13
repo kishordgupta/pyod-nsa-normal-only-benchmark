@@ -1,0 +1,207 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset letter --results benchmark/odds_oneclass/full_retention/raw/letter_native_seed46_retain25.jsonl --seed 46 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.25 --method-timeout 15.0 --method-filter all
+letter       native NSA/fixed                success            0.492
+letter       native NSA/variable             success            0.6822083333333333
+letter       native NSA/coverage             success            0.6822083333333333
+letter       native NSA/grid                 success            0.7000833333333333
+letter       native NSA/hierarchical         success            0.5015833333333333
+letter       native NSA/voronoi              requires_2d_or_3d  None
+letter       native NSA/deterministic        requires_2d        None
+letter       native NSA/suppressed           success            0.6865833333333333
+letter       native NSA/dual                 success            0.6210833333333333
+letter       native NSA/annealed             success            0.5242916666666666
+letter       native NSA/binary/hamming       success            0.5083541666666667
+letter       native NSA/binary/rcontiguous   success            0.6001041666666667
+letter       native NSA/binary/rchunk        success            0.55275
+letter       native ECOD                     success            0.6012916666666668
+letter       native ABOD                     success            0.8163750000000001
+letter       native COPOD                    success            0.5939166666666666
+letter       native MAD                      requires_1d        None
+letter       native SOS                      success            0.8000833333333334
+letter       native QMCD                     success            0.641
+letter       native KDE                      success            0.8545
+letter       native Sampling                 success            0.7332916666666667
+letter       native GMM                      success            0.8585833333333334
+letter       native PCA                      success            0.5718333333333333
+letter       native KPCA                     success            0.8431666666666666
+letter       native MCD                      success            0.8365833333333333
+letter       native CD                       success            0.8328333333333333
+letter       native OCSVM                    success            0.6431666666666668
+letter       native LMDD                     timeout            None
+letter       native LOF                      success            0.740375
+letter       native COF                      success            0.8295833333333333
+letter       native CBLOF                    timeout            None
+Exception ignored on calling ctypes callback function: <function ExecutionEngine._raw_object_cache_notify at 0x10feafd80>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/llvmlite/binding/executionengine.py", line 178, in _raw_object_cache_notify
+    def _raw_object_cache_notify(self, data):
+
+  File "benchmark/odds_oneclass/runner.py", line 46, in _on_alarm
+    raise FitTimeout("per-method wall-time budget exceeded")
+FitTimeout: per-method wall-time budget exceeded
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset letter --results benchmark/odds_oneclass/full_retention/raw/letter_native_seed46_retain25.jsonl --seed 46 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.25 --method-timeout 15.0 --method-filter all
+letter       native HBOS                     timeout            None
+letter       native HDBSCAN                  success            0.588
+letter       native KNN                      success            0.7874166666666667
+letter       native SOD                      timeout            None
+Exception ignored on calling ctypes callback function: <function ExecutionEngine._raw_object_cache_getbuffer at 0x1123cfe20>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/llvmlite/binding/executionengine.py", line 210, in _raw_object_cache_getbuffer
+    buf = self._object_cache_getbuffer(module)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/numba/core/codegen.py", line 913, in _object_getbuffer_hook
+    if self._object_caching_enabled and self._compiled_object:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored on calling ctypes callback function: <function ExecutionEngine._raw_object_cache_notify at 0x1123cfd80>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/llvmlite/binding/executionengine.py", line 194, in _raw_object_cache_notify
+    self._object_cache_notify(module, buf)
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/numba/core/codegen.py", line 900, in _object_compiled_hook
+    if self._object_caching_enabled:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ReferenceError: weakly-referenced object no longer exists
+letter       native ROD                      timeout            None
+letter       native IForest                  success            0.6499583333333333
+letter       native INNE                     success            0.723875
+letter       native DIF                      success            0.6502916666666667
+letter       native FeatureBagging           success            0.7417083333333333
+letter       native LSCP                     success            0.7622500000000001
+letter       native LODA                     success            0.6316666666666666
+letter       native SUOD                     timeout            None
+letter       native XGBOD                    requires_labeled_outliers None
+letter       native AutoEncoder              timeout            None
+letter       native VAE                      success            0.5761249999999999
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+letter       native SO_GAAL                  success            0.40095833333333336
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+letter       native MO_GAAL                  success            0.4300833333333334
+letter       native DeepSVDD                 success            0.7033333333333333
+letter       native AnoGAN                   timeout            None
+letter       native ALAD                     success            0.5419166666666666
+Epoch 10/50, Loss: 8.21751947402954
+Epoch 20/50, Loss: 7.637272739410401
+Epoch 30/50, Loss: 7.502215099334717
+Epoch 40/50, Loss: 8.04439926147461
+Epoch 50/50, Loss: 5.76091833114624
+letter       native AE1SVM                   success            0.6233333333333334
+letter       native DevNet                   requires_labeled_outliers None
+letter       native RGraph                   timeout            None
+letter       native LUNAR                    success            0.8512083333333333

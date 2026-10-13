@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset musk --results benchmark/odds_oneclass/retention/raw/musk_pca2_seed43_retain75.jsonl --seed 43 --representation pca2 --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.75
+musk         pca2   NSA/fixed                success            0.8779997405629784
+musk         pca2   NSA/variable             success            0.9997621827301423
+musk         pca2   NSA/coverage             success            0.9993730271976479
+musk         pca2   NSA/grid                 success            0.9997621827301423
+musk         pca2   NSA/hierarchical         success            0.9982488001037748
+musk         pca2   NSA/voronoi              success            0.9998054222337527
+musk         pca2   NSA/deterministic        success            0.9994162667012583
+musk         pca2   NSA/suppressed           success            0.9990487309205691
+musk         pca2   NSA/dual                 success            0.999913520992779
+musk         pca2   NSA/annealed             success            0.8638820426341506
+musk         pca2   NSA/binary/hamming       error              None
+musk         pca2   NSA/binary/rcontiguous   error              None
+musk         pca2   NSA/binary/rchunk        error              None
+musk         pca2   IForest                  success            0.9662299476802008
+musk         pca2   ECOD                     success            0.4185908245773338
+musk         pca2   OCSVM                    success            0.9999135209927791
+musk         pca2   KNN                      success            0.9998919012409738
+musk         pca2   ABOD                     success            0.9994595062048688

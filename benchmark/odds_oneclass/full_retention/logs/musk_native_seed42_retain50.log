@@ -1,0 +1,188 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset musk --results benchmark/odds_oneclass/full_retention/raw/musk_native_seed42_retain50.jsonl --seed 42 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.5 --method-timeout 15.0 --method-filter all
+musk         native NSA/fixed                success            0.0
+musk         native NSA/variable             success            0.0
+musk         native NSA/coverage             success            0.0
+musk         native NSA/grid                 success            0.0
+musk         native NSA/hierarchical         success            0.0
+musk         native NSA/voronoi              requires_2d_or_3d  None
+musk         native NSA/deterministic        requires_2d        None
+musk         native NSA/suppressed           success            0.0
+musk         native NSA/dual                 success            1.0
+musk         native NSA/annealed             success            0.0
+musk         native NSA/binary/hamming       success            0.5332295585246681
+musk         native NSA/binary/rcontiguous   success            0.5236628183508453
+musk         native NSA/binary/rchunk        success            0.5458122540753232
+musk         native ECOD                     success            0.9767803865611623
+musk         native ABOD                     success            1.0
+musk         native COPOD                    success            0.9596791628832101
+musk         native MAD                      requires_1d        None
+musk         native SOS                      success            0.44852337095170147
+musk         native QMCD                     success            0.09929952004150991
+musk         native KDE                      success            1.0
+musk         native Sampling                 success            1.0
+musk         native GMM                      success            1.0
+musk         native PCA                      success            1.0
+musk         native KPCA                     success            1.0
+musk         native MCD                      success            1.0
+musk         native CD                       success            1.0
+musk         native OCSVM                    success            1.0
+musk         native LMDD                     timeout            None
+musk         native LOF                      success            1.0
+musk         native COF                      success            0.5420720370130151
+musk         native CBLOF                    success            1.0
+musk         native LOCI                     timeout            None
+musk         native HBOS                     success            1.0
+musk         native HDBSCAN                  success            0.4232066415877545
+musk         native KNN                      success            1.0
+musk         native SOD                      success            0.8416569377783543
+musk         native ROD                      timeout            None
+musk         native IForest                  success            0.978401867946556
+musk         native INNE                     success            1.0
+musk         native DIF                      success            0.9471829463397761
+musk         native FeatureBagging           success            1.0
+musk         native LSCP                     success            1.0
+musk         native LODA                     success            0.9926709041380205
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    1.0s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.2s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.5s finished
+RandomForestRegressor()
+
+
+musk         native SUOD                     success            0.9999351407445842
+musk         native XGBOD                    requires_labeled_outliers None
+musk         native AutoEncoder              success            1.0
+musk         native VAE                      success            1.0
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+musk         native SO_GAAL                  success            0.7683119297790462
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+musk         native MO_GAAL                  success            0.7748951442037446
+musk         native DeepSVDD                 success            1.0
+musk         native AnoGAN                   success            0.9984866173736325
+musk         native ALAD                     success            0.5612055173606607
+Epoch 10/50, Loss: 9.270082664489745
+Epoch 20/50, Loss: 7.493091869354248
+Epoch 30/50, Loss: 5.7569441318511965
+Epoch 40/50, Loss: 5.199207282066345
+Epoch 50/50, Loss: 3.5381670713424684
+musk         native AE1SVM                   success            1.0
+musk         native DevNet                   requires_labeled_outliers None
+musk         native RGraph                   timeout            None
+musk         native LUNAR                    success            1.0

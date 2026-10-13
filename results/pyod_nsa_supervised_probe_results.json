@@ -1,0 +1,87 @@
+{
+  "environment": {
+    "libomp_directory": "<PYTHON_ENV>/lib/python3.12/site-packages/torch/lib",
+    "numpy_version": "2.5.3",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "pyod_source": "vendor/pyod/pyod",
+    "pyod_version": "3.6.6",
+    "python": "3.12.14",
+    "sklearn_version": "1.9.1",
+    "torch_version": "2.14.0",
+    "xgboost_version": "3.4.1"
+  },
+  "input": {
+    "feature_seed": 7,
+    "feature_sha256": "bc3a96abf2d2349b0f32bd9e2e61f53b8e1bc416edd6bc63651c3d681132b15c",
+    "features": 3,
+    "normal_labels": 24,
+    "outlier_labels": 0,
+    "rows": 24
+  },
+  "models": {
+    "DevNet": {
+      "constructor_settings": {
+        "batch_size": 8,
+        "device": "cpu",
+        "epochs": 1,
+        "network_depth": 1,
+        "random_seed": 7
+      },
+      "fit_X_all_zero_y": {
+        "score_count": 24,
+        "score_max": 1.2311058044433594,
+        "score_min": -0.6006293892860413,
+        "score_unique": 24,
+        "status": "completed",
+        "stdout": [
+          "Original training size: 24, No. outliers: 0",
+          "24 0 24 2",
+          "Epoch 1, Loss: 1.3307957649230957"
+        ],
+        "warnings": [
+          "To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).",
+          "To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).",
+          "To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).",
+          "To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).",
+          "To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).",
+          "To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor)."
+        ]
+      },
+      "fit_X_only": {
+        "message": "DevNet.fit() missing 1 required positional argument: 'y'",
+        "type": "TypeError"
+      },
+      "torch_seed": 42
+    },
+    "XGBOD": {
+      "constructor_settings": {
+        "estimator_list": "[IForest(n_estimators=8, random_state=7)]",
+        "n_estimators": 2,
+        "n_jobs": 1,
+        "random_state": 7,
+        "standardization_flag_list": [
+          false
+        ]
+      },
+      "fit_X_all_zero_y": {
+        "classifier_classes": [
+          0
+        ],
+        "score_count": 24,
+        "score_max": 0.41843828558921814,
+        "score_min": 0.41843828558921814,
+        "score_unique": 1,
+        "status": "completed",
+        "warnings": [
+          "y should not be presented in unsupervised learning.",
+          "[14:36:20] WARNING: <BUILD_HOST>/work/xgboost/xgboost/src/learner.cc:794: \nParameters: { \"silent\" } are not used.\n"
+        ]
+      },
+      "fit_X_only": {
+        "message": "XGBOD.fit() missing 1 required positional argument: 'y'",
+        "type": "TypeError"
+      }
+    }
+  },
+  "purpose": "normal-only execution probe; no anomaly test labels or AUC"
+}

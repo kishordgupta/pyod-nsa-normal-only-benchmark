@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset glass --results benchmark/odds_oneclass/retention/raw/glass_native_seed43_retain75.jsonl --seed 43 --representation native --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.75
+glass        native NSA/fixed                success            0.4481707317073171
+glass        native NSA/variable             success            0.6310975609756098
+glass        native NSA/coverage             success            0.6310975609756098
+glass        native NSA/grid                 success            0.6128048780487805
+glass        native NSA/hierarchical         success            0.4085365853658537
+glass        native NSA/voronoi              requires_2d_or_3d  None
+glass        native NSA/deterministic        requires_2d        None
+glass        native NSA/suppressed           success            0.728658536585366
+glass        native NSA/dual                 success            0.8658536585365852
+glass        native NSA/annealed             success            0.7469512195121952
+glass        native NSA/binary/hamming       success            0.28658536585365857
+glass        native NSA/binary/rcontiguous   error              None
+glass        native NSA/binary/rchunk        success            0.3018292682926829
+glass        native IForest                  success            0.7957317073170732
+glass        native ECOD                     success            0.7317073170731707
+glass        native OCSVM                    success            0.6524390243902439
+glass        native KNN                      success            0.8445121951219512
+glass        native ABOD                     success            0.8628048780487805

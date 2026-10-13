@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset lympho --results benchmark/odds_oneclass/retention/raw/lympho_pca2_seed42_retain25.jsonl --seed 42 --representation pca2 --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.25
+lympho       pca2   NSA/fixed                success            0.9137931034482759
+lympho       pca2   NSA/variable             success            0.7672413793103449
+lympho       pca2   NSA/coverage             success            0.5948275862068966
+lympho       pca2   NSA/grid                 success            0.7413793103448276
+lympho       pca2   NSA/hierarchical         success            0.8275862068965517
+lympho       pca2   NSA/voronoi              success            0.7327586206896551
+lympho       pca2   NSA/deterministic        success            0.853448275862069
+lympho       pca2   NSA/suppressed           success            0.6896551724137931
+lympho       pca2   NSA/dual                 success            0.603448275862069
+lympho       pca2   NSA/annealed             success            0.9137931034482759
+lympho       pca2   NSA/binary/hamming       error              None
+lympho       pca2   NSA/binary/rcontiguous   error              None
+lympho       pca2   NSA/binary/rchunk        error              None
+lympho       pca2   IForest                  success            0.9827586206896551
+lympho       pca2   ECOD                     success            0.9655172413793103
+lympho       pca2   OCSVM                    success            0.8103448275862069
+lympho       pca2   KNN                      success            0.9827586206896551
+lympho       pca2   ABOD                     success            0.8706896551724138

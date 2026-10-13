@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "source": {
+    "repository_url": "https://github.com/yzhao062/pyod",
+    "original_data_commit": "ef6d5e8dc828615f498286c1d6a22cbd02fd4cd2",
+    "odds_catalog_url": "https://shebuti.com/outlier-detection-datasets-odds/",
+    "local_directory": "vendor/pyod/notebooks/data",
+    "note": "These 17 local files are byte-identical to their blobs at the original PyOD dataset commit. No downloaded copies or feature/label transformations are stored here."
+  },
+  "labels": {
+    "normal": 0,
+    "anomaly": 1
+  },
+  "datasets": [
+    {
+      "name": "arrhythmia",
+      "filename": "arrhythmia.mat",
+      "source_url": "https://github.com/yzhao062/pyod/blob/ef6d5e8dc828615f498286c1d6a22cbd02fd4cd2/notebooks/data/arrhythmia.mat",
+      "sha256": "e4d47e499591ae31e5d7f0cd983367092353eac240f48e14c9b36457edb3460d",
+      "git_blob_sha1": "4d9016e98ca0a36e366125102a0102718cc772cf",
+      "n_samples": 452,
+      "n_features": 274,
+      "n_normal": 386,
+      "n_anomaly": 66
+    },
+    {
+      "name": "cardio",
+      "filename": "cardio.mat",
+      "source_url": "https://github.com/yzhao062/pyod/blob/ef6d5e8dc828615f498286c1d6a22cbd02fd4cd2/notebooks/data/cardio.mat",
+      "sha256": "5e568b6a73711012c481fa6cc984ab9c68e9a4fa44d6aeb3b43efa381c3f695b",
+      "git_blob_sha1": "8d5ed3a7b40014f14fd127f63e8d779b23926a43",
+      "n_samples": 1831,
+      "n_features": 21,
+      "n_normal": 1655,
+      "n_anomaly": 176
+    },
+    {
+      "name": "glass",
+      "filename": "glass.mat",
+      "source_url": "https://github.com/yzhao062/pyod/blob/ef6d5e8dc828615f498286c1d6a22cbd02fd4cd2/notebooks/data/glass.mat",
+      "sha256": "2c506e6e1e2ca1e82a905d10a90773151ff812c4bd969c71a12db5b2bb6e7921",
+      "git_blob_sha1": "dcadebf4a8ed7403aaf8f5fdc9eb781c7e6fb4d1",
+      "n_samples": 214,
+      "n_features": 9,
+      "n_normal": 205,
+      "n_anomaly": 9
+    },
+    {
+      "name": "ionosphere",
+      "filename": "ionosphere.mat",
+      "source_url": "https://github.com/yzhao062/pyod/blob/ef6d5e8dc828615f498286c1d6a22cbd02fd4cd2/notebooks/data/ionosphere.mat",
+      "sha256": "8ac5dfa6f47db4acdfe10615489b7f7dd015d79d5b381ce641e72baca3cfefb0",
+      "git_blob_sha1": "4c4d7b8d6fc186d3417e66cc4f3ef6df3a94db5e",
+      "n_samples": 351,
+      "n_features": 33,
+      "n_normal": 225,
+      "n_anomaly": 126
+    },
+    {
+      "name": "letter",
+      "filename": "letter.mat",
+      "source_url": "https://github.com/yzhao062/pyod/blob/ef6d5e8dc828615f498286c1d6a22cbd02fd4cd2/notebooks/data/letter.mat",
+      "sha256": "f4a229b0e2a6b0c9157ce27fa760bcbac0f948cd690b2f5d51c120e5450f2195",
+      "git_blob_sha1": "e4188ad0e3dfe4cc67ecf6c4f967a965fe439471",
+      "n_samples": 1600,
+      "n_features": 32,
+      "n_normal": 1500,
+      "n_anomaly": 100
+    },
+    {
+      "name": "lympho",
+      "filename": "lympho.mat",
+      "source_url": "https://github.com/yzhao062/pyod/blob/ef6d5e8dc828615f498286c1d6a22cbd02fd4cd2/notebooks/data/lympho.mat",
+      "sha256": "031b907ecb50347720b08b38f8139d05635adeca9335a064d89d5569c27a5834",
+      "git_blob_sha1": "7d508ef211b51aa70580c792e67b9a16cc2396f0",
+      "n_samples": 148,
+      "n_features": 18,
+      "n_normal": 142,
+      "n_anomaly": 6
+    },
+    {
+      "name": "mnist",
+      "filename": "mnist.mat",
+      "source_url": "https://github.com/yzhao062/pyod/blob/ef6d5e8dc828615f498286c1d6a22cbd02fd4cd2/notebooks/data/mnist.mat",
+      "sha256": "9479e221f236684c09f3e11c7ad124725d34ecd301b9450425e8b113368413a6",
+      "git_blob_sha1": "6090e3374e35e8c0fdd980fe81f98903a734791e",
+      "n_samples": 7603,
+      "n_features": 100,
+      "n_normal": 6903,
+      "n_anomaly": 700
+    },
+    {
+      "name": "musk",
+      "filename": "musk.mat",
+      "source_url": "https://github.com/yzhao062/pyod/blob/ef6d5e8dc828615f498286c1d6a22cbd02fd4cd2/notebooks/data/musk.mat",
+      "sha256": "50bbf414caceb66cfe6f6b1eb7c1ff7c6eb1e6d87173f7bb597ba55cd3dc5493",
+      "git_blob_sha1": "d9c748adf29ba9d9f6f184bb9969cee9b9c0e31d",
+      "n_samples": 3062,
+      "n_features": 166,
+      "n_normal": 2965,
+      "n_anomaly": 97
+    },
+    {
+      "name": "optdigits",
+      "filename": "optdigits.mat",
+      "source_url": "https://github.com/yzhao062/pyod/blob/ef6d5e8dc828615f498286c1d6a22cbd02fd4cd2/notebooks/data/optdigits.mat",
+      "sha256": "30c664cd6f3740a173277a27cd1028d471b06f0835a9902c9712749cec58c1c4",
+      "git_blob_sha1": "0ce6a86daefb40a414d88b74c7c4f0e96d99cb85",
+      "n_samples": 5216,
+      "n_features": 64,
+      "n_normal": 5066,
+      "n_anomaly": 150
+    },
+    {
+      "name": "pendigits",
+      "filename": "pendigits.mat",
+      "source_url": "https://github.com/yzhao062/pyod/blob/ef6d5e8dc828615f498286c1d6a22cbd02fd4cd2/notebooks/data/pendigits.mat",
+      "sha256": "7bc32ac83b3d583443acea8b1342a54aaa59eaedb9996af405322f473f3c22bc",
+      "git_blob_sha1": "60e2b3d80583072f30dc699de412f331c327ac1e",
+      "n_samples": 6870,
+      "n_features": 16,
+      "n_normal": 6714,
+      "n_anomaly": 156
+    },
+    {
+      "name": "pima",
+      "filename": "pima.mat",
+      "source_url": "https://github.com/yzhao062/pyod/blob/ef6d5e8dc828615f498286c1d6a22cbd02fd4cd2/notebooks/data/pima.mat",
+      "sha256": "b6a5be8d548b9293d6958beceb1c77055591714d25d40d957eba87808456468f",
+      "git_blob_sha1": "15e626e9228f82a7965f0677f4bff5e2cf4421dc",
+      "n_samples": 768,
+      "n_features": 8,
+      "n_normal": 500,
+      "n_anomaly": 268
+    },
+    {
+      "name": "satellite",
+      "filename": "satellite.mat",
+      "source_url": "https://github.com/yzhao062/pyod/blob/ef6d5e8dc828615f498286c1d6a22cbd02fd4cd2/notebooks/data/satellite.mat",
+      "sha256": "6feac3112b9c14e1c3e60afc437f2f3d29dc1000119c9f950c628078778d6aa0",
+      "git_blob_sha1": "bbec6e17c0d6a5a030818e0e397edaa2e03b43cf",
+      "n_samples": 6435,
+      "n_features": 36,
+      "n_normal": 4399,
+      "n_anomaly": 2036
+    },
+    {
+      "name": "satimage-2",
+      "filename": "satimage-2.mat",
+      "source_url": "https://github.com/yzhao062/pyod/blob/ef6d5e8dc828615f498286c1d6a22cbd02fd4cd2/notebooks/data/satimage-2.mat",
+      "sha256": "95c37a07cea2cb201f6900d14f521510e10b6b2f0074c06ac46d3157440ec67b",
+      "git_blob_sha1": "de37b6009a246a0ca74dec8ced2e9d87b9c55581",
+      "n_samples": 5803,
+      "n_features": 36,
+      "n_normal": 5732,
+      "n_anomaly": 71
+    },
+    {
+      "name": "shuttle",
+      "filename": "shuttle.mat",
+      "source_url": "https://github.com/yzhao062/pyod/blob/ef6d5e8dc828615f498286c1d6a22cbd02fd4cd2/notebooks/data/shuttle.mat",
+      "sha256": "b6e396c92354d5dcf5036901e36dc58e2913f2d1a5e138c35a2bedf9c69db899",
+      "git_blob_sha1": "22d548b0e84df99d1ceb1a79b8b23b7380e43315",
+      "n_samples": 49097,
+      "n_features": 9,
+      "n_normal": 45586,
+      "n_anomaly": 3511
+    },
+    {
+      "name": "vertebral",
+      "filename": "vertebral.mat",
+      "source_url": "https://github.com/yzhao062/pyod/blob/ef6d5e8dc828615f498286c1d6a22cbd02fd4cd2/notebooks/data/vertebral.mat",
+      "sha256": "84b50b055f118f54b5c976650ccd284ab7c1adee822f8b3eb517c7e2c890d15e",
+      "git_blob_sha1": "9479ce222ba80ef42010588d22a9696c71d138f4",
+      "n_samples": 240,
+      "n_features": 6,
+      "n_normal": 210,
+      "n_anomaly": 30
+    },
+    {
+      "name": "vowels",
+      "filename": "vowels.mat",
+      "source_url": "https://github.com/yzhao062/pyod/blob/ef6d5e8dc828615f498286c1d6a22cbd02fd4cd2/notebooks/data/vowels.mat",
+      "sha256": "51d5397bad1ceeda22b7cd44fd58125c5d603c9c2edb53aa59933330e259ac7b",
+      "git_blob_sha1": "ea1dcdc34e4d5f7b15d6bb106238974917991a43",
+      "n_samples": 1456,
+      "n_features": 12,
+      "n_normal": 1406,
+      "n_anomaly": 50
+    },
+    {
+      "name": "wbc",
+      "filename": "wbc.mat",
+      "source_url": "https://github.com/yzhao062/pyod/blob/ef6d5e8dc828615f498286c1d6a22cbd02fd4cd2/notebooks/data/wbc.mat",
+      "sha256": "afe6b26953cc196b9a480318c903e0edef22529c2f61bd02082438c6e70630a7",
+      "git_blob_sha1": "9df22bc992e93fbc24f73cb805a4fd329665bde7",
+      "n_samples": 378,
+      "n_features": 30,
+      "n_normal": 357,
+      "n_anomaly": 21
+    }
+  ]
+}

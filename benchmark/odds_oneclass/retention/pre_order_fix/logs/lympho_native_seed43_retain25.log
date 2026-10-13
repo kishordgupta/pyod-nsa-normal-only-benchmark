@@ -1,0 +1,20 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset lympho --results benchmark/odds_oneclass/retention/raw/lympho_native_seed43_retain25.jsonl --seed 43 --representation native --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.25
+Traceback (most recent call last):
+  File "benchmark/odds_oneclass/selected_runner.py", line 7, in <module>
+    import runner
+  File "benchmark/odds_oneclass/runner.py", line 30, in <module>
+    from sklearn.decomposition import PCA
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/sklearn/decomposition/__init__.py", line 10, in <module>
+    from sklearn.decomposition._dict_learning import (
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/sklearn/decomposition/_dict_learning.py", line 21, in <module>
+    from sklearn.linear_model import Lars, Lasso, LassoLars, orthogonal_mp_gram
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/sklearn/linear_model/__init__.py", line 25, in <module>
+    from sklearn.linear_model._huber import HuberRegressor
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1322, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1262, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1532, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1506, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1605, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 147, in _path_stat
+KeyboardInterrupt

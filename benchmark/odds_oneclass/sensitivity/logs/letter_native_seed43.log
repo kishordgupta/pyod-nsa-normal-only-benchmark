@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset letter --results benchmark/odds_oneclass/sensitivity/raw/letter_native_seed43.jsonl --seed 43 --representation native --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all
+letter       native NSA/fixed                success            0.602625
+letter       native NSA/variable             success            0.6952916666666666
+letter       native NSA/coverage             success            0.6952916666666666
+letter       native NSA/grid                 success            0.7124166666666666
+letter       native NSA/hierarchical         success            0.5579166666666667
+letter       native NSA/voronoi              requires_2d_or_3d  None
+letter       native NSA/deterministic        requires_2d        None
+letter       native NSA/suppressed           success            0.6933750000000001
+letter       native NSA/dual                 success            0.40604166666666663
+letter       native NSA/annealed             success            0.49474999999999997
+letter       native NSA/binary/hamming       success            0.6054166666666667
+letter       native NSA/binary/rcontiguous   success            0.5394166666666668
+letter       native NSA/binary/rchunk        success            0.5121666666666667
+letter       native IForest                  success            0.6607916666666667
+letter       native ECOD                     success            0.5765
+letter       native OCSVM                    success            0.5889166666666668
+letter       native KNN                      success            0.8686666666666666
+letter       native ABOD                     success            0.8919166666666667

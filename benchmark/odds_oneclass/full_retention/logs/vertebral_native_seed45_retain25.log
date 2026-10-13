@@ -1,0 +1,190 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset vertebral --results benchmark/odds_oneclass/full_retention/raw/vertebral_native_seed45_retain25.jsonl --seed 45 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.25 --method-timeout 15.0 --method-filter all
+vertebral    native NSA/fixed                success            0.3948412698412699
+vertebral    native NSA/variable             success            0.46825396825396826
+vertebral    native NSA/coverage             success            0.4404761904761905
+vertebral    native NSA/grid                 success            0.49404761904761907
+vertebral    native NSA/hierarchical         success            0.36408730158730157
+vertebral    native NSA/voronoi              requires_2d_or_3d  None
+vertebral    native NSA/deterministic        requires_2d        None
+vertebral    native NSA/suppressed           success            0.5059523809523809
+vertebral    native NSA/dual                 success            0.5436507936507936
+vertebral    native NSA/annealed             success            0.4523809523809524
+vertebral    native NSA/binary/hamming       success            0.5873015873015872
+vertebral    native NSA/binary/rcontiguous   error              None
+vertebral    native NSA/binary/rchunk        error              None
+vertebral    native ECOD                     success            0.48809523809523814
+vertebral    native ABOD                     success            0.494047619047619
+vertebral    native COPOD                    success            0.3055555555555556
+vertebral    native MAD                      requires_1d        None
+vertebral    native SOS                      success            0.5952380952380952
+vertebral    native QMCD                     success            0.5059523809523809
+vertebral    native KDE                      success            0.5386904761904762
+vertebral    native Sampling                 success            0.623015873015873
+vertebral    native GMM                      success            0.47619047619047616
+vertebral    native PCA                      success            0.5198412698412698
+vertebral    native KPCA                     success            0.5873015873015872
+vertebral    native MCD                      success            0.5535714285714285
+vertebral    native CD                       success            0.4226190476190476
+vertebral    native OCSVM                    success            0.5277777777777778
+vertebral    native LMDD                     success            0.3834325396825397
+vertebral    native LOF                      success            0.5124007936507936
+vertebral    native COF                      success            0.43452380952380953
+vertebral    native CBLOF                    success            0.5486111111111112
+vertebral    native LOCI                     success            0.6160714285714286
+vertebral    native HBOS                     success            0.38095238095238093
+vertebral    native HDBSCAN                  success            0.49107142857142855
+vertebral    native KNN                      success            0.5079365079365079
+Exception ignored on calling ctypes callback function: <function ExecutionEngine._raw_object_cache_notify at 0x10e113d80>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/llvmlite/binding/executionengine.py", line 178, in _raw_object_cache_notify
+    def _raw_object_cache_notify(self, data):
+
+  File "benchmark/odds_oneclass/runner.py", line 46, in _on_alarm
+    raise FitTimeout("per-method wall-time budget exceeded")
+FitTimeout: per-method wall-time budget exceeded
+vertebral    native SOD                      success            0.48015873015873023
+vertebral    native ROD                      success            0.5267857142857143
+vertebral    native IForest                  success            0.5228174603174603
+vertebral    native INNE                     success            0.6324404761904762
+vertebral    native DIF                      success            0.7113095238095237
+vertebral    native FeatureBagging           success            0.4990079365079365
+vertebral    native LSCP                     success            0.5218253968253967
+vertebral    native LODA                     success            0.4464285714285714
+vertebral    native SUOD                     timeout            None
+vertebral    native XGBOD                    requires_labeled_outliers None
+vertebral    native AutoEncoder              error              None
+vertebral    native VAE                      error              None
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+vertebral    native SO_GAAL                  success            0.3382936507936508
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+vertebral    native MO_GAAL                  success            0.5238095238095238
+vertebral    native DeepSVDD                 success            0.35714285714285715
+vertebral    native AnoGAN                   success            0.5922619047619048
+vertebral    native ALAD                     success            0.5892857142857142
+Epoch 10/50, Loss: 5.371211051940918
+Epoch 20/50, Loss: 8.583593368530273
+Epoch 30/50, Loss: 6.686971187591553
+Epoch 40/50, Loss: 6.819565773010254
+Epoch 50/50, Loss: 8.077960968017578
+vertebral    native AE1SVM                   success            0.5466269841269841
+vertebral    native DevNet                   requires_labeled_outliers None
+vertebral    native RGraph                   success            0.5674603174603174
+vertebral    native LUNAR                    success            0.4097222222222222

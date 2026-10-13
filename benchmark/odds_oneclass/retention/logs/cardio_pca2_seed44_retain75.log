@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset cardio --results benchmark/odds_oneclass/retention/raw/cardio_pca2_seed44_retain75.jsonl --seed 44 --representation pca2 --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.75
+cardio       pca2   NSA/fixed                success            0.8914673561732386
+cardio       pca2   NSA/variable             success            0.9068950657185951
+cardio       pca2   NSA/coverage             success            0.9167205343675932
+cardio       pca2   NSA/grid                 success            0.9064641241111829
+cardio       pca2   NSA/hierarchical         success            0.9154492566257272
+cardio       pca2   NSA/voronoi              success            0.9095022624434389
+cardio       pca2   NSA/deterministic        success            0.9206636500754147
+cardio       pca2   NSA/suppressed           success            0.8843783667313079
+cardio       pca2   NSA/dual                 success            0.9068735186382245
+cardio       pca2   NSA/annealed             success            0.9033613445378151
+cardio       pca2   NSA/binary/hamming       error              None
+cardio       pca2   NSA/binary/rcontiguous   error              None
+cardio       pca2   NSA/binary/rchunk        error              None
+cardio       pca2   IForest                  success            0.9111398405516052
+cardio       pca2   ECOD                     success            0.8923938806291747
+cardio       pca2   OCSVM                    success            0.8605903900021546
+cardio       pca2   KNN                      success            0.8840551605257487
+cardio       pca2   ABOD                     success            0.8817065287653524

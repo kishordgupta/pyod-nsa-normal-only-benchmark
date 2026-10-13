@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset wbc --results benchmark/odds_oneclass/retention/raw/wbc_pca2_seed42_retain75.jsonl --seed 42 --representation pca2 --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.75
+wbc          pca2   NSA/fixed                success            0.6423611111111112
+wbc          pca2   NSA/variable             success            0.7421875
+wbc          pca2   NSA/coverage             success            0.7682291666666667
+wbc          pca2   NSA/grid                 success            0.7421875
+wbc          pca2   NSA/hierarchical         success            0.7881944444444444
+wbc          pca2   NSA/voronoi              success            0.7473958333333333
+wbc          pca2   NSA/deterministic        success            0.7708333333333334
+wbc          pca2   NSA/suppressed           success            0.7317708333333333
+wbc          pca2   NSA/dual                 success            0.8793402777777777
+wbc          pca2   NSA/annealed             success            0.7378472222222222
+wbc          pca2   NSA/binary/hamming       error              None
+wbc          pca2   NSA/binary/rcontiguous   error              None
+wbc          pca2   NSA/binary/rchunk        error              None
+wbc          pca2   IForest                  success            0.9344618055555556
+wbc          pca2   ECOD                     success            0.9140625
+wbc          pca2   OCSVM                    success            0.9470486111111112
+wbc          pca2   KNN                      success            0.939236111111111
+wbc          pca2   ABOD                     success            0.9487847222222222

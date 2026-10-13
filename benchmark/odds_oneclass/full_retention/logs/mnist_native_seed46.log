@@ -1,0 +1,188 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset mnist --results benchmark/odds_oneclass/full_retention/raw/mnist_native_seed46.jsonl --seed 46 --representation native --train-cap 600 --test-cap 2000 --train-fraction 1.0 --method-timeout 15.0 --method-filter all
+mnist        native NSA/fixed                success            0.40587590978739707
+mnist        native NSA/variable             success            0.5879560907872056
+mnist        native NSA/coverage             success            0.5879560907872056
+mnist        native NSA/grid                 success            0.5966619182149013
+mnist        native NSA/hierarchical         success            0.2542496648151695
+mnist        native NSA/voronoi              requires_2d_or_3d  None
+mnist        native NSA/deterministic        requires_2d        None
+mnist        native NSA/suppressed           success            0.5857624257805017
+mnist        native NSA/dual                 error              None
+mnist        native NSA/annealed             success            0.45721904328672663
+mnist        native NSA/binary/hamming       success            0.4243454917640299
+mnist        native NSA/binary/rcontiguous   success            0.558215918885271
+mnist        native NSA/binary/rchunk        success            0.4622722538785673
+mnist        native ECOD                     success            0.7713141639532657
+mnist        native ABOD                     success            0.916631751580157
+mnist        native COPOD                    success            0.7945735970120666
+mnist        native MAD                      requires_1d        None
+mnist        native SOS                      success            0.5319353332694886
+mnist        native QMCD                     success            0.6976124066270829
+mnist        native KDE                      success            0.9311973280980653
+mnist        native Sampling                 success            0.9196663713847922
+mnist        native GMM                      success            0.9298416251675925
+mnist        native PCA                      success            0.9189810381153035
+mnist        native KPCA                     success            0.9408308992530167
+mnist        native MCD                      success            0.9004261635701973
+mnist        native CD                       error              None
+mnist        native OCSVM                    success            0.9217403275234628
+mnist        native LMDD                     timeout            None
+mnist        native LOF                      success            0.9415401742961119
+mnist        native COF                      success            0.6517220120666539
+mnist        native CBLOF                    success            0.9292909643746409
+mnist        native LOCI                     timeout            None
+mnist        native HBOS                     success            0.6151000766136756
+mnist        native HDBSCAN                  success            0.7578918071250718
+mnist        native KNN                      success            0.9328971940241334
+mnist        native SOD                      success            0.7264921710400307
+mnist        native ROD                      timeout            None
+mnist        native IForest                  success            0.8752992721700825
+mnist        native INNE                     success            0.9302875407010152
+mnist        native DIF                      success            0.8383750718253208
+mnist        native FeatureBagging           success            0.9443084418693737
+mnist        native LSCP                     success            0.9223328864202259
+mnist        native LODA                     success            0.6620379237693927
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.3s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    1.6s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+RandomForestRegressor()
+
+
+mnist        native SUOD                     success            0.8683352087722658
+mnist        native XGBOD                    requires_labeled_outliers None
+mnist        native AutoEncoder              success            0.9334179276000766
+mnist        native VAE                      success            0.9197292185405095
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+mnist        native SO_GAAL                  success            0.7242835424248228
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+mnist        native MO_GAAL                  success            0.8041757445891593
+mnist        native DeepSVDD                 success            0.929270015322735
+mnist        native AnoGAN                   success            0.8912265370618656
+mnist        native ALAD                     success            0.5046342295537254
+Epoch 10/50, Loss: 6.780764717804758
+Epoch 20/50, Loss: 4.3869805335998535
+Epoch 30/50, Loss: 3.03331050119902
+Epoch 40/50, Loss: 2.7313252185520374
+Epoch 50/50, Loss: 2.7175845597919666
+mnist        native AE1SVM                   success            0.9371019680137904
+mnist        native DevNet                   requires_labeled_outliers None
+mnist        native RGraph                   timeout            None
+mnist        native LUNAR                    success            0.929204175445317

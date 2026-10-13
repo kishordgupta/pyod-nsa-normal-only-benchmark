@@ -1,0 +1,188 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset pendigits --results benchmark/odds_oneclass/full_retention/raw/pendigits_pca2_seed45_retain50.jsonl --seed 45 --representation pca2 --train-cap 600 --test-cap 2000 --train-fraction 0.5 --method-timeout 15.0 --method-filter all
+pendigits    pca2   NSA/fixed                success            0.8298493890309747
+pendigits    pca2   NSA/variable             success            0.9760159136118216
+pendigits    pca2   NSA/coverage             success            0.977152600170503
+pendigits    pca2   NSA/grid                 success            0.975924978687127
+pendigits    pca2   NSA/hierarchical         success            0.9839613526570048
+pendigits    pca2   NSA/voronoi              success            0.9753793691389598
+pendigits    pca2   NSA/deterministic        success            0.8701108269394715
+pendigits    pca2   NSA/suppressed           success            0.9292980960500142
+pendigits    pca2   NSA/dual                 success            0.9751520318272237
+pendigits    pca2   NSA/annealed             success            0.7536459221369708
+pendigits    pca2   NSA/binary/hamming       error              None
+pendigits    pca2   NSA/binary/rcontiguous   error              None
+pendigits    pca2   NSA/binary/rchunk        error              None
+pendigits    pca2   ECOD                     success            0.6386018755328218
+pendigits    pca2   ABOD                     success            0.9766751918158567
+pendigits    pca2   COPOD                    success            0.7433475419153168
+pendigits    pca2   MAD                      requires_1d        None
+pendigits    pca2   SOS                      success            0.570662119920432
+pendigits    pca2   QMCD                     success            0.9286729184427394
+pendigits    pca2   KDE                      success            0.9673429951690822
+pendigits    pca2   Sampling                 success            0.9697414038079
+pendigits    pca2   GMM                      success            0.8561750497300369
+pendigits    pca2   PCA                      success            0.39672634271099744
+pendigits    pca2   KPCA                     success            0.9833930093776642
+pendigits    pca2   MCD                      success            0.795339585109406
+pendigits    pca2   CD                       success            0.8090934924694515
+pendigits    pca2   OCSVM                    success            0.9839386189258311
+pendigits    pca2   LMDD                     success            0.7818357487922707
+pendigits    pca2   LOF                      success            0.9734129013924411
+pendigits    pca2   COF                      success            0.5425973287865871
+pendigits    pca2   CBLOF                    success            0.9832679738562091
+pendigits    pca2   LOCI                     timeout            None
+pendigits    pca2   HBOS                     success            0.8869281045751634
+pendigits    pca2   HDBSCAN                  success            0.6229724353509519
+pendigits    pca2   KNN                      success            0.9861778914464336
+pendigits    pca2   SOD                      success            0.6084228473998294
+pendigits    pca2   ROD                      success            0.8892185279909065
+pendigits    pca2   IForest                  success            0.9540323955669224
+pendigits    pca2   INNE                     success            0.9728161409491333
+pendigits    pca2   DIF                      success            0.9771412333049161
+pendigits    pca2   FeatureBagging           success            0.9628417163967036
+pendigits    pca2   LSCP                     success            0.9880761579994316
+pendigits    pca2   LODA                     success            0.907774936061381
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.2s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+RandomForestRegressor()
+
+
+pendigits    pca2   SUOD                     success            0.9350724637681159
+pendigits    pca2   XGBOD                    requires_labeled_outliers None
+pendigits    pca2   AutoEncoder              success            0.9162375674907645
+pendigits    pca2   VAE                      success            0.8712702472293264
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+pendigits    pca2   SO_GAAL                  success            0.43790849673202614
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+pendigits    pca2   MO_GAAL                  success            0.2962205171923842
+pendigits    pca2   DeepSVDD                 success            0.8338846263142938
+pendigits    pca2   AnoGAN                   success            0.6673373117362887
+pendigits    pca2   ALAD                     success            0.47813015061096903
+Epoch 10/50, Loss: 8.85525984764099
+Epoch 20/50, Loss: 6.928363871574402
+Epoch 30/50, Loss: 5.160981512069702
+Epoch 40/50, Loss: 3.382511430978775
+Epoch 50/50, Loss: 4.469079518318177
+pendigits    pca2   AE1SVM                   success            0.3202728047740836
+pendigits    pca2   DevNet                   requires_labeled_outliers None
+pendigits    pca2   RGraph                   timeout            None
+pendigits    pca2   LUNAR                    success            0.9611480534242682

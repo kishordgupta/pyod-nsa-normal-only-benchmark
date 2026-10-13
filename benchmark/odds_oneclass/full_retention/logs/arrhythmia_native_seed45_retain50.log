@@ -1,0 +1,186 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset arrhythmia --results benchmark/odds_oneclass/full_retention/raw/arrhythmia_native_seed45_retain50.jsonl --seed 45 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.5 --method-timeout 15.0 --method-filter all
+arrhythmia   native NSA/fixed                success            0.1858560794044665
+arrhythmia   native NSA/variable             success            0.2952853598014889
+arrhythmia   native NSA/coverage             success            0.2952853598014889
+arrhythmia   native NSA/grid                 success            0.2955334987593053
+arrhythmia   native NSA/hierarchical         success            0.19230769230769235
+arrhythmia   native NSA/voronoi              requires_2d_or_3d  None
+arrhythmia   native NSA/deterministic        requires_2d        None
+arrhythmia   native NSA/suppressed           success            0.2952853598014889
+arrhythmia   native NSA/dual                 success            0.5471464019851117
+arrhythmia   native NSA/annealed             success            0.1781637717121588
+arrhythmia   native NSA/binary/hamming       success            0.6049627791563277
+arrhythmia   native NSA/binary/rcontiguous   success            0.4672456575682381
+arrhythmia   native NSA/binary/rchunk        success            0.5173697270471465
+arrhythmia   native ECOD                     success            0.8707196029776675
+arrhythmia   native ABOD                     success            0.8436724565756825
+arrhythmia   native COPOD                    success            0.8593052109181142
+arrhythmia   native MAD                      requires_1d        None
+arrhythmia   native SOS                      success            0.6593052109181141
+arrhythmia   native QMCD                     success            0.40322580645161293
+arrhythmia   native KDE                      success            0.8096774193548387
+arrhythmia   native Sampling                 success            0.8332506203473945
+arrhythmia   native GMM                      success            0.8330024813895781
+arrhythmia   native PCA                      success            0.8607940446650124
+arrhythmia   native KPCA                     success            0.8674937965260546
+arrhythmia   native MCD                      success            0.8650124069478907
+arrhythmia   native CD                       timeout            None
+arrhythmia   native OCSVM                    success            0.8642679900744417
+arrhythmia   native LMDD                     success            0.78287841191067
+arrhythmia   native LOF                      success            0.8568238213399504
+arrhythmia   native COF                      success            0.8578163771712158
+arrhythmia   native CBLOF                    success            0.864516129032258
+arrhythmia   native LOCI                     timeout            None
+arrhythmia   native HBOS                     success            0.8751861042183623
+arrhythmia   native HDBSCAN                  success            0.45272952853598025
+arrhythmia   native KNN                      success            0.860545905707196
+arrhythmia   native SOD                      timeout            None
+arrhythmia   native ROD                      timeout            None
+arrhythmia   native IForest                  success            0.8831265508684863
+arrhythmia   native INNE                     success            0.8595533498759305
+arrhythmia   native DIF                      success            0.8330024813895781
+arrhythmia   native FeatureBagging           success            0.8521091811414393
+arrhythmia   native LSCP                     success            0.8739454094292805
+arrhythmia   native LODA                     success            0.7905707196029776
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.9s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    1.9s finished
+RandomForestRegressor()
+
+arrhythmia   native SUOD                     timeout            None
+arrhythmia   native XGBOD                    requires_labeled_outliers None
+arrhythmia   native AutoEncoder              success            0.8331265508684863
+arrhythmia   native VAE                      success            0.8320099255583127
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+arrhythmia   native SO_GAAL                  success            0.6918114143920596
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+arrhythmia   native MO_GAAL                  success            0.7240694789081885
+arrhythmia   native DeepSVDD                 success            0.8101736972704715
+arrhythmia   native AnoGAN                   success            0.8714640198511167
+arrhythmia   native ALAD                     success            0.6124069478908188
+Epoch 10/50, Loss: 8.203643918037415
+Epoch 20/50, Loss: 6.787038564682007
+Epoch 30/50, Loss: 5.256198287010193
+Epoch 40/50, Loss: 6.200069785118103
+Epoch 50/50, Loss: 6.666589856147766
+arrhythmia   native AE1SVM                   success            0.8307692307692307
+arrhythmia   native DevNet                   requires_labeled_outliers None
+arrhythmia   native RGraph                   timeout            None
+arrhythmia   native LUNAR                    success            0.8550868486352358

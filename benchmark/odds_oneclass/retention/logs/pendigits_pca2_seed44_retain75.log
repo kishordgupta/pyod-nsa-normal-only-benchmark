@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset pendigits --results benchmark/odds_oneclass/retention/raw/pendigits_pca2_seed44_retain75.jsonl --seed 44 --representation pca2 --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.75
+pendigits    pca2   NSA/fixed                success            0.6130377948280761
+pendigits    pca2   NSA/variable             success            0.971150895140665
+pendigits    pca2   NSA/coverage             success            0.9670247229326513
+pendigits    pca2   NSA/grid                 success            0.9703665814151747
+pendigits    pca2   NSA/hierarchical         success            0.9539641943734015
+pendigits    pca2   NSA/voronoi              success            0.9740380789997157
+pendigits    pca2   NSA/deterministic        success            0.8431372549019608
+pendigits    pca2   NSA/suppressed           success            0.8620858198351804
+pendigits    pca2   NSA/dual                 success            0.9715032679738562
+pendigits    pca2   NSA/annealed             success            0.890468883205456
+pendigits    pca2   NSA/binary/hamming       error              None
+pendigits    pca2   NSA/binary/rcontiguous   error              None
+pendigits    pca2   NSA/binary/rchunk        error              None
+pendigits    pca2   IForest                  success            0.9684228473998294
+pendigits    pca2   ECOD                     success            0.9268428530832623
+pendigits    pca2   OCSVM                    success            0.984563796533106
+pendigits    pca2   KNN                      success            0.9679681727763569
+pendigits    pca2   ABOD                     success            0.9467348678601876

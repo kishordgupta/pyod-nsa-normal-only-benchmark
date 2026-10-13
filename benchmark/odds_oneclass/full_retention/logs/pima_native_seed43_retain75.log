@@ -1,0 +1,188 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset pima --results benchmark/odds_oneclass/full_retention/raw/pima_native_seed43_retain75.jsonl --seed 43 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.75 --method-timeout 15.0 --method-filter all
+pima         native NSA/fixed                success            0.47905333147347373
+pima         native NSA/variable             success            0.6909378341935183
+pima         native NSA/coverage             success            0.6909378341935183
+pima         native NSA/grid                 success            0.7389687078625563
+pima         native NSA/hierarchical         success            0.5901334449249082
+pima         native NSA/voronoi              requires_2d_or_3d  None
+pima         native NSA/deterministic        requires_2d        None
+pima         native NSA/suppressed           success            0.6689914911424187
+pima         native NSA/dual                 success            0.6563444459943274
+pima         native NSA/annealed             success            0.4459943274282791
+pima         native NSA/binary/hamming       error              None
+pima         native NSA/binary/rcontiguous   error              None
+pima         native NSA/binary/rchunk        error              None
+pima         native ECOD                     success            0.6694564560375692
+pima         native ABOD                     success            0.767657041893337
+pima         native COPOD                    success            0.714000092992979
+pima         native MAD                      requires_1d        None
+pima         native SOS                      success            0.545264332542893
+pima         native QMCD                     success            0.7691914260473334
+pima         native KDE                      success            0.787650532384805
+pima         native Sampling                 success            0.7257172083507695
+pima         native GMM                      success            0.75984563165481
+pima         native PCA                      success            0.745338726926117
+pima         native KPCA                     success            0.7749569907471986
+pima         native MCD                      success            0.7591481843120844
+pima         native CD                       success            0.7488724601292602
+pima         native OCSVM                    success            0.7419444831915191
+pima         native LMDD                     success            0.6283070628167573
+pima         native LOF                      success            0.7222299716371413
+pima         native COF                      success            0.6131492072348537
+pima         native CBLOF                    success            0.7392476867996467
+pima         native LOCI                     timeout            None
+pima         native HBOS                     success            0.7674710559352769
+pima         native HDBSCAN                  success            0.7650532384804947
+pima         native KNN                      success            0.7748175012786535
+pima         native SOD                      success            0.606104989073325
+pima         native ROD                      success            0.7537080950388245
+pima         native IForest                  success            0.7615660017668666
+pima         native INNE                     success            0.7495234109824708
+pima         native DIF                      success            0.6171479053331472
+pima         native FeatureBagging           success            0.728506997721672
+pima         native LSCP                     success            0.7666341191240061
+pima         native LODA                     success            0.7175338261961223
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.4s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.2s finished
+RandomForestRegressor()
+
+
+pima         native SUOD                     success            0.7637978332635884
+pima         native XGBOD                    requires_labeled_outliers None
+pima         native AutoEncoder              success            0.7437113497930906
+pima         native VAE                      success            0.7637978332635885
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+pima         native SO_GAAL                  success            0.32231366531826844
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+pima         native MO_GAAL                  success            0.300599804714744
+pima         native DeepSVDD                 success            0.6906123587669131
+pima         native AnoGAN                   success            0.74324638489794
+pima         native ALAD                     success            0.5706281675733482
+Epoch 10/50, Loss: 6.869175161634173
+Epoch 20/50, Loss: 6.099867071424212
+Epoch 30/50, Loss: 4.34470442363194
+Epoch 40/50, Loss: 4.96964522770473
+Epoch 50/50, Loss: 4.16615903377533
+pima         native AE1SVM                   success            0.6953550006974473
+pima         native DevNet                   requires_labeled_outliers None
+pima         native RGraph                   timeout            None
+pima         native LUNAR                    success            0.7730041381875667

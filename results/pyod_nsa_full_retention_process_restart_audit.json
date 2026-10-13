@@ -1,0 +1,18 @@
+{
+  "event_count": 2,
+  "events": [
+    {
+      "cell": "glass_pca2_seed43_retain25",
+      "sidecar_sha256": "6d465f7f23254022a6c016adcecacf6c268972e839932f33317411858107abcb",
+      "first_completed_record_count": 36,
+      "final_record_count": 56
+    },
+    {
+      "cell": "pendigits_pca2_seed43_retain25",
+      "sidecar_sha256": "70bea757edd4c49207f6397ac83a674c5517fb6bdf7a00baa5e8a8a9ece7fbec",
+      "first_completed_record_count": 30,
+      "final_record_count": 56
+    }
+  ],
+  "raw_and_log_hashes_verified": true
+}

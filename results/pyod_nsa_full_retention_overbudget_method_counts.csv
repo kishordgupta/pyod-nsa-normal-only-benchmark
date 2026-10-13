@@ -1,0 +1,57 @@
+method,family,overbudget_success_records,max_measured_end_to_end_seconds,mean_measured_end_to_end_seconds,by_representation,by_retention_pct
+NSA/fixed,NSA,0,,,{},{}
+NSA/variable,NSA,0,,,{},{}
+NSA/coverage,NSA,0,,,{},{}
+NSA/grid,NSA,0,,,{},{}
+NSA/hierarchical,NSA,0,,,{},{}
+NSA/voronoi,NSA,0,,,{},{}
+NSA/deterministic,NSA,0,,,{},{}
+NSA/suppressed,NSA,0,,,{},{}
+NSA/dual,NSA,0,,,{},{}
+NSA/annealed,NSA,0,,,{},{}
+NSA/binary/hamming,NSA,0,,,{},{}
+NSA/binary/rcontiguous,NSA,0,,,{},{}
+NSA/binary/rchunk,NSA,0,,,{},{}
+ECOD,baseline,8,16.474113,16.030810625,"{""native"": 8}","{""100"": 8}"
+ABOD,baseline,0,,,{},{}
+COPOD,baseline,0,,,{},{}
+MAD,baseline,0,,,{},{}
+SOS,baseline,0,,,{},{}
+QMCD,baseline,0,,,{},{}
+KDE,baseline,0,,,{},{}
+Sampling,baseline,0,,,{},{}
+GMM,baseline,0,,,{},{}
+PCA,baseline,0,,,{},{}
+KPCA,baseline,0,,,{},{}
+MCD,baseline,0,,,{},{}
+CD,baseline,0,,,{},{}
+OCSVM,baseline,0,,,{},{}
+LMDD,baseline,0,,,{},{}
+LOF,baseline,0,,,{},{}
+COF,baseline,0,,,{},{}
+CBLOF,baseline,4,21.191425000000002,19.11460725,"{""pca2"": 4}","{""25"": 4}"
+LOCI,baseline,5,56.924561999999995,33.83129219999999,"{""native"": 2, ""pca2"": 3}","{""25"": 5}"
+HBOS,baseline,9,21.908362999999998,20.474994111111112,"{""native"": 2, ""pca2"": 7}","{""25"": 9}"
+HDBSCAN,baseline,0,,,{},{}
+KNN,baseline,0,,,{},{}
+SOD,baseline,55,65.269699,23.467389072727276,"{""native"": 40, ""pca2"": 15}","{""25"": 20, ""50"": 30, ""75"": 5}"
+ROD,baseline,8,250.751106,47.88919175,"{""native"": 3, ""pca2"": 5}","{""25"": 8}"
+IForest,baseline,0,,,{},{}
+INNE,baseline,0,,,{},{}
+DIF,baseline,24,24.467821999999998,18.733693249999998,"{""native"": 13, ""pca2"": 11}","{""25"": 24}"
+FeatureBagging,baseline,0,,,{},{}
+LSCP,baseline,0,,,{},{}
+LODA,baseline,0,,,{},{}
+SUOD,baseline,1,31.196441999999998,31.196441999999998,"{""native"": 1}","{""25"": 1}"
+XGBOD,baseline,0,,,{},{}
+AutoEncoder,baseline,4,20.701281,18.24698625,"{""native"": 1, ""pca2"": 3}","{""25"": 4}"
+VAE,baseline,0,,,{},{}
+SO_GAAL,baseline,0,,,{},{}
+MO_GAAL,baseline,0,,,{},{}
+DeepSVDD,baseline,0,,,{},{}
+AnoGAN,baseline,0,,,{},{}
+ALAD,baseline,0,,,{},{}
+AE1SVM,baseline,0,,,{},{}
+DevNet,baseline,0,,,{},{}
+RGraph,baseline,0,,,{},{}
+LUNAR,baseline,0,,,{},{}

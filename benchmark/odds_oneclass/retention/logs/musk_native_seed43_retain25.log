@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset musk --results benchmark/odds_oneclass/retention/raw/musk_native_seed43_retain25.jsonl --seed 43 --representation native --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.25
+musk         native NSA/fixed                success            0.0001297185108314934
+musk         native NSA/variable             success            0.0
+musk         native NSA/coverage             success            0.0
+musk         native NSA/grid                 success            0.0
+musk         native NSA/hierarchical         success            0.0
+musk         native NSA/voronoi              requires_2d_or_3d  None
+musk         native NSA/deterministic        requires_2d        None
+musk         native NSA/suppressed           success            0.0
+musk         native NSA/dual                 success            1.0
+musk         native NSA/annealed             success            0.0
+musk         native NSA/binary/hamming       success            0.21270592813594497
+musk         native NSA/binary/rcontiguous   success            0.4179206122713711
+musk         native NSA/binary/rchunk        success            0.49053054870930085
+musk         native IForest                  success            0.9311843300038916
+musk         native ECOD                     success            0.9683919228607256
+musk         native OCSVM                    success            0.9999783802481947
+musk         native KNN                      success            1.0
+musk         native ABOD                     success            0.9983352791109958

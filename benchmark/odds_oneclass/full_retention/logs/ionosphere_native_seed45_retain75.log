@@ -1,0 +1,196 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset ionosphere --results benchmark/odds_oneclass/full_retention/raw/ionosphere_native_seed45_retain75.jsonl --seed 45 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.75 --method-timeout 15.0 --method-filter all
+ionosphere   native NSA/fixed                success            0.33355119825708057
+ionosphere   native NSA/variable             success            0.46122004357298474
+ionosphere   native NSA/coverage             success            0.46122004357298474
+ionosphere   native NSA/grid                 success            0.4583877995642701
+ionosphere   native NSA/hierarchical         success            0.10174291938997822
+ionosphere   native NSA/voronoi              requires_2d_or_3d  None
+ionosphere   native NSA/deterministic        requires_2d        None
+ionosphere   native NSA/suppressed           success            0.4625272331154684
+ionosphere   native NSA/dual                 success            0.8958605664488017
+ionosphere   native NSA/annealed             success            0.21917211328976033
+ionosphere   native NSA/binary/hamming       success            0.5833333333333334
+ionosphere   native NSA/binary/rcontiguous   success            0.5478213507625271
+ionosphere   native NSA/binary/rchunk        success            0.5132897603485839
+ionosphere   native ECOD                     success            0.7854030501089324
+ionosphere   native ABOD                     success            0.9753812636165577
+ionosphere   native COPOD                    success            0.8450980392156863
+ionosphere   native MAD                      requires_1d        None
+ionosphere   native SOS                      success            0.8095860566448801
+ionosphere   native QMCD                     success            0.5034858387799565
+ionosphere   native KDE                      success            0.9854030501089325
+ionosphere   native Sampling                 success            0.987363834422658
+ionosphere   native GMM                      success            0.9816993464052287
+ionosphere   native PCA                      success            0.9130718954248366
+ionosphere   native KPCA                     success            0.9847494553376905
+ionosphere   native MCD                      success            0.9777777777777777
+ionosphere   native CD                       success            0.9793028322440087
+ionosphere   native OCSVM                    success            0.9679738562091503
+ionosphere   native LMDD                     success            0.8008714596949892
+ionosphere   native LOF                      success            0.9738562091503268
+ionosphere   native COF                      success            0.8694989106753812
+ionosphere   native CBLOF                    success            0.9555555555555555
+ionosphere   native LOCI                     success            0.6694989106753814
+ionosphere   native HBOS                     success            0.7233115468409586
+ionosphere   native HDBSCAN                  success            0.7596949891067538
+ionosphere   native KNN                      success            0.9825708061002179
+Exception ignored in: <function _on_type_disposal at 0x10eddb600>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/numba/core/types/abstract.py", line 28, in _on_type_disposal
+    def _on_type_disposal(wr, _pop=_typecache.pop):
+    
+  File "benchmark/odds_oneclass/runner.py", line 46, in _on_alarm
+    raise FitTimeout("per-method wall-time budget exceeded")
+FitTimeout: per-method wall-time budget exceeded
+ionosphere   native SOD                      success            0.934640522875817
+ionosphere   native ROD                      timeout            None
+ionosphere   native IForest                  success            0.9169934640522877
+ionosphere   native INNE                     success            0.9784313725490196
+ionosphere   native DIF                      success            0.9427015250544662
+ionosphere   native FeatureBagging           success            0.9734204793028323
+ionosphere   native LSCP                     success            0.9612200435729847
+ionosphere   native LODA                     success            0.8668845315904139
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.5s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+RandomForestRegressor()
+
+
+ionosphere   native SUOD                     success            0.8773420479302834
+ionosphere   native XGBOD                    requires_labeled_outliers None
+ionosphere   native AutoEncoder              success            0.9581699346405229
+ionosphere   native VAE                      success            0.9178649237472767
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+ionosphere   native SO_GAAL                  success            0.7906318082788671
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+ionosphere   native MO_GAAL                  success            0.8082788671023965
+ionosphere   native DeepSVDD                 success            0.9795206971677559
+ionosphere   native AnoGAN                   success            0.8444444444444444
+ionosphere   native ALAD                     success            0.5633986928104575
+Epoch 10/50, Loss: 10.279723048210144
+Epoch 20/50, Loss: 6.09895122051239
+Epoch 30/50, Loss: 7.349148511886597
+Epoch 40/50, Loss: 6.931499004364014
+Epoch 50/50, Loss: 8.581795811653137
+ionosphere   native AE1SVM                   success            0.9429193899782136
+ionosphere   native DevNet                   requires_labeled_outliers None
+ionosphere   native RGraph                   success            0.410239651416122
+ionosphere   native LUNAR                    success            0.9808278867102396

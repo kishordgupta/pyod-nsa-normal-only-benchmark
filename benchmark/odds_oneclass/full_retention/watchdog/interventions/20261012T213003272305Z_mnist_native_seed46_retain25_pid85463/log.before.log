@@ -1,0 +1,40 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset mnist --results benchmark/odds_oneclass/full_retention/raw/mnist_native_seed46_retain25.jsonl --seed 46 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.25 --method-timeout 15.0 --method-filter all
+mnist        native NSA/fixed                success            0.38452882589542237
+mnist        native NSA/variable             success            0.4809303773223521
+mnist        native NSA/coverage             success            0.4809303773223521
+mnist        native NSA/grid                 success            0.4962321633786631
+mnist        native NSA/hierarchical         success            0.31781806646236355
+mnist        native NSA/voronoi              requires_2d_or_3d  None
+mnist        native NSA/deterministic        requires_2d        None
+mnist        native NSA/suppressed           success            0.47978416491093656
+mnist        native NSA/dual                 success            0.5499335615782417
+mnist        native NSA/annealed             success            0.3862346772648918
+mnist        native NSA/binary/hamming       success            0.47085238699482856
+mnist        native NSA/binary/rcontiguous   success            0.5533512497605823
+mnist        native NSA/binary/rchunk        success            0.4456806047692013
+mnist        native ECOD                     success            0.7638173960927026
+mnist        native ABOD                     success            0.8938212267764797
+mnist        native COPOD                    success            0.7879776383834514
+mnist        native MAD                      requires_1d        None
+mnist        native SOS                      error              None
+mnist        native QMCD                     success            0.25480032560812105
+mnist        native KDE                      success            0.9114124449339206
+mnist        native Sampling                 success            0.9143004213752154
+mnist        native GMM                      success            0.9131661798506032
+mnist        native PCA                      success            0.9163175158015706
+mnist        native KPCA                     success            0.9262294100746983
+mnist        native MCD                      success            0.88804527389389
+mnist        native CD                       timeout            None
+mnist        native OCSVM                    success            0.9191127178701399
+mnist        native LMDD                     timeout            None
+mnist        native LOF                      success            0.9231169795058418
+mnist        native COF                      timeout            None
+mnist        native CBLOF                    success            0.9081533710017239
+Exception ignored in: <function BaseContext._insert_global.<locals>.on_disposal at 0x1153bc7c0>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/numba/core/typing/context.py", line 585, in on_disposal
+    def on_disposal(wr, pop=self._globals.pop):
+
+  File "benchmark/odds_oneclass/runner.py", line 46, in _on_alarm
+    raise FitTimeout("per-method wall-time budget exceeded")
+FitTimeout: per-method wall-time budget exceeded

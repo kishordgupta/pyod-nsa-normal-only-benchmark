@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset shuttle --results benchmark/odds_oneclass/retention/raw/shuttle_native_seed44_retain50.jsonl --seed 44 --representation native --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.5
+shuttle      native NSA/fixed                success            0.0050084541199242
+shuttle      native NSA/variable             success            0.7613415125531443
+shuttle      native NSA/coverage             success            0.7613415125531443
+shuttle      native NSA/grid                 success            0.776065614514726
+shuttle      native NSA/hierarchical         success            0.25292693305617375
+shuttle      native NSA/voronoi              requires_2d_or_3d  None
+shuttle      native NSA/deterministic        requires_2d        None
+shuttle      native NSA/suppressed           success            0.7507371465368234
+shuttle      native NSA/dual                 success            0.9961401011481787
+shuttle      native NSA/annealed             success            0.005806794175130184
+shuttle      native NSA/binary/hamming       success            0.8998403319889587
+shuttle      native NSA/binary/rcontiguous   error              None
+shuttle      native NSA/binary/rchunk        success            0.6707317991647554
+shuttle      native IForest                  success            0.9953266980730632
+shuttle      native ECOD                     success            0.9958200119751008
+shuttle      native OCSVM                    success            0.9959819394391285
+shuttle      native KNN                      success            0.9959367503793998
+shuttle      native ABOD                     success            0.9958953270746486

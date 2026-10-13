@@ -1,0 +1,188 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset vowels --results benchmark/odds_oneclass/full_retention/raw/vowels_pca2_seed43_retain75.jsonl --seed 43 --representation pca2 --train-cap 600 --test-cap 2000 --train-fraction 0.75 --method-timeout 15.0 --method-filter all
+vowels       pca2   NSA/fixed                success            0.3015985790408525
+vowels       pca2   NSA/variable             success            0.31714031971580814
+vowels       pca2   NSA/coverage             success            0.2769094138543517
+vowels       pca2   NSA/grid                 success            0.31607460035523977
+vowels       pca2   NSA/hierarchical         success            0.3308170515097691
+vowels       pca2   NSA/voronoi              success            0.308170515097691
+vowels       pca2   NSA/deterministic        success            0.36420959147424514
+vowels       pca2   NSA/suppressed           success            0.2960923623445826
+vowels       pca2   NSA/dual                 success            0.338809946714032
+vowels       pca2   NSA/annealed             success            0.31536412078152753
+vowels       pca2   NSA/binary/hamming       error              None
+vowels       pca2   NSA/binary/rcontiguous   error              None
+vowels       pca2   NSA/binary/rchunk        error              None
+vowels       pca2   ECOD                     success            0.3192717584369449
+vowels       pca2   ABOD                     success            0.7520426287744227
+vowels       pca2   COPOD                    success            0.41714031971580817
+vowels       pca2   MAD                      requires_1d        None
+vowels       pca2   SOS                      success            0.5792184724689164
+vowels       pca2   QMCD                     success            0.5365896980461812
+vowels       pca2   KDE                      success            0.7664298401420959
+vowels       pca2   Sampling                 success            0.7382770870337477
+vowels       pca2   GMM                      success            0.3352575488454707
+vowels       pca2   PCA                      success            0.514120781527531
+vowels       pca2   KPCA                     success            0.7230905861456484
+vowels       pca2   MCD                      success            0.49493783303730016
+vowels       pca2   CD                       success            0.3331261101243339
+vowels       pca2   OCSVM                    success            0.6937833037300177
+vowels       pca2   LMDD                     success            0.1599911190053286
+vowels       pca2   LOF                      success            0.7435168738898756
+vowels       pca2   COF                      success            0.5797513321492007
+vowels       pca2   CBLOF                    success            0.6815275310834813
+vowels       pca2   LOCI                     timeout            None
+vowels       pca2   HBOS                     success            0.6052841918294849
+vowels       pca2   HDBSCAN                  success            0.7029307282415631
+vowels       pca2   KNN                      success            0.7677619893428064
+vowels       pca2   SOD                      success            0.5201598579040853
+vowels       pca2   ROD                      success            0.3149200710479574
+vowels       pca2   IForest                  success            0.5955595026642984
+vowels       pca2   INNE                     success            0.7397868561278863
+vowels       pca2   DIF                      success            0.6442273534635878
+vowels       pca2   FeatureBagging           success            0.7425399644760213
+vowels       pca2   LSCP                     success            0.7643872113676732
+vowels       pca2   LODA                     success            0.4983570159857904
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.4s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+RandomForestRegressor()
+
+
+vowels       pca2   SUOD                     success            0.6412966252220249
+vowels       pca2   XGBOD                    requires_labeled_outliers None
+vowels       pca2   AutoEncoder              success            0.3941385435168739
+vowels       pca2   VAE                      success            0.45328596802841914
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+vowels       pca2   SO_GAAL                  success            0.3427175843694494
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+vowels       pca2   MO_GAAL                  success            0.48854351687388986
+vowels       pca2   DeepSVDD                 success            0.6369449378330373
+vowels       pca2   AnoGAN                   success            0.3443161634103019
+vowels       pca2   ALAD                     success            0.48259325044404977
+Epoch 10/50, Loss: 9.484021965662638
+Epoch 20/50, Loss: 5.886508909861247
+Epoch 30/50, Loss: 5.036159690221151
+Epoch 40/50, Loss: 3.9244552810986835
+Epoch 50/50, Loss: 3.876531799634298
+vowels       pca2   AE1SVM                   success            0.4984902309058614
+vowels       pca2   DevNet                   requires_labeled_outliers None
+vowels       pca2   RGraph                   timeout            None
+vowels       pca2   LUNAR                    success            0.7544404973357015

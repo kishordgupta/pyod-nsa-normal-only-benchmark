@@ -1,0 +1,84 @@
+{
+  "action": {
+    "primary_method_timeout_seconds": 15.0,
+    "runner_fds_closed_utc": "2026-10-12T21:28:31.100297+00:00",
+    "signal": "SIGTERM",
+    "signal_sent_utc": "2026-10-12T21:28:29.478660+00:00",
+    "termination_confirmed": true
+  },
+  "after": {
+    "appended_method": "LOCI",
+    "appended_status": "timeout",
+    "log_sha256": "adf52f3cd3c218a767f69dfb59b3b744d7ece7a15832e4b33283dd04dcefd77d",
+    "raw_record_count": 32,
+    "raw_sha256": "5ab6a031c08008f6a371a4619d1d1dd6fd9a205e479b8b86d1d3739d67ac9dad"
+  },
+  "appended_row_sha256": "b119f160cc4bd993548ddfe6bc061f488109510eed289bf3803b07075b6f5cb3",
+  "before": {
+    "log_sha256": "adf52f3cd3c218a767f69dfb59b3b744d7ece7a15832e4b33283dd04dcefd77d",
+    "log_snapshot": "log.before.log",
+    "raw_age_seconds": 913.081,
+    "raw_record_count": 31,
+    "raw_sha256": "685580cfd96f37984de0c1c892b060f4ef6a3e28dee9258bfdf901179a2f5803",
+    "raw_snapshot": "raw.before.jsonl",
+    "signal_evidence_excerpt": "\nException ignored on calling ctypes callback function: <function ExecutionEngine._raw_object_cache_notify at 0x10feafd80>\nTraceback (most recent call last):\n  File \"<PYTHON_ENV>/lib/python3.12/site-packages/llvmlite/binding/executionengine.py\", line 178, in _raw_object_cache_notify\n    def _raw_object_cache_notify(self, data):\n\n  File \"benchmark/odds_oneclass/runner.py\", line 46, in _on_alarm\n    raise FitTimeout(\"per-method wall-time budget exceeded\")\nFitTimeout: per-method wall-time budget exceeded\n"
+  },
+  "cell": {
+    "dataset": "letter",
+    "method": "LOCI",
+    "name": "letter_native_seed46_retain25",
+    "representation": "native",
+    "retention_fraction": 0.25,
+    "seed": 46
+  },
+  "completed_utc": "2026-10-12T21:28:32.235000+00:00",
+  "created_utc": "2026-10-12T21:28:28.933736+00:00",
+  "intervention_id": "20261012T212828933736Z_letter_native_seed46_retain25_pid85334",
+  "resume_state": "pending_unfiltered_sweep",
+  "schema_version": 1,
+  "state": "completed",
+  "target": {
+    "fd_identity": {
+      "1w": {
+        "command": "python3.1",
+        "inode": 32021060,
+        "path": "benchmark/odds_oneclass/full_retention/logs/letter_native_seed46_retain25.log"
+      },
+      "2w": {
+        "command": "python3.1",
+        "inode": 32021060,
+        "path": "benchmark/odds_oneclass/full_retention/logs/letter_native_seed46_retain25.log"
+      },
+      "3w": {
+        "command": "python3.1",
+        "inode": 32021247,
+        "path": "benchmark/odds_oneclass/full_retention/raw/letter_native_seed46_retain25.jsonl"
+      }
+    },
+    "pid": 85334,
+    "runner_argv": [
+      "<PYTHON_ENV>/bin/python",
+      "benchmark/odds_oneclass/runner.py",
+      "--data-dir",
+      "vendor/pyod/notebooks/data",
+      "--dataset",
+      "letter",
+      "--results",
+      "benchmark/odds_oneclass/full_retention/raw/letter_native_seed46_retain25.jsonl",
+      "--seed",
+      "46",
+      "--representation",
+      "native",
+      "--train-cap",
+      "600",
+      "--test-cap",
+      "2000",
+      "--train-fraction",
+      "0.25",
+      "--method-timeout",
+      "15.0",
+      "--method-filter",
+      "all"
+    ]
+  }
+}

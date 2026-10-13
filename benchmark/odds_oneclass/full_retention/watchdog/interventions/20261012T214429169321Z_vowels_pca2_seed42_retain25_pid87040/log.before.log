@@ -1,0 +1,48 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset vowels --results benchmark/odds_oneclass/full_retention/raw/vowels_pca2_seed42_retain25.jsonl --seed 42 --representation pca2 --train-cap 600 --test-cap 2000 --train-fraction 0.25 --method-timeout 15.0 --method-filter all
+vowels       pca2   NSA/fixed                success            0.3218472468916519
+vowels       pca2   NSA/variable             success            0.805417406749556
+vowels       pca2   NSA/coverage             success            0.6457371225577265
+vowels       pca2   NSA/grid                 success            0.8088809946714032
+vowels       pca2   NSA/hierarchical         success            0.7824156305506217
+vowels       pca2   NSA/voronoi              success            0.8096802841918296
+vowels       pca2   NSA/deterministic        success            0.3756660746003553
+vowels       pca2   NSA/suppressed           success            0.708525754884547
+vowels       pca2   NSA/dual                 success            0.8079040852575489
+vowels       pca2   NSA/annealed             success            0.32406749555950265
+vowels       pca2   NSA/binary/hamming       error              None
+vowels       pca2   NSA/binary/rcontiguous   error              None
+vowels       pca2   NSA/binary/rchunk        error              None
+vowels       pca2   ECOD                     success            0.2954706927175844
+vowels       pca2   ABOD                     success            0.7988454706927176
+vowels       pca2   COPOD                    success            0.4286856127886323
+vowels       pca2   MAD                      requires_1d        None
+vowels       pca2   SOS                      success            0.43934280639431617
+vowels       pca2   QMCD                     success            0.6072824156305506
+vowels       pca2   KDE                      success            0.6785968028419183
+vowels       pca2   Sampling                 success            0.7449378330373002
+vowels       pca2   GMM                      success            0.33960923623445827
+vowels       pca2   PCA                      success            0.5067495559502665
+vowels       pca2   KPCA                     success            0.730373001776199
+vowels       pca2   MCD                      success            0.5436056838365897
+vowels       pca2   CD                       success            0.3947602131438721
+vowels       pca2   OCSVM                    success            0.7753996447602132
+vowels       pca2   LMDD                     success            0.1730017761989343
+vowels       pca2   LOF                      success            0.7276198934280639
+vowels       pca2   COF                      success            0.6911190053285969
+Exception ignored on calling ctypes callback function: <function ExecutionEngine._raw_object_cache_notify at 0x1103b3e20>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/llvmlite/binding/executionengine.py", line 178, in _raw_object_cache_notify
+    def _raw_object_cache_notify(self, data):
+
+  File "benchmark/odds_oneclass/runner.py", line 46, in _on_alarm
+    raise FitTimeout("per-method wall-time budget exceeded")
+FitTimeout: per-method wall-time budget exceeded
+vowels       pca2   CBLOF                    success            0.7349911190053287
+Exception ignored in: <function BaseContext._insert_global.<locals>.on_disposal at 0x114dbd580>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/numba/core/typing/context.py", line 585, in on_disposal
+    def on_disposal(wr, pop=self._globals.pop):
+
+  File "benchmark/odds_oneclass/runner.py", line 46, in _on_alarm
+    raise FitTimeout("per-method wall-time budget exceeded")
+FitTimeout: per-method wall-time budget exceeded

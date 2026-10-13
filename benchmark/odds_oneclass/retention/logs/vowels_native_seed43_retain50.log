@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset vowels --results benchmark/odds_oneclass/retention/raw/vowels_native_seed43_retain50.jsonl --seed 43 --representation native --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.5
+vowels       native NSA/fixed                success            0.47202486678507993
+vowels       native NSA/variable             success            0.7579928952042629
+vowels       native NSA/coverage             success            0.7579928952042629
+vowels       native NSA/grid                 success            0.7766429840142095
+vowels       native NSA/hierarchical         success            0.24813499111900533
+vowels       native NSA/voronoi              requires_2d_or_3d  None
+vowels       native NSA/deterministic        requires_2d        None
+vowels       native NSA/suppressed           success            0.7736234458259325
+vowels       native NSA/dual                 success            0.9569271758436945
+vowels       native NSA/annealed             success            0.45373001776198935
+vowels       native NSA/binary/hamming       success            0.697113676731794
+vowels       native NSA/binary/rcontiguous   error              None
+vowels       native NSA/binary/rchunk        success            0.6555950266429841
+vowels       native IForest                  success            0.7957371225577264
+vowels       native ECOD                     success            0.6245115452930728
+vowels       native OCSVM                    success            0.8604795737122557
+vowels       native KNN                      success            0.9657193605683837
+vowels       native ABOD                     success            0.9583481349911189

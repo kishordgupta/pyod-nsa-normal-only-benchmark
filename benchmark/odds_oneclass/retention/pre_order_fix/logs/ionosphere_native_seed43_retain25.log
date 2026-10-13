@@ -1,0 +1,52 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset ionosphere --results benchmark/odds_oneclass/retention/raw/ionosphere_native_seed43_retain25.jsonl --seed 43 --representation native --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.25
+ionosphere   native NSA/fixed                success            0.11503267973856211
+ionosphere   native NSA/variable             success            0.3185185185185185
+ionosphere   native NSA/coverage             success            0.3185185185185185
+ionosphere   native NSA/grid                 success            0.33769063180827885
+ionosphere   native NSA/hierarchical         success            0.05359477124183007
+ionosphere   native NSA/voronoi              requires_2d_or_3d  None
+ionosphere   native NSA/deterministic        requires_2d        None
+ionosphere   native NSA/suppressed           success            0.3570806100217865
+Traceback (most recent call last):
+  File "benchmark/odds_oneclass/selected_runner.py", line 18, in <module>
+    runner.main()
+  File "benchmark/odds_oneclass/runner.py", line 240, in main
+    evaluate(args.data_dir / f"{args.dataset}.mat", args.seed, args.train_cap,
+  File "benchmark/odds_oneclass/runner.py", line 190, in evaluate
+    model.fit(X_fit)
+  File "vendor/pyod/pyod/models/nsa.py", line 295, in fit
+    return self._fit(X)
+           ^^^^^^^^^^^^
+  File "vendor/pyod/pyod/models/nsa.py", line 334, in _fit
+    centers, extra = self._generate_advanced(rng)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "vendor/pyod/pyod/models/nsa.py", line 516, in _generate_advanced
+    result = generate_dual_detectors(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "vendor/pyod/pyod/models/_nsa_cluster.py", line 269, in generate_dual_detectors
+    apc_centers, apc_radii, diagnostics = _fit_apc_balls(
+                                          ^^^^^^^^^^^^^^^
+  File "vendor/pyod/pyod/models/_nsa_cluster.py", line 201, in _fit_apc_balls
+    model = KMeans(n_clusters=count, n_init=10, random_state=rng).fit(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/sklearn/base.py", line 1403, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/sklearn/cluster/_kmeans.py", line 1504, in fit
+    centers_init = self._init_centroids(
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/sklearn/cluster/_kmeans.py", line 1019, in _init_centroids
+    centers, _ = _kmeans_plusplus(
+                 ^^^^^^^^^^^^^^^^^
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/sklearn/cluster/_kmeans.py", line 240, in _kmeans_plusplus
+    closest_dist_sq = _euclidean_distances(
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/sklearn/metrics/pairwise.py", line 385, in _euclidean_distances
+    xp, _, device_ = get_namespace_and_device(X, Y)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/sklearn/utils/_array_api.py", line 501, in get_namespace_and_device
+    array_list = _remove_non_arrays(
+                 ^^^^^^^^^^^^^^^^^^^
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/sklearn/utils/_array_api.py", line 352, in _remove_non_arrays
+    filtered_arrays.append(array)
+KeyboardInterrupt

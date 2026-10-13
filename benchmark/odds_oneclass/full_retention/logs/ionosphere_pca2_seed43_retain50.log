@@ -1,0 +1,188 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset ionosphere --results benchmark/odds_oneclass/full_retention/raw/ionosphere_pca2_seed43_retain50.jsonl --seed 43 --representation pca2 --train-cap 600 --test-cap 2000 --train-fraction 0.5 --method-timeout 15.0 --method-filter all
+ionosphere   pca2   NSA/fixed                success            0.5553376906318083
+ionosphere   pca2   NSA/variable             success            0.6745098039215687
+ionosphere   pca2   NSA/coverage             success            0.6518518518518518
+ionosphere   pca2   NSA/grid                 success            0.6736383442265795
+ionosphere   pca2   NSA/hierarchical         success            0.663834422657952
+ionosphere   pca2   NSA/voronoi              success            0.6633986928104576
+ionosphere   pca2   NSA/deterministic        success            0.6603485838779957
+ionosphere   pca2   NSA/suppressed           success            0.6766884531590412
+ionosphere   pca2   NSA/dual                 success            0.6760348583877996
+ionosphere   pca2   NSA/annealed             success            0.412636165577342
+ionosphere   pca2   NSA/binary/hamming       error              None
+ionosphere   pca2   NSA/binary/rcontiguous   error              None
+ionosphere   pca2   NSA/binary/rchunk        error              None
+ionosphere   pca2   ECOD                     success            0.3784313725490196
+ionosphere   pca2   ABOD                     success            0.716557734204793
+ionosphere   pca2   COPOD                    success            0.4751633986928105
+ionosphere   pca2   MAD                      requires_1d        None
+ionosphere   pca2   SOS                      success            0.5825708061002179
+ionosphere   pca2   QMCD                     success            0.6444444444444444
+ionosphere   pca2   KDE                      success            0.7021786492374728
+ionosphere   pca2   Sampling                 success            0.7143790849673203
+ionosphere   pca2   GMM                      success            0.3705882352941176
+ionosphere   pca2   PCA                      success            0.5712418300653596
+ionosphere   pca2   KPCA                     success            0.7017429193899782
+ionosphere   pca2   MCD                      success            0.5790849673202615
+ionosphere   pca2   CD                       success            0.42701525054466233
+ionosphere   pca2   OCSVM                    success            0.7126361655773421
+ionosphere   pca2   LMDD                     success            0.3503267973856209
+ionosphere   pca2   LOF                      success            0.6145969498910676
+ionosphere   pca2   COF                      success            0.5213507625272331
+ionosphere   pca2   CBLOF                    success            0.7374727668845317
+ionosphere   pca2   LOCI                     success            0.269281045751634
+ionosphere   pca2   HBOS                     success            0.6116557734204793
+ionosphere   pca2   HDBSCAN                  success            0.6049019607843138
+ionosphere   pca2   KNN                      success            0.6747276688453159
+ionosphere   pca2   SOD                      success            0.500871459694989
+ionosphere   pca2   ROD                      success            0.567755991285403
+ionosphere   pca2   IForest                  success            0.5723311546840959
+ionosphere   pca2   INNE                     success            0.6950980392156862
+ionosphere   pca2   DIF                      success            0.6071895424836601
+ionosphere   pca2   FeatureBagging           success            0.5982570806100217
+ionosphere   pca2   LSCP                     success            0.6572984749455337
+ionosphere   pca2   LODA                     success            0.6718954248366013
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.3s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+RandomForestRegressor()
+
+
+ionosphere   pca2   SUOD                     success            0.5854030501089325
+ionosphere   pca2   XGBOD                    requires_labeled_outliers None
+ionosphere   pca2   AutoEncoder              success            0.4045751633986928
+ionosphere   pca2   VAE                      success            0.3880174291938998
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+ionosphere   pca2   SO_GAAL                  success            0.5281045751633987
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+ionosphere   pca2   MO_GAAL                  success            0.5176470588235295
+ionosphere   pca2   DeepSVDD                 success            0.6257080610021786
+ionosphere   pca2   AnoGAN                   success            0.5596949891067539
+ionosphere   pca2   ALAD                     success            0.5387799564270153
+Epoch 10/50, Loss: 7.439959526062012
+Epoch 20/50, Loss: 4.833333651224772
+Epoch 30/50, Loss: 5.873712221781413
+Epoch 40/50, Loss: 3.7897001107533774
+Epoch 50/50, Loss: 8.290200551350912
+ionosphere   pca2   AE1SVM                   success            0.529193899782135
+ionosphere   pca2   DevNet                   requires_labeled_outliers None
+ionosphere   pca2   RGraph                   success            0.5425925925925926
+ionosphere   pca2   LUNAR                    success            0.7167755991285403

@@ -1,0 +1,189 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset arrhythmia --results benchmark/odds_oneclass/full_retention/raw/arrhythmia_native_seed43.jsonl --seed 43 --representation native --train-cap 600 --test-cap 2000 --train-fraction 1.0 --method-timeout 15.0 --method-filter all
+arrhythmia   native NSA/fixed                success            0.2647642679900744
+arrhythmia   native NSA/variable             success            0.36104218362282875
+arrhythmia   native NSA/coverage             success            0.36104218362282875
+arrhythmia   native NSA/grid                 success            0.36575682382133995
+arrhythmia   native NSA/hierarchical         success            0.3004962779156327
+arrhythmia   native NSA/voronoi              requires_2d_or_3d  None
+arrhythmia   native NSA/deterministic        requires_2d        None
+arrhythmia   native NSA/suppressed           success            0.36104218362282875
+arrhythmia   native NSA/dual                 success            0.4511166253101737
+arrhythmia   native NSA/annealed             success            0.34913151364764267
+arrhythmia   native NSA/binary/hamming       success            0.4543424317617866
+arrhythmia   native NSA/binary/rcontiguous   success            0.6254342431761787
+arrhythmia   native NSA/binary/rchunk        success            0.41550868486352355
+Matplotlib is building the font cache; this may take a moment.
+arrhythmia   native ECOD                     success            0.7816377171215881
+arrhythmia   native ABOD                     success            0.7933002481389578
+arrhythmia   native COPOD                    success            0.7808933002481389
+arrhythmia   native MAD                      requires_1d        None
+arrhythmia   native SOS                      success            0.5399503722084367
+arrhythmia   native QMCD                     success            0.3640198511166253
+arrhythmia   native KDE                      success            0.7741935483870968
+arrhythmia   native Sampling                 success            0.7635235732009925
+arrhythmia   native GMM                      success            0.7754342431761787
+arrhythmia   native PCA                      success            0.7709677419354838
+arrhythmia   native KPCA                     success            0.7775434243176178
+arrhythmia   native MCD                      success            0.7831265508684864
+arrhythmia   native CD                       error              None
+arrhythmia   native OCSVM                    success            0.7745657568238213
+arrhythmia   native LMDD                     success            0.6799007444168735
+arrhythmia   native LOF                      success            0.7796526054590571
+arrhythmia   native COF                      success            0.7679900744416873
+arrhythmia   native CBLOF                    success            0.7650124069478909
+arrhythmia   native LOCI                     success            0.7205955334987592
+arrhythmia   native HBOS                     success            0.786104218362283
+arrhythmia   native HDBSCAN                  success            0.5260545905707196
+arrhythmia   native KNN                      success            0.7789081885856078
+arrhythmia   native SOD                      success            0.7166253101736972
+arrhythmia   native ROD                      timeout            None
+arrhythmia   native IForest                  success            0.7650124069478909
+arrhythmia   native INNE                     success            0.7629032258064516
+arrhythmia   native DIF                      success            0.7712158808933003
+arrhythmia   native FeatureBagging           success            0.7722084367245657
+arrhythmia   native LSCP                     success            0.7806451612903226
+arrhythmia   native LODA                     success            0.7888337468982631
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.2s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.8s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+RandomForestRegressor()
+
+
+arrhythmia   native SUOD                     success            0.7851116625310174
+arrhythmia   native XGBOD                    requires_labeled_outliers None
+arrhythmia   native AutoEncoder              success            0.7760545905707196
+arrhythmia   native VAE                      success            0.7710918114143921
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+arrhythmia   native SO_GAAL                  success            0.7607940446650123
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+arrhythmia   native MO_GAAL                  success            0.785483870967742
+arrhythmia   native DeepSVDD                 success            0.7354838709677419
+arrhythmia   native AnoGAN                   success            0.786104218362283
+arrhythmia   native ALAD                     success            0.5992555831265508
+Epoch 10/50, Loss: 9.59993839263916
+Epoch 20/50, Loss: 6.649644255638123
+Epoch 30/50, Loss: 5.743014991283417
+Epoch 40/50, Loss: 5.555259317159653
+Epoch 50/50, Loss: 4.873038470745087
+arrhythmia   native AE1SVM                   success            0.7714640198511167
+arrhythmia   native DevNet                   requires_labeled_outliers None
+arrhythmia   native RGraph                   timeout            None
+arrhythmia   native LUNAR                    success            0.7774193548387097

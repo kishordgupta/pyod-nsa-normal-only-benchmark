@@ -1,0 +1,34 @@
+{
+  "metadata_flagged": [
+    "COF",
+    "COPOD",
+    "ECOD",
+    "LOCI",
+    "RGraph",
+    "SOD",
+    "SOS",
+    "SUOD"
+  ],
+  "analysis_override_for_underflagged_metadata": [
+    "CD",
+    "DIF",
+    "LMDD",
+    "ROD"
+  ],
+  "all_batch_dependent_scoring_methods": [
+    "CD",
+    "COF",
+    "COPOD",
+    "DIF",
+    "ECOD",
+    "LMDD",
+    "LOCI",
+    "RGraph",
+    "ROD",
+    "SOD",
+    "SOS",
+    "SUOD"
+  ],
+  "count": 12,
+  "note": "LMDD, DIF, CD, and ROD are marked inductive in the active model_factory metadata, but source-level scoring review found dependence on the query batch. The active model factory is unchanged; analysis flags correct reporting only."
+}

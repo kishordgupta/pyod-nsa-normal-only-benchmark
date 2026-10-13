@@ -1,0 +1,188 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset satellite --results benchmark/odds_oneclass/full_retention/raw/satellite_native_seed42_retain25.jsonl --seed 42 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.25 --method-timeout 15.0 --method-filter all
+satellite    native NSA/fixed                success            0.3104689466281738
+satellite    native NSA/variable             success            0.3598758235250574
+satellite    native NSA/coverage             success            0.3598758235250574
+satellite    native NSA/grid                 success            0.3671082704123177
+satellite    native NSA/hierarchical         success            0.2564829465541491
+satellite    native NSA/voronoi              requires_2d_or_3d  None
+satellite    native NSA/deterministic        requires_2d        None
+satellite    native NSA/suppressed           success            0.36003081279147237
+satellite    native NSA/dual                 success            0.5812456047819972
+satellite    native NSA/annealed             success            0.33279665408246356
+satellite    native NSA/binary/hamming       success            0.39273817455029975
+satellite    native NSA/binary/rcontiguous   success            0.38280151195499296
+satellite    native NSA/binary/rchunk        success            0.36147892145976757
+satellite    native ECOD                     success            0.6043378488415131
+satellite    native ABOD                     success            0.8286674624324524
+satellite    native COPOD                    success            0.6583192223702716
+satellite    native MAD                      requires_1d        None
+satellite    native SOS                      success            0.47513116255829446
+satellite    native QMCD                     success            0.5832593086090755
+satellite    native KDE                      success            0.8702566344659116
+satellite    native Sampling                 success            0.8747397568287809
+satellite    native GMM                      success            0.8048662003109038
+satellite    native PCA                      success            0.7082303927011622
+satellite    native KPCA                     success            0.8455497261085203
+satellite    native MCD                      success            0.8108772392479089
+satellite    native CD                       success            0.7430729051003034
+satellite    native OCSVM                    success            0.7867694685024798
+satellite    native LMDD                     timeout            None
+satellite    native LOF                      success            0.8396352663039455
+satellite    native COF                      success            0.565301373158635
+satellite    native CBLOF                    success            0.8805692038640908
+satellite    native LOCI                     timeout            None
+satellite    native HBOS                     success            0.8789545395662152
+satellite    native HDBSCAN                  success            0.7232423754534014
+satellite    native KNN                      success            0.8675686116662965
+satellite    native SOD                      success            0.5981937967281072
+satellite    native ROD                      timeout            None
+satellite    native IForest                  success            0.8059337756310607
+satellite    native INNE                     success            0.8197717725220224
+satellite    native DIF                      success            0.789322164853061
+satellite    native FeatureBagging           success            0.8436505292767784
+satellite    native LSCP                     success            0.8819918665334221
+satellite    native LODA                     success            0.7715920867569768
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.2s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.2s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+RandomForestRegressor()
+
+
+satellite    native SUOD                     success            0.8498026778444
+satellite    native XGBOD                    requires_labeled_outliers None
+satellite    native AutoEncoder              success            0.7192045580723962
+satellite    native VAE                      success            0.7042434673180844
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+satellite    native SO_GAAL                  success            0.6977957981715892
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+satellite    native MO_GAAL                  success            0.6871553223776742
+satellite    native DeepSVDD                 success            0.8848406617810348
+satellite    native AnoGAN                   success            0.795202503886298
+satellite    native ALAD                     success            0.5128270967503146
+Epoch 10/50, Loss: 9.463156127929688
+Epoch 20/50, Loss: 7.395553112030029
+Epoch 30/50, Loss: 7.0289177894592285
+Epoch 40/50, Loss: 4.899878406524659
+Epoch 50/50, Loss: 5.556959772109986
+satellite    native AE1SVM                   success            0.7873813291139241
+satellite    native DevNet                   requires_labeled_outliers None
+satellite    native RGraph                   timeout            None
+satellite    native LUNAR                    success            0.8687576337996891

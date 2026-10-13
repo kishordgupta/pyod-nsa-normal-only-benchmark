@@ -1,0 +1,196 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset optdigits --results benchmark/odds_oneclass/full_retention/raw/optdigits_native_seed46_retain50.jsonl --seed 46 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.5 --method-timeout 15.0 --method-filter all
+optdigits    native NSA/fixed                success            0.9378154599055539
+optdigits    native NSA/variable             success            0.7654016668021055
+optdigits    native NSA/coverage             success            0.7654016668021055
+optdigits    native NSA/grid                 success            0.7350723695497107
+optdigits    native NSA/hierarchical         success            0.2743000063204847
+optdigits    native NSA/voronoi              requires_2d_or_3d  None
+optdigits    native NSA/deterministic        requires_2d        None
+optdigits    native NSA/suppressed           success            0.7623046293035729
+optdigits    native NSA/dual                 success            0.30771731180756834
+optdigits    native NSA/annealed             success            0.20091917905933132
+optdigits    native NSA/binary/hamming       success            0.263528094554451
+optdigits    native NSA/binary/rcontiguous   success            0.29820498234778925
+optdigits    native NSA/binary/rchunk        success            0.3105615299184657
+optdigits    native ECOD                     success            0.6000939043439788
+optdigits    native ABOD                     success            0.7624310389973905
+optdigits    native COPOD                    success            0.6562559254543977
+optdigits    native MAD                      requires_1d        None
+optdigits    native SOS                      success            0.5286904858646875
+optdigits    native QMCD                     success            0.14042311130373542
+optdigits    native KDE                      success            0.9261406217551084
+optdigits    native Sampling                 success            0.7434786141885852
+optdigits    native GMM                      success            0.8310173271573169
+optdigits    native PCA                      success            0.5592545439770296
+optdigits    native KPCA                     success            0.8709989074590748
+optdigits    native MCD                      success            0.6802015331690008
+optdigits    native CD                       success            0.8181957724986682
+optdigits    native OCSVM                    success            0.6068568229632239
+optdigits    native LMDD                     timeout            None
+optdigits    native LOF                      success            0.8638025841753122
+optdigits    native COF                      success            0.4474632283229948
+optdigits    native CBLOF                    success            0.8217262146617186
+optdigits    native LOCI                     timeout            None
+optdigits    native HBOS                     success            0.8800372005670377
+optdigits    native HDBSCAN                  success            0.4460004875802476
+optdigits    native KNN                      success            0.8663307780516655
+Exception ignored on calling ctypes callback function: <function ExecutionEngine._raw_object_cache_notify at 0x111fdbd80>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/llvmlite/binding/executionengine.py", line 178, in _raw_object_cache_notify
+    def _raw_object_cache_notify(self, data):
+
+  File "benchmark/odds_oneclass/runner.py", line 46, in _on_alarm
+    raise FitTimeout("per-method wall-time budget exceeded")
+FitTimeout: per-method wall-time budget exceeded
+optdigits    native SOD                      success            0.5258643262814782
+optdigits    native ROD                      timeout            None
+optdigits    native IForest                  success            0.778196133669222
+optdigits    native INNE                     success            0.7480383924298651
+optdigits    native DIF                      success            0.5224332060207131
+optdigits    native FeatureBagging           success            0.8464663975946042
+optdigits    native LSCP                     success            0.8633872380384827
+optdigits    native LODA                     success            0.5660174625962745
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    1.3s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.0s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.3s finished
+RandomForestRegressor()
+
+
+optdigits    native SUOD                     success            0.843495769789889
+optdigits    native XGBOD                    requires_labeled_outliers None
+optdigits    native AutoEncoder              success            0.7576455291600076
+optdigits    native VAE                      success            0.5550830240810467
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+optdigits    native SO_GAAL                  success            0.5092279076486894
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+optdigits    native MO_GAAL                  success            0.44829392059665374
+optdigits    native DeepSVDD                 success            0.6693754458199024
+optdigits    native AnoGAN                   success            0.694512916361929
+optdigits    native ALAD                     success            0.5170066184503977
+Epoch 10/50, Loss: 8.135388517379761
+Epoch 20/50, Loss: 6.753783512115478
+Epoch 30/50, Loss: 6.3592825651168825
+Epoch 40/50, Loss: 4.8714670777320865
+Epoch 50/50, Loss: 4.320820021629333
+optdigits    native AE1SVM                   success            0.6681203781455698
+optdigits    native DevNet                   requires_labeled_outliers None
+optdigits    native RGraph                   timeout            None
+optdigits    native LUNAR                    success            0.9647678124802485

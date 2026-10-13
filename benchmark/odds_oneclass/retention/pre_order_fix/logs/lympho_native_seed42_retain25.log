@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset lympho --results benchmark/odds_oneclass/retention/raw/lympho_native_seed42_retain25.jsonl --seed 42 --representation native --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.25
+lympho       native NSA/fixed                success            0.0
+lympho       native NSA/variable             success            0.5775862068965517
+lympho       native NSA/coverage             success            0.5775862068965517
+lympho       native NSA/grid                 success            0.5431034482758621
+lympho       native NSA/hierarchical         success            0.33620689655172414
+lympho       native NSA/voronoi              requires_2d_or_3d  None
+lympho       native NSA/deterministic        requires_2d        None
+lympho       native NSA/suppressed           success            0.6637931034482759
+lympho       native NSA/dual                 success            1.0
+lympho       native NSA/annealed             success            0.0
+lympho       native NSA/binary/hamming       success            0.48275862068965525
+lympho       native NSA/binary/rcontiguous   success            0.7672413793103449
+lympho       native NSA/binary/rchunk        success            0.3706896551724138
+lympho       native IForest                  success            1.0
+lympho       native ECOD                     success            1.0
+lympho       native OCSVM                    success            1.0
+lympho       native KNN                      success            1.0
+lympho       native ABOD                     success            1.0

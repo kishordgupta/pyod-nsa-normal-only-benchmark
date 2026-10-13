@@ -1,0 +1,194 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset mnist --results benchmark/odds_oneclass/full_retention/raw/mnist_pca2_seed46_retain25.jsonl --seed 46 --representation pca2 --train-cap 600 --test-cap 2000 --train-fraction 0.25 --method-timeout 15.0 --method-filter all
+mnist        pca2   NSA/fixed                success            0.5063355918406435
+mnist        pca2   NSA/variable             success            0.5515945221221988
+mnist        pca2   NSA/coverage             success            0.5565833891974717
+mnist        pca2   NSA/grid                 success            0.5519267142309903
+mnist        pca2   NSA/hierarchical         success            0.5730942348209156
+mnist        pca2   NSA/voronoi              success            0.546129812296495
+mnist        pca2   NSA/deterministic        success            0.5222957766711358
+mnist        pca2   NSA/suppressed           success            0.5517112382685309
+mnist        pca2   NSA/dual                 success            0.5438014748132541
+mnist        pca2   NSA/annealed             success            0.42068389676307216
+mnist        pca2   NSA/binary/hamming       error              None
+mnist        pca2   NSA/binary/rcontiguous   error              None
+mnist        pca2   NSA/binary/rchunk        error              None
+mnist        pca2   ECOD                     success            0.5729984677264892
+mnist        pca2   ABOD                     success            0.6989292041754452
+mnist        pca2   COPOD                    success            0.6955923194790269
+mnist        pca2   MAD                      requires_1d        None
+mnist        pca2   SOS                      success            0.5268327427695845
+mnist        pca2   QMCD                     success            0.7269111520781459
+mnist        pca2   KDE                      success            0.7795381631871288
+mnist        pca2   Sampling                 success            0.633158159356445
+mnist        pca2   GMM                      success            0.6641418071250719
+mnist        pca2   PCA                      success            0.6211064690672286
+mnist        pca2   KPCA                     success            0.7616476728596056
+mnist        pca2   MCD                      success            0.7628746887569432
+mnist        pca2   CD                       success            0.5951356301474813
+mnist        pca2   OCSVM                    success            0.6812122917065697
+mnist        pca2   LMDD                     success            0.6119158207239992
+mnist        pca2   LOF                      success            0.7144719043286727
+mnist        pca2   COF                      success            0.5531477446849262
+mnist        pca2   CBLOF                    success            0.5879560907872055
+mnist        pca2   LOCI                     timeout            None
+mnist        pca2   HBOS                     success            0.740737526335951
+mnist        pca2   HDBSCAN                  success            0.7474172811721891
+mnist        pca2   KNN                      success            0.746573333652557
+Exception ignored in: <function _on_type_disposal at 0x11283b6a0>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/numba/core/types/abstract.py", line 28, in _on_type_disposal
+    def _on_type_disposal(wr, _pop=_typecache.pop):
+    
+  File "benchmark/odds_oneclass/runner.py", line 46, in _on_alarm
+    raise FitTimeout("per-method wall-time budget exceeded")
+FitTimeout: per-method wall-time budget exceeded
+mnist        pca2   SOD                      success            0.5198447375981613
+mnist        pca2   ROD                      success            0.7411445364872631
+mnist        pca2   IForest                  success            0.7095623443784717
+mnist        pca2   INNE                     success            0.7562218684160122
+mnist        pca2   DIF                      success            0.7397828481133883
+mnist        pca2   FeatureBagging           success            0.6706689331545681
+mnist        pca2   LSCP                     success            0.7268961884696419
+mnist        pca2   LODA                     success            0.7535254261635701
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    1.5s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.2s finished
+RandomForestRegressor()
+
+mnist        pca2   SUOD                     timeout            None
+mnist        pca2   XGBOD                    requires_labeled_outliers None
+mnist        pca2   AutoEncoder              success            0.6377280453936027
+mnist        pca2   VAE                      success            0.7056628280022984
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+mnist        pca2   SO_GAAL                  success            0.7606690528634361
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+mnist        pca2   MO_GAAL                  success            0.7471045417544531
+mnist        pca2   DeepSVDD                 success            0.7087513167975483
+mnist        pca2   AnoGAN                   success            0.6590541802336718
+mnist        pca2   ALAD                     success            0.5120486975675158
+Epoch 10/50, Loss: 7.261744022369385
+Epoch 20/50, Loss: 6.44653091430664
+Epoch 30/50, Loss: 5.914597225189209
+Epoch 40/50, Loss: 5.699077415466308
+Epoch 50/50, Loss: 4.459288120269775
+mnist        pca2   AE1SVM                   success            0.7442868942731279
+mnist        pca2   DevNet                   requires_labeled_outliers None
+mnist        pca2   RGraph                   timeout            None
+mnist        pca2   LUNAR                    success            0.6784859222371195

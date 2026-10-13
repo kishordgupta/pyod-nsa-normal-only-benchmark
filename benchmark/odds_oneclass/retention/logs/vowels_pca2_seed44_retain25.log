@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset vowels --results benchmark/odds_oneclass/retention/raw/vowels_pca2_seed44_retain25.jsonl --seed 44 --representation pca2 --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.25
+vowels       pca2   NSA/fixed                success            0.23436944937833037
+vowels       pca2   NSA/variable             success            0.644582593250444
+vowels       pca2   NSA/coverage             success            0.32317939609236235
+vowels       pca2   NSA/grid                 success            0.6441385435168738
+vowels       pca2   NSA/hierarchical         success            0.472291296625222
+vowels       pca2   NSA/voronoi              success            0.6697158081705151
+vowels       pca2   NSA/deterministic        success            0.28223801065719356
+vowels       pca2   NSA/suppressed           success            0.6587921847246891
+vowels       pca2   NSA/dual                 success            0.6408525754884548
+vowels       pca2   NSA/annealed             success            0.2516873889875666
+vowels       pca2   NSA/binary/hamming       error              None
+vowels       pca2   NSA/binary/rcontiguous   error              None
+vowels       pca2   NSA/binary/rchunk        error              None
+vowels       pca2   IForest                  success            0.6078152753108348
+vowels       pca2   ECOD                     success            0.3178507992895204
+vowels       pca2   OCSVM                    success            0.5922735346358792
+vowels       pca2   KNN                      success            0.800177619893428
+vowels       pca2   ABOD                     success            0.7325044404973358

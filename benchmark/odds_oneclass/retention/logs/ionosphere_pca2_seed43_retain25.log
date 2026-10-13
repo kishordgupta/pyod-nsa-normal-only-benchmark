@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset ionosphere --results benchmark/odds_oneclass/retention/raw/ionosphere_pca2_seed43_retain25.jsonl --seed 43 --representation pca2 --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.25
+ionosphere   pca2   NSA/fixed                success            0.7257080610021787
+ionosphere   pca2   NSA/variable             success            0.7481481481481482
+ionosphere   pca2   NSA/coverage             success            0.7498910675381264
+ionosphere   pca2   NSA/grid                 success            0.7453159041394335
+ionosphere   pca2   NSA/hierarchical         success            0.710239651416122
+ionosphere   pca2   NSA/voronoi              success            0.7636165577342048
+ionosphere   pca2   NSA/deterministic        success            0.691285403050109
+ionosphere   pca2   NSA/suppressed           success            0.7607843137254902
+ionosphere   pca2   NSA/dual                 success            0.7252723311546841
+ionosphere   pca2   NSA/annealed             success            0.6389978213507626
+ionosphere   pca2   NSA/binary/hamming       error              None
+ionosphere   pca2   NSA/binary/rcontiguous   error              None
+ionosphere   pca2   NSA/binary/rchunk        error              None
+ionosphere   pca2   IForest                  success            0.59760348583878
+ionosphere   pca2   ECOD                     success            0.38540305010893244
+ionosphere   pca2   OCSVM                    success            0.7459694989106754
+ionosphere   pca2   KNN                      success            0.6904139433551197
+ionosphere   pca2   ABOD                     success            0.7490196078431373

@@ -1,0 +1,182 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset wbc --results benchmark/odds_oneclass/full_retention/raw/wbc_native_seed46_retain25.jsonl --seed 46 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.25 --method-timeout 15.0 --method-filter all
+wbc          native NSA/fixed                success            0.013020833333333356
+wbc          native NSA/variable             success            0.08506944444444443
+wbc          native NSA/coverage             success            0.08506944444444443
+wbc          native NSA/grid                 success            0.09027777777777776
+wbc          native NSA/hierarchical         success            0.017361111111111105
+wbc          native NSA/voronoi              requires_2d_or_3d  None
+wbc          native NSA/deterministic        requires_2d        None
+wbc          native NSA/suppressed           success            0.08593749999999999
+wbc          native NSA/dual                 success            0.9895833333333334
+wbc          native NSA/annealed             success            0.012152777777777776
+wbc          native NSA/binary/hamming       success            0.73828125
+wbc          native NSA/binary/rcontiguous   success            0.31857638888888895
+wbc          native NSA/binary/rchunk        success            0.7821180555555556
+wbc          native ECOD                     success            0.9635416666666666
+wbc          native ABOD                     success            0.9861111111111112
+wbc          native COPOD                    success            0.9861111111111112
+wbc          native MAD                      requires_1d        None
+wbc          native SOS                      success            0.5850694444444445
+wbc          native QMCD                     success            0.09635416666666666
+wbc          native KDE                      success            0.9800347222222222
+wbc          native Sampling                 success            0.9800347222222222
+wbc          native GMM                      success            0.9817708333333333
+wbc          native PCA                      success            0.9878472222222222
+wbc          native KPCA                     success            0.9852430555555555
+wbc          native MCD                      success            0.984375
+wbc          native CD                       success            0.9661458333333333
+wbc          native OCSVM                    success            0.9869791666666667
+wbc          native LMDD                     success            0.9678819444444445
+wbc          native LOF                      success            0.9869791666666666
+wbc          native COF                      success            0.9487847222222222
+wbc          native CBLOF                    timeout            None
+wbc          native LOCI                     timeout            None
+wbc          native HBOS                     timeout            None
+wbc          native HDBSCAN                  success            0.48307291666666663
+wbc          native KNN                      success            0.9852430555555556
+wbc          native SOD                      timeout            None
+wbc          native ROD                      timeout            None
+wbc          native IForest                  success            0.9835069444444445
+wbc          native INNE                     success            0.9869791666666666
+wbc          native DIF                      success            0.8489583333333334
+wbc          native FeatureBagging           success            0.9869791666666666
+wbc          native LSCP                     success            0.9817708333333334
+wbc          native LODA                     success            0.959201388888889
+wbc          native SUOD                     timeout            None
+wbc          native XGBOD                    requires_labeled_outliers None
+wbc          native AutoEncoder              timeout            None
+wbc          native VAE                      success            0.986111111111111
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+wbc          native SO_GAAL                  success            0.03472222222222224
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+wbc          native MO_GAAL                  success            0.061631944444444434
+wbc          native DeepSVDD                 success            0.9635416666666666
+wbc          native AnoGAN                   success            0.9869791666666666
+wbc          native ALAD                     success            0.7664930555555556
+Epoch 10/50, Loss: 8.207159519195557
+Epoch 20/50, Loss: 11.148770332336426
+Epoch 30/50, Loss: 9.659016132354736
+Epoch 40/50, Loss: 8.096150159835815
+Epoch 50/50, Loss: 7.80488920211792
+wbc          native AE1SVM                   success            0.9895833333333334
+wbc          native DevNet                   requires_labeled_outliers None
+wbc          native RGraph                   timeout            None
+wbc          native LUNAR                    success            0.9817708333333333

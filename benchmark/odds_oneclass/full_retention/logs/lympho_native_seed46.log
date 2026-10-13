@@ -1,0 +1,188 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset lympho --results benchmark/odds_oneclass/full_retention/raw/lympho_native_seed46.jsonl --seed 46 --representation native --train-cap 600 --test-cap 2000 --train-fraction 1.0 --method-timeout 15.0 --method-filter all
+lympho       native NSA/fixed                success            0.4396551724137931
+lympho       native NSA/variable             success            0.6810344827586207
+lympho       native NSA/coverage             success            0.6810344827586207
+lympho       native NSA/grid                 success            0.4396551724137931
+lympho       native NSA/hierarchical         success            0.008620689655172431
+lympho       native NSA/voronoi              requires_2d_or_3d  None
+lympho       native NSA/deterministic        requires_2d        None
+lympho       native NSA/suppressed           success            0.5172413793103448
+lympho       native NSA/dual                 success            0.7241379310344828
+lympho       native NSA/annealed             success            0.4827586206896552
+lympho       native NSA/binary/hamming       success            0.49137931034482757
+lympho       native NSA/binary/rcontiguous   success            0.6939655172413792
+lympho       native NSA/binary/rchunk        success            0.7241379310344829
+lympho       native ECOD                     success            1.0
+lympho       native ABOD                     success            0.9568965517241379
+lympho       native COPOD                    success            1.0
+lympho       native MAD                      requires_1d        None
+lympho       native SOS                      success            0.9827586206896552
+lympho       native QMCD                     success            0.03448275862068967
+lympho       native KDE                      success            0.9482758620689655
+lympho       native Sampling                 success            0.9741379310344828
+lympho       native GMM                      success            0.8793103448275862
+lympho       native PCA                      success            0.9827586206896552
+lympho       native KPCA                     success            0.9568965517241379
+lympho       native MCD                      success            0.8879310344827587
+lympho       native CD                       success            0.7758620689655172
+lympho       native OCSVM                    success            0.9741379310344828
+lympho       native LMDD                     success            0.9913793103448275
+lympho       native LOF                      success            0.9741379310344828
+lympho       native COF                      success            0.9137931034482758
+lympho       native CBLOF                    success            0.9741379310344828
+lympho       native LOCI                     success            0.8706896551724138
+lympho       native HBOS                     success            1.0
+lympho       native HDBSCAN                  success            0.935344827586207
+lympho       native KNN                      success            0.9568965517241379
+lympho       native SOD                      success            0.8448275862068966
+lympho       native ROD                      success            1.0
+lympho       native IForest                  success            1.0
+lympho       native INNE                     success            0.9827586206896551
+lympho       native DIF                      success            0.9568965517241379
+lympho       native FeatureBagging           success            0.9655172413793103
+lympho       native LSCP                     success            0.9913793103448275
+lympho       native LODA                     success            0.025862068965517238
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.3s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+RandomForestRegressor()
+
+
+lympho       native SUOD                     success            1.0
+lympho       native XGBOD                    requires_labeled_outliers None
+lympho       native AutoEncoder              success            0.9827586206896552
+lympho       native VAE                      success            0.9913793103448275
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+lympho       native SO_GAAL                  success            0.5258620689655172
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+lympho       native MO_GAAL                  success            0.46551724137931033
+lympho       native DeepSVDD                 success            1.0
+lympho       native AnoGAN                   success            1.0
+lympho       native ALAD                     success            0.5775862068965517
+Epoch 10/50, Loss: 9.056236108144125
+Epoch 20/50, Loss: 10.496926625569662
+Epoch 30/50, Loss: 9.393329620361328
+Epoch 40/50, Loss: 9.02219263712565
+Epoch 50/50, Loss: 8.05344820022583
+lympho       native AE1SVM                   success            0.9913793103448275
+lympho       native DevNet                   requires_labeled_outliers None
+lympho       native RGraph                   success            0.5086206896551724
+lympho       native LUNAR                    success            0.9913793103448275

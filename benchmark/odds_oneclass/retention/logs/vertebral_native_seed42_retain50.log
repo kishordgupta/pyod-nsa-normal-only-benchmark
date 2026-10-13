@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset vertebral --results benchmark/odds_oneclass/retention/raw/vertebral_native_seed42_retain50.jsonl --seed 42 --representation native --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.5
+vertebral    native NSA/fixed                success            0.7807539682539683
+vertebral    native NSA/variable             success            0.5297619047619048
+vertebral    native NSA/coverage             success            0.5565476190476191
+vertebral    native NSA/grid                 success            0.5823412698412699
+vertebral    native NSA/hierarchical         success            0.3194444444444444
+vertebral    native NSA/voronoi              requires_2d_or_3d  None
+vertebral    native NSA/deterministic        requires_2d        None
+vertebral    native NSA/suppressed           success            0.6061507936507936
+vertebral    native NSA/dual                 success            0.4851190476190476
+vertebral    native NSA/annealed             success            0.5724206349206349
+vertebral    native NSA/binary/hamming       success            0.7544642857142857
+vertebral    native NSA/binary/rcontiguous   error              None
+vertebral    native NSA/binary/rchunk        error              None
+vertebral    native IForest                  success            0.4087301587301587
+vertebral    native ECOD                     success            0.4732142857142857
+vertebral    native OCSVM                    success            0.5376984126984127
+vertebral    native KNN                      success            0.47916666666666663
+vertebral    native ABOD                     success            0.5029761904761905

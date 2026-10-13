@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset cardio --results benchmark/odds_oneclass/retention/raw/cardio_native_seed44_retain75.jsonl --seed 44 --representation native --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.75
+cardio       native NSA/fixed                success            0.4001939237233355
+cardio       native NSA/variable             success            0.8155785391079509
+cardio       native NSA/coverage             success            0.8155785391079509
+cardio       native NSA/grid                 success            0.7747899159663866
+cardio       native NSA/hierarchical         success            0.1231631113984055
+cardio       native NSA/voronoi              requires_2d_or_3d  None
+cardio       native NSA/deterministic        requires_2d        None
+cardio       native NSA/suppressed           success            0.79045464339582
+cardio       native NSA/dual                 success            0.7557207498383969
+cardio       native NSA/annealed             success            0.1550743374272786
+cardio       native NSA/binary/hamming       success            0.4292070674423616
+cardio       native NSA/binary/rcontiguous   success            0.6671083818142642
+cardio       native NSA/binary/rchunk        success            0.6037168713639303
+cardio       native IForest                  success            0.9449903038138332
+cardio       native ECOD                     success            0.9360267183796596
+cardio       native OCSVM                    success            0.9596207713854772
+cardio       native KNN                      success            0.934453781512605
+cardio       native ABOD                     success            0.9326869209222151

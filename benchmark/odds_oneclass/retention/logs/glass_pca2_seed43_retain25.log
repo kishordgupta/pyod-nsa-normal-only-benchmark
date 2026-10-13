@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset glass --results benchmark/odds_oneclass/retention/raw/glass_pca2_seed43_retain25.jsonl --seed 43 --representation pca2 --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.25
+glass        pca2   NSA/fixed                success            0.7713414634146342
+glass        pca2   NSA/variable             success            0.9359756097560976
+glass        pca2   NSA/coverage             success            0.9481707317073171
+glass        pca2   NSA/grid                 success            0.9329268292682927
+glass        pca2   NSA/hierarchical         success            0.9115853658536586
+glass        pca2   NSA/voronoi              success            0.9573170731707318
+glass        pca2   NSA/deterministic        success            0.9054878048780488
+glass        pca2   NSA/suppressed           success            0.9390243902439024
+glass        pca2   NSA/dual                 success            0.9542682926829269
+glass        pca2   NSA/annealed             success            0.951219512195122
+glass        pca2   NSA/binary/hamming       error              None
+glass        pca2   NSA/binary/rcontiguous   error              None
+glass        pca2   NSA/binary/rchunk        error              None
+glass        pca2   IForest                  success            0.7835365853658537
+glass        pca2   ECOD                     success            0.7134146341463414
+glass        pca2   OCSVM                    success            0.9329268292682927
+glass        pca2   KNN                      success            0.9176829268292682
+glass        pca2   ABOD                     success            0.9054878048780488

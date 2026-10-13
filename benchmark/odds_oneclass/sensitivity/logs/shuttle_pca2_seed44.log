@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset shuttle --results benchmark/odds_oneclass/sensitivity/raw/shuttle_pca2_seed44.jsonl --seed 44 --representation pca2 --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all
+shuttle      pca2   NSA/fixed                success            0.9716288020003692
+shuttle      pca2   NSA/variable             success            0.9765280492259489
+shuttle      pca2   NSA/coverage             success            0.9774167674006122
+shuttle      pca2   NSA/grid                 success            0.9764452026164466
+shuttle      pca2   NSA/hierarchical         success            0.9760761586286626
+shuttle      pca2   NSA/voronoi              success            0.9793674284788987
+shuttle      pca2   NSA/deterministic        success            0.9695463394978743
+shuttle      pca2   NSA/suppressed           success            0.971014983939055
+shuttle      pca2   NSA/dual                 success            0.9894897778581139
+shuttle      pca2   NSA/annealed             success            0.9755489529318286
+shuttle      pca2   NSA/binary/hamming       error              None
+shuttle      pca2   NSA/binary/rcontiguous   error              None
+shuttle      pca2   NSA/binary/rchunk        error              None
+shuttle      pca2   IForest                  success            0.9816005211804889
+shuttle      pca2   ECOD                     success            0.9577953010909391
+shuttle      pca2   OCSVM                    success            0.9851817541639836
+shuttle      pca2   KNN                      success            0.9910262058888877
+shuttle      pca2   ABOD                     success            0.9918546719839126

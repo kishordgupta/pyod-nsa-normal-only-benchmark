@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset pima --results benchmark/odds_oneclass/retention/raw/pima_pca2_seed43_retain50.jsonl --seed 43 --representation pca2 --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.5
+pima         pca2   NSA/fixed                success            0.45636304459013344
+pima         pca2   NSA/variable             success            0.6143581159622449
+pima         pca2   NSA/coverage             success            0.6476496024550147
+pima         pca2   NSA/grid                 success            0.6106383968010415
+pima         pca2   NSA/hierarchical         success            0.660250151113591
+pima         pca2   NSA/voronoi              success            0.6215650718370763
+pima         pca2   NSA/deterministic        success            0.601153112939973
+pima         pca2   NSA/suppressed           success            0.6074766355140186
+pima         pca2   NSA/dual                 success            0.6282605663272423
+pima         pca2   NSA/annealed             success            0.5880875993862463
+pima         pca2   NSA/binary/hamming       error              None
+pima         pca2   NSA/binary/rcontiguous   error              None
+pima         pca2   NSA/binary/rchunk        error              None
+pima         pca2   IForest                  success            0.7216720137629608
+pima         pca2   ECOD                     success            0.6249825638164317
+pima         pca2   OCSVM                    success            0.7172548472590319
+pima         pca2   KNN                      success            0.7196726647138141
+pima         pca2   ABOD                     success            0.6877760729064956

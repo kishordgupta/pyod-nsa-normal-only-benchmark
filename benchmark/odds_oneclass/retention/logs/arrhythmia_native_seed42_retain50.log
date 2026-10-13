@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset arrhythmia --results benchmark/odds_oneclass/retention/raw/arrhythmia_native_seed42_retain50.jsonl --seed 42 --representation native --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.5
+arrhythmia   native NSA/fixed                success            0.27866004962779156
+arrhythmia   native NSA/variable             success            0.3382133995037221
+arrhythmia   native NSA/coverage             success            0.3382133995037221
+arrhythmia   native NSA/grid                 success            0.3225806451612903
+arrhythmia   native NSA/hierarchical         success            0.23995037220843674
+arrhythmia   native NSA/voronoi              requires_2d_or_3d  None
+arrhythmia   native NSA/deterministic        requires_2d        None
+arrhythmia   native NSA/suppressed           success            0.3382133995037221
+arrhythmia   native NSA/dual                 success            0.5838709677419355
+arrhythmia   native NSA/annealed             success            0.23846153846153847
+arrhythmia   native NSA/binary/hamming       success            0.48511166253101734
+arrhythmia   native NSA/binary/rcontiguous   success            0.4380893300248139
+arrhythmia   native NSA/binary/rchunk        success            0.6255583126550869
+arrhythmia   native IForest                  success            0.8121588089330025
+arrhythmia   native ECOD                     success            0.8116625310173697
+arrhythmia   native OCSVM                    success            0.7781637717121588
+arrhythmia   native KNN                      success            0.7965260545905707
+arrhythmia   native ABOD                     success            0.7558312655086848

@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset vertebral --results benchmark/odds_oneclass/retention/raw/vertebral_pca2_seed43_retain75.jsonl --seed 43 --representation pca2 --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.75
+vertebral    pca2   NSA/fixed                success            0.3551587301587302
+vertebral    pca2   NSA/variable             success            0.2926587301587302
+vertebral    pca2   NSA/coverage             success            0.27380952380952384
+vertebral    pca2   NSA/grid                 success            0.2926587301587302
+vertebral    pca2   NSA/hierarchical         success            0.3204365079365079
+vertebral    pca2   NSA/voronoi              success            0.3204365079365079
+vertebral    pca2   NSA/deterministic        success            0.3740079365079365
+vertebral    pca2   NSA/suppressed           success            0.2609126984126984
+vertebral    pca2   NSA/dual                 success            0.31547619047619047
+vertebral    pca2   NSA/annealed             success            0.28968253968253965
+vertebral    pca2   NSA/binary/hamming       error              None
+vertebral    pca2   NSA/binary/rcontiguous   error              None
+vertebral    pca2   NSA/binary/rchunk        error              None
+vertebral    pca2   IForest                  success            0.24900793650793648
+vertebral    pca2   ECOD                     success            0.2728174603174603
+vertebral    pca2   OCSVM                    success            0.34325396825396826
+vertebral    pca2   KNN                      success            0.2956349206349206
+vertebral    pca2   ABOD                     success            0.31547619047619047

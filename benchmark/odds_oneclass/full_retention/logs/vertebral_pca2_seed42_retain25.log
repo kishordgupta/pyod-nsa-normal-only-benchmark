@@ -1,0 +1,193 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset vertebral --results benchmark/odds_oneclass/full_retention/raw/vertebral_pca2_seed42_retain25.jsonl --seed 42 --representation pca2 --train-cap 600 --test-cap 2000 --train-fraction 0.25 --method-timeout 15.0 --method-filter all
+vertebral    pca2   NSA/fixed                success            0.4107142857142857
+vertebral    pca2   NSA/variable             success            0.3402777777777778
+vertebral    pca2   NSA/coverage             success            0.3819444444444444
+vertebral    pca2   NSA/grid                 success            0.35515873015873023
+vertebral    pca2   NSA/hierarchical         success            0.35912698412698413
+vertebral    pca2   NSA/voronoi              success            0.3323412698412698
+vertebral    pca2   NSA/deterministic        success            0.36607142857142855
+vertebral    pca2   NSA/suppressed           success            0.3700396825396825
+vertebral    pca2   NSA/dual                 success            0.3531746031746032
+vertebral    pca2   NSA/annealed             success            0.4196428571428571
+vertebral    pca2   NSA/binary/hamming       error              None
+vertebral    pca2   NSA/binary/rcontiguous   error              None
+vertebral    pca2   NSA/binary/rchunk        error              None
+vertebral    pca2   ECOD                     success            0.33531746031746035
+vertebral    pca2   ABOD                     success            0.34424603174603174
+vertebral    pca2   COPOD                    success            0.24751984126984125
+vertebral    pca2   MAD                      requires_1d        None
+vertebral    pca2   SOS                      success            0.4176587301587302
+vertebral    pca2   QMCD                     success            0.40178571428571425
+vertebral    pca2   KDE                      success            0.38591269841269843
+vertebral    pca2   Sampling                 success            0.49702380952380953
+vertebral    pca2   GMM                      success            0.3819444444444444
+vertebral    pca2   PCA                      success            0.5724206349206349
+vertebral    pca2   KPCA                     success            0.3829365079365079
+vertebral    pca2   MCD                      success            0.37996031746031744
+vertebral    pca2   CD                       success            0.38591269841269843
+vertebral    pca2   OCSVM                    success            0.38988095238095233
+vertebral    pca2   LMDD                     success            0.4563492063492064
+vertebral    pca2   LOF                      success            0.37549603174603174
+vertebral    pca2   COF                      success            0.39583333333333337
+vertebral    pca2   CBLOF                    success            0.3839285714285714
+vertebral    pca2   LOCI                     timeout            None
+vertebral    pca2   HBOS                     success            0.38591269841269843
+vertebral    pca2   HDBSCAN                  success            0.5426587301587301
+vertebral    pca2   KNN                      success            0.41170634920634924
+vertebral    pca2   SOD                      timeout            None
+Exception ignored on calling ctypes callback function: <function ExecutionEngine._raw_object_cache_notify at 0x11256fe20>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/llvmlite/binding/executionengine.py", line 178, in _raw_object_cache_notify
+    def _raw_object_cache_notify(self, data):
+
+  File "benchmark/odds_oneclass/runner.py", line 46, in _on_alarm
+    raise FitTimeout("per-method wall-time budget exceeded")
+FitTimeout: per-method wall-time budget exceeded
+vertebral    pca2   ROD                      success            0.3948412698412699
+vertebral    pca2   IForest                  success            0.34226190476190477
+vertebral    pca2   INNE                     success            0.3546626984126984
+vertebral    pca2   DIF                      success            0.3829365079365079
+vertebral    pca2   FeatureBagging           success            0.41964285714285715
+vertebral    pca2   LSCP                     success            0.3839285714285714
+vertebral    pca2   LODA                     success            0.4623015873015874
+[Parallel(n_jobs=1)]: Done   0 out of   1 | elapsed:    1.9s remaining:    1.9s
+RandomForestRegressor()
+
+vertebral    pca2   SUOD                     timeout            None
+vertebral    pca2   XGBOD                    requires_labeled_outliers None
+vertebral    pca2   AutoEncoder              error              None
+vertebral    pca2   VAE                      error              None
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+vertebral    pca2   SO_GAAL                  success            0.5317460317460317
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+vertebral    pca2   MO_GAAL                  success            0.39384920634920634
+vertebral    pca2   DeepSVDD                 success            0.4077380952380952
+vertebral    pca2   AnoGAN                   success            0.45833333333333337
+vertebral    pca2   ALAD                     success            0.37202380952380953
+Epoch 10/50, Loss: 8.050869941711426
+Epoch 20/50, Loss: 10.082706451416016
+Epoch 30/50, Loss: 7.562602519989014
+Epoch 40/50, Loss: 6.67490291595459
+Epoch 50/50, Loss: 8.666938781738281
+vertebral    pca2   AE1SVM                   success            0.5099206349206349
+vertebral    pca2   DevNet                   requires_labeled_outliers None
+vertebral    pca2   RGraph                   success            0.5362103174603174
+vertebral    pca2   LUNAR                    success            0.4196428571428571

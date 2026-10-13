@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset pima --results benchmark/odds_oneclass/sensitivity/raw/pima_native_seed43.jsonl --seed 43 --representation native --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all
+pima         native NSA/fixed                success            0.48035523317989487
+pima         native NSA/variable             success            0.7009345794392524
+pima         native NSA/coverage             success            0.7009345794392524
+pima         native NSA/grid                 success            0.7417584972334588
+pima         native NSA/hierarchical         success            0.5544706374668712
+pima         native NSA/voronoi              requires_2d_or_3d  None
+pima         native NSA/deterministic        requires_2d        None
+pima         native NSA/suppressed           success            0.6876365834379503
+pima         native NSA/dual                 success            0.5998977077230669
+pima         native NSA/annealed             success            0.4102385269912122
+pima         native NSA/binary/hamming       error              None
+pima         native NSA/binary/rcontiguous   error              None
+pima         native NSA/binary/rchunk        error              None
+pima         native IForest                  success            0.756404891430697
+pima         native ECOD                     success            0.6812665643743899
+pima         native OCSVM                    success            0.7382247640303157
+pima         native KNN                      success            0.7730506346770818
+pima         native ABOD                     success            0.7578927790951783

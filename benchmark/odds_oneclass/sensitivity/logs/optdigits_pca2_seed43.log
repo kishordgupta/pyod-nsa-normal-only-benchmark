@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset optdigits --results benchmark/odds_oneclass/sensitivity/raw/optdigits_pca2_seed43.jsonl --seed 43 --representation pca2 --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all
+optdigits    pca2   NSA/fixed                success            0.30119818331211456
+optdigits    pca2   NSA/variable             success            0.2859477566793979
+optdigits    pca2   NSA/coverage             success            0.2668328051213984
+optdigits    pca2   NSA/grid                 success            0.2695777013300106
+optdigits    pca2   NSA/hierarchical         success            0.22915368709989073
+optdigits    pca2   NSA/voronoi              success            0.2440068261234662
+optdigits    pca2   NSA/deterministic        success            0.3099204521855333
+optdigits    pca2   NSA/suppressed           success            0.2667605710106455
+optdigits    pca2   NSA/dual                 success            0.2503363400781934
+optdigits    pca2   NSA/annealed             success            0.2244674991647931
+optdigits    pca2   NSA/binary/hamming       error              None
+optdigits    pca2   NSA/binary/rcontiguous   error              None
+optdigits    pca2   NSA/binary/rchunk        error              None
+optdigits    pca2   IForest                  success            0.4647994149037029
+optdigits    pca2   ECOD                     success            0.30169930745546314
+optdigits    pca2   OCSVM                    success            0.624274272918529
+optdigits    pca2   KNN                      success            0.653393648815812
+optdigits    pca2   ABOD                     success            0.6474704517340701

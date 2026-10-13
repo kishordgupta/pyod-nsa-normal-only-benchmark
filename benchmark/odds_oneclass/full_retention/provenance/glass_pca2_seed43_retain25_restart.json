@@ -1,0 +1,42 @@
+{
+  "cell": "glass_pca2_seed43_retain25",
+  "command": "COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset glass --results benchmark/odds_oneclass/full_retention/raw/glass_pca2_seed43_retain25.jsonl --seed 43 --representation pca2 --train-cap 600 --test-cap 2000 --train-fraction 0.25 --method-timeout 15.0 --method-filter all",
+  "commands_identical": true,
+  "final": {
+    "all_fit_outliers_zero": true,
+    "fit_index_ordered_sha256": "1f8298b90246727eea93c2eef10f2c5db93609460d1581cece0bf1c9e32cb21f",
+    "fit_index_sha256": "c77dc1fdcb83645746a0402de1f748a7a364acb43c9d6a54eb7f92bfa613bfb9",
+    "log_sha256": "6834c69b6a45f98bc56907fb4ed85d9c1319d7ee99dfc25e58780d42e0cfd785",
+    "raw_sha256": "b64e6943bae6f9374da3c869bfa3dab37d70b2cdddafd693f96035f1b6d3c391",
+    "record_count": 56,
+    "test_index_sha256": "fe8fb72db8e4edba3be44187adb44b58220a61b3085cc0eec1b4d80bbb19e8a2",
+    "unique_method_count": 56
+  },
+  "first_invocation": {
+    "completed_record_count": 36,
+    "ignored_fit_timeout_observed": true,
+    "last_record_method": "SOD",
+    "last_record_status": "timeout",
+    "llvmlite_cleanup_attribute_error_observed": true,
+    "log_segment_bytes": 4246,
+    "log_segment_sha256": "3c14ea99248684440778d49660ce31910e83246ab722c23be052f32bbff4fcc5",
+    "raw_prefix_bytes": 37889,
+    "raw_prefix_sha256": "353666991d2c106a3bb1960add48dbb9b8db65568bbc4c42485d8b17a00826bc"
+  },
+  "limits": [
+    "The saved raw and log artifacts do not contain the first process exit code.",
+    "The log does not establish which method caused the first process to end.",
+    "No score or failure outcome was imputed from the restart itself."
+  ],
+  "log_file": "logs/glass_pca2_seed43_retain25.log",
+  "observed_invocations": 2,
+  "purpose": "process restart provenance only; primary method outcomes remain authoritative",
+  "raw_file": "raw/glass_pca2_seed43_retain25.jsonl",
+  "resumed_invocation": {
+    "first_new_record_method": "ROD",
+    "first_new_record_status": "timeout",
+    "log_segment_bytes": 4127,
+    "log_segment_sha256": "eab29a611418b8e653e837224f7dcd8f6aa2cbb2531a89110b3acc195ab146ca"
+  },
+  "schema_version": 1
+}

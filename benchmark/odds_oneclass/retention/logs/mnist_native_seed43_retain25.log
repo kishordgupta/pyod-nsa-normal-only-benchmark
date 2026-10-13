@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset mnist --results benchmark/odds_oneclass/retention/raw/mnist_native_seed43_retain25.jsonl --seed 43 --representation native --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.25
+mnist        native NSA/fixed                success            0.28467666634744304
+mnist        native NSA/variable             success            0.5900779304730895
+mnist        native NSA/coverage             success            0.5900779304730895
+mnist        native NSA/grid                 success            0.5846670896380004
+mnist        native NSA/hierarchical         success            0.44176762114537443
+mnist        native NSA/voronoi              requires_2d_or_3d  None
+mnist        native NSA/deterministic        requires_2d        None
+mnist        native NSA/suppressed           success            0.5825871480559279
+mnist        native NSA/dual                 error              None
+mnist        native NSA/annealed             success            0.3404909260678031
+mnist        native NSA/binary/hamming       success            0.6357917544531699
+mnist        native NSA/binary/rcontiguous   success            0.5605696945029688
+mnist        native NSA/binary/rchunk        success            0.4290859629381345
+mnist        native IForest                  success            0.8930610754644704
+mnist        native ECOD                     success            0.7327679084466578
+mnist        native OCSVM                    success            0.9153837866309136
+mnist        native KNN                      success            0.9159793382493775
+mnist        native ABOD                     success            0.9110533183298218

@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+local_runs/
+reanalysis/
+vendor/pyod/notebooks/data/
+*.download
+.env
+.env.*
+*.pem
+*.key

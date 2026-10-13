@@ -1,0 +1,48 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset satellite --results benchmark/odds_oneclass/full_retention/raw/satellite_pca2_seed42_retain25.jsonl --seed 42 --representation pca2 --train-cap 600 --test-cap 2000 --train-fraction 0.25 --method-timeout 15.0 --method-filter all
+satellite    pca2   NSA/fixed                success            0.45188277259604703
+satellite    pca2   NSA/variable             success            0.7465647901399067
+satellite    pca2   NSA/coverage             success            0.749072377674143
+satellite    pca2   NSA/grid                 success            0.6682073062402842
+satellite    pca2   NSA/hierarchical         success            0.6358029831963876
+satellite    pca2   NSA/voronoi              success            0.7425512621215486
+satellite    pca2   NSA/deterministic        success            0.4921938614997409
+satellite    pca2   NSA/suppressed           success            0.6549395310533718
+satellite    pca2   NSA/dual                 success            0.834271365386039
+satellite    pca2   NSA/annealed             success            0.5237029480346436
+satellite    pca2   NSA/binary/hamming       error              None
+satellite    pca2   NSA/binary/rcontiguous   error              None
+satellite    pca2   NSA/binary/rchunk        error              None
+satellite    pca2   ECOD                     success            0.5503900177659338
+satellite    pca2   ABOD                     success            0.8445203197868087
+satellite    pca2   COPOD                    success            0.6554646439410763
+satellite    pca2   MAD                      requires_1d        None
+satellite    pca2   SOS                      success            0.5094601284328966
+satellite    pca2   QMCD                     success            0.466551234362277
+satellite    pca2   KDE                      success            0.8586844881190319
+satellite    pca2   Sampling                 success            0.8265404082463543
+satellite    pca2   GMM                      success            0.6503846972388778
+satellite    pca2   PCA                      success            0.674659023613887
+satellite    pca2   KPCA                     success            0.8514520412317714
+satellite    pca2   MCD                      success            0.6573638407728181
+satellite    pca2   CD                       success            0.5023919239025835
+satellite    pca2   OCSVM                    success            0.8391061051891332
+satellite    pca2   LMDD                     timeout            None
+satellite    pca2   LOF                      success            0.7977343807831816
+satellite    pca2   COF                      success            0.5394956603005403
+Exception ignored on calling ctypes callback function: <function ExecutionEngine._raw_object_cache_notify at 0x10fde7e20>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/llvmlite/binding/executionengine.py", line 178, in _raw_object_cache_notify
+    def _raw_object_cache_notify(self, data):
+
+  File "benchmark/odds_oneclass/runner.py", line 46, in _on_alarm
+    raise FitTimeout("per-method wall-time budget exceeded")
+FitTimeout: per-method wall-time budget exceeded
+satellite    pca2   CBLOF                    success            0.8503601765489675
+Exception ignored on calling ctypes callback function: <function ExecutionEngine._raw_object_cache_notify at 0x10fde7e20>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/llvmlite/binding/executionengine.py", line 178, in _raw_object_cache_notify
+    def _raw_object_cache_notify(self, data):
+
+  File "benchmark/odds_oneclass/runner.py", line 46, in _on_alarm
+    raise FitTimeout("per-method wall-time budget exceeded")
+FitTimeout: per-method wall-time budget exceeded

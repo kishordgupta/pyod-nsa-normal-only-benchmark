@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset mnist --results benchmark/odds_oneclass/retention/raw/mnist_pca2_seed42_retain25.jsonl --seed 42 --representation pca2 --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.25
+mnist        pca2   NSA/fixed                success            0.6035332072399924
+mnist        pca2   NSA/variable             success            0.6947543574027965
+mnist        pca2   NSA/coverage             success            0.6806496600268148
+mnist        pca2   NSA/grid                 success            0.6897445412756177
+mnist        pca2   NSA/hierarchical         success            0.6365339494349742
+mnist        pca2   NSA/voronoi              success            0.6729823070293048
+mnist        pca2   NSA/deterministic        success            0.6293753591266041
+mnist        pca2   NSA/suppressed           success            0.633026479601609
+mnist        pca2   NSA/dual                 success            0.6567228500287301
+mnist        pca2   NSA/annealed             success            0.6400893028155527
+mnist        pca2   NSA/binary/hamming       error              None
+mnist        pca2   NSA/binary/rcontiguous   error              None
+mnist        pca2   NSA/binary/rchunk        error              None
+mnist        pca2   IForest                  success            0.6635701972802145
+mnist        pca2   ECOD                     success            0.6548793334610228
+mnist        pca2   OCSVM                    success            0.6950416586860755
+mnist        pca2   KNN                      success            0.700955276766903
+mnist        pca2   ABOD                     success            0.6368062871097491

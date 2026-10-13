@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset wbc --results benchmark/odds_oneclass/sensitivity/raw/wbc_native_seed44.jsonl --seed 44 --representation native --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all
+wbc          native NSA/fixed                success            0.21180555555555555
+wbc          native NSA/variable             success            0.7256944444444444
+wbc          native NSA/coverage             success            0.7256944444444444
+wbc          native NSA/grid                 success            0.7387152777777779
+wbc          native NSA/hierarchical         success            0.27777777777777773
+wbc          native NSA/voronoi              requires_2d_or_3d  None
+wbc          native NSA/deterministic        requires_2d        None
+wbc          native NSA/suppressed           success            0.7265625
+wbc          native NSA/dual                 success            0.6640625
+wbc          native NSA/annealed             success            0.4166666666666667
+wbc          native NSA/binary/hamming       success            0.4166666666666667
+wbc          native NSA/binary/rcontiguous   success            0.5859375
+wbc          native NSA/binary/rchunk        success            0.5030381944444444
+wbc          native IForest                  success            0.9375
+wbc          native ECOD                     success            0.8940972222222222
+wbc          native OCSVM                    success            0.943576388888889
+wbc          native KNN                      success            0.9296875
+wbc          native ABOD                     success            0.8958333333333333

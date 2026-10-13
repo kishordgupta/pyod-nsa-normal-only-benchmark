@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset optdigits --results benchmark/odds_oneclass/retention/raw/optdigits_native_seed43_retain50.jsonl --seed 43 --representation native --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.5
+optdigits    native NSA/fixed                success            0.6491860118644526
+optdigits    native NSA/variable             success            0.9304746684002853
+optdigits    native NSA/coverage             success            0.9304746684002853
+optdigits    native NSA/grid                 success            0.9187727424583073
+optdigits    native NSA/hierarchical         success            0.7022690540040271
+optdigits    native NSA/voronoi              requires_2d_or_3d  None
+optdigits    native NSA/deterministic        requires_2d        None
+optdigits    native NSA/suppressed           success            0.9444429395671372
+optdigits    native NSA/dual                 success            0.5727171763686106
+optdigits    native NSA/annealed             success            0.39996930050293
+optdigits    native NSA/binary/hamming       success            0.5898502045128261
+optdigits    native NSA/binary/rcontiguous   success            0.7471309514135311
+optdigits    native NSA/binary/rchunk        success            0.4320547895730061
+optdigits    native IForest                  success            0.827532031313487
+optdigits    native ECOD                     success            0.6302967919025562
+optdigits    native OCSVM                    success            0.640247040658775
+optdigits    native KNN                      success            0.8760462659479372
+optdigits    native ABOD                     success            0.8391075475616474

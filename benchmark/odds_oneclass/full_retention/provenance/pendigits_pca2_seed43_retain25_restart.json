@@ -1,0 +1,40 @@
+{
+  "cell": "pendigits_pca2_seed43_retain25",
+  "command": "COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset pendigits --results benchmark/odds_oneclass/full_retention/raw/pendigits_pca2_seed43_retain25.jsonl --seed 43 --representation pca2 --train-cap 600 --test-cap 2000 --train-fraction 0.25 --method-timeout 15.0 --method-filter all",
+  "commands_identical": true,
+  "final": {
+    "all_fit_outliers_zero": true,
+    "fit_index_ordered_sha256": "cfb195960e345db3a86ff1502f8a0ebbd5080eaba748cacbd9f5852bd95b2e1d",
+    "fit_index_sha256": "cfb195960e345db3a86ff1502f8a0ebbd5080eaba748cacbd9f5852bd95b2e1d",
+    "log_sha256": "a39e4dd4e444bc0b24568557965fa3e1680ca1dba2c0027be0880455a684b503",
+    "raw_sha256": "69f89df81c53128c9547fb934ab0cf0ec1a177de58d7c70b6974fd751423d64c",
+    "record_count": 56,
+    "test_index_sha256": "10a94d87ae2799c6c798f91a77bd8c24077b7e3500e8bda2c2e6535f61672578",
+    "unique_method_count": 56
+  },
+  "first_invocation": {
+    "completed_record_count": 30,
+    "last_record_method": "COF",
+    "last_record_status": "success",
+    "log_segment_bytes": 2761,
+    "log_segment_sha256": "0368cdb5edaf7cf77e8c6ba1700c05b5ead94398c7a8d540724bce7653d21d6b",
+    "raw_prefix_bytes": 31945,
+    "raw_prefix_sha256": "96748a8b69473f865c3e5fee607d91ad1a6722e05838b9d92ae182cc7afa5b28"
+  },
+  "limits": [
+    "The saved raw and log artifacts do not contain the first process exit code.",
+    "The log does not establish which method caused the first process to end.",
+    "No score or failure outcome was imputed from the restart itself."
+  ],
+  "log_file": "logs/pendigits_pca2_seed43_retain25.log",
+  "observed_invocations": 2,
+  "purpose": "process restart provenance only; primary method outcomes remain authoritative",
+  "raw_file": "raw/pendigits_pca2_seed43_retain25.jsonl",
+  "resumed_invocation": {
+    "first_new_record_method": "CBLOF",
+    "first_new_record_status": "success",
+    "log_segment_bytes": 4650,
+    "log_segment_sha256": "99d95da1cde2b23e1f63479e6cfb486a04e4b624f275b42dbcb2f50e727e157c"
+  },
+  "schema_version": 1
+}

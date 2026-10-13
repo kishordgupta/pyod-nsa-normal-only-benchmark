@@ -1,0 +1,19 @@
+COMMAND: <PYTHON_ENV>/bin/python benchmark/odds_oneclass/selected_runner.py --data-dir vendor/pyod/notebooks/data --dataset satellite --results benchmark/odds_oneclass/retention/raw/satellite_pca2_seed44_retain50.jsonl --seed 44 --representation pca2 --train-cap 600 --test-cap 2000 --method-timeout 15.0 --method-filter all --train-fraction 0.5
+satellite    pca2   NSA/fixed                success            0.6222645551114072
+satellite    pca2   NSA/variable             success            0.7582086479384115
+satellite    pca2   NSA/coverage             success            0.7341367329187949
+satellite    pca2   NSA/grid                 success            0.7659106891701828
+satellite    pca2   NSA/hierarchical         success            0.7219619790510031
+satellite    pca2   NSA/voronoi              success            0.7873061477533496
+satellite    pca2   NSA/deterministic        success            0.5646016081871346
+satellite    pca2   NSA/suppressed           success            0.772548624990747
+satellite    pca2   NSA/dual                 success            0.8019746095195797
+satellite    pca2   NSA/annealed             success            0.6467193167517951
+satellite    pca2   NSA/binary/hamming       error              None
+satellite    pca2   NSA/binary/rcontiguous   error              None
+satellite    pca2   NSA/binary/rchunk        error              None
+satellite    pca2   IForest                  success            0.7656735787252942
+satellite    pca2   ECOD                     success            0.5232830890517433
+satellite    pca2   OCSVM                    success            0.8034204049152416
+satellite    pca2   KNN                      success            0.8141655562958029
+satellite    pca2   ABOD                     success            0.7952973480642536
