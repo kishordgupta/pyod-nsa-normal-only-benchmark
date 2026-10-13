@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset shuttle --seed 43 --representation native --fraction 0.1 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/shuttle_native_seed43_retain10.jsonl
+shuttle      native AutoEncoder              success            0.9940162153409327
+shuttle_native_seed43_retain10 AutoEncoder success batches=10
+shuttle      native VAE                      success            0.9940576386456839
+shuttle_native_seed43_retain10 VAE success batches=30

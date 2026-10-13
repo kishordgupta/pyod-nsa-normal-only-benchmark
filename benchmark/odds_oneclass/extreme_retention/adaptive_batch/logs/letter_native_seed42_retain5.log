@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset letter --seed 42 --representation native --fraction 0.05 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/letter_native_seed42_retain5.jsonl
+letter       native AutoEncoder              success            0.5159583333333333
+letter_native_seed42_retain5 AutoEncoder success batches=10
+letter       native VAE                      success            0.47754166666666664
+letter_native_seed42_retain5 VAE success batches=30

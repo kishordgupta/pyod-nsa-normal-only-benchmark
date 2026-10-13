@@ -1,0 +1,188 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset arrhythmia --results benchmark/odds_oneclass/extreme_retention/raw/arrhythmia_pca2_seed44_retain5.jsonl --seed 44 --representation pca2 --train-cap 600 --test-cap 2000 --train-fraction 0.05 --method-timeout 15.0 --method-filter all
+arrhythmia   pca2   NSA/fixed                success            0.6466501240694789
+arrhythmia   pca2   NSA/variable             success            0.6158808933002482
+arrhythmia   pca2   NSA/coverage             success            0.616377171215881
+arrhythmia   pca2   NSA/grid                 success            0.6253101736972705
+arrhythmia   pca2   NSA/hierarchical         success            0.6481389578163772
+arrhythmia   pca2   NSA/voronoi              success            0.6270471464019851
+arrhythmia   pca2   NSA/deterministic        success            0.6245657568238214
+arrhythmia   pca2   NSA/suppressed           success            0.6188585607940447
+arrhythmia   pca2   NSA/dual                 success            0.6990074441687345
+arrhythmia   pca2   NSA/annealed             success            0.6640198511166253
+arrhythmia   pca2   NSA/binary/hamming       error              None
+arrhythmia   pca2   NSA/binary/rcontiguous   error              None
+arrhythmia   pca2   NSA/binary/rchunk        error              None
+arrhythmia   pca2   ECOD                     success            0.7673697270471465
+arrhythmia   pca2   ABOD                     success            0.7627791563275433
+arrhythmia   pca2   COPOD                    success            0.7794044665012406
+arrhythmia   pca2   MAD                      requires_1d        None
+arrhythmia   pca2   SOS                      success            0.5198511166253101
+arrhythmia   pca2   QMCD                     success            0.5535980148883375
+arrhythmia   pca2   KDE                      success            0.7086848635235732
+arrhythmia   pca2   Sampling                 error              None
+arrhythmia   pca2   GMM                      success            0.7794044665012407
+arrhythmia   pca2   PCA                      success            0.6392059553349876
+arrhythmia   pca2   KPCA                     success            0.7029776674937965
+arrhythmia   pca2   MCD                      success            0.7133995037220844
+arrhythmia   pca2   CD                       success            0.788833746898263
+arrhythmia   pca2   OCSVM                    success            0.6952853598014889
+arrhythmia   pca2   LMDD                     success            0.7877171215880894
+arrhythmia   pca2   LOF                      success            0.6940446650124069
+arrhythmia   pca2   COF                      success            0.7204714640198511
+arrhythmia   pca2   CBLOF                    success            0.7496277915632754
+arrhythmia   pca2   LOCI                     success            0.7027295285359801
+arrhythmia   pca2   HBOS                     success            0.48399503722084364
+arrhythmia   pca2   HDBSCAN                  success            0.4574441687344913
+arrhythmia   pca2   KNN                      success            0.792059553349876
+arrhythmia   pca2   SOD                      build_error        None
+arrhythmia   pca2   ROD                      success            0.721091811414392
+arrhythmia   pca2   IForest                  success            0.7668734491315138
+arrhythmia   pca2   INNE                     success            0.5109181141439205
+arrhythmia   pca2   DIF                      success            0.664516129032258
+arrhythmia   pca2   FeatureBagging           success            0.6714640198511167
+arrhythmia   pca2   LSCP                     error              None
+arrhythmia   pca2   LODA                     success            0.49032258064516127
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.3s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+RandomForestRegressor()
+
+
+arrhythmia   pca2   SUOD                     success            0.6186104218362284
+arrhythmia   pca2   XGBOD                    requires_labeled_outliers None
+arrhythmia   pca2   AutoEncoder              error              None
+arrhythmia   pca2   VAE                      error              None
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+arrhythmia   pca2   SO_GAAL                  success            0.4580645161290322
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+arrhythmia   pca2   MO_GAAL                  success            0.4595533498759305
+arrhythmia   pca2   DeepSVDD                 success            0.6272952853598015
+arrhythmia   pca2   AnoGAN                   success            0.8022332506203473
+arrhythmia   pca2   ALAD                     success            0.5357320099255583
+Epoch 10/50, Loss: 1.405100703239441
+Epoch 20/50, Loss: 6.945091247558594
+Epoch 30/50, Loss: 3.347628355026245
+Epoch 40/50, Loss: 4.456071853637695
+Epoch 50/50, Loss: 2.754746675491333
+arrhythmia   pca2   AE1SVM                   success            0.7873449131513648
+arrhythmia   pca2   DevNet                   requires_labeled_outliers None
+arrhythmia   pca2   RGraph                   success            0.3330024813895782
+arrhythmia   pca2   LUNAR                    success            0.677667493796526

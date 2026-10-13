@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset satimage-2 --seed 42 --representation pca2 --fraction 0.1 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/satimage-2_pca2_seed42_retain10.jsonl
+satimage-2   pca2   AutoEncoder              success            0.9574687921727395
+satimage-2_pca2_seed42_retain10 AutoEncoder success batches=10
+satimage-2   pca2   VAE                      success            0.9690452091767882
+satimage-2_pca2_seed42_retain10 VAE success batches=30

@@ -1,0 +1,50 @@
+{
+  "new_event_count": 4,
+  "events": [
+    {
+      "intervention_id": "20261013T021718955895Z_arrhythmia_native_seed42_retain5_pid3905",
+      "dataset": "arrhythmia",
+      "seed": 42,
+      "representation": "native",
+      "retention_pct": 5,
+      "method": "ROD",
+      "reason": "ignored_signal_callback",
+      "raw_age_seconds": 1601.018,
+      "evidence_path": "watchdog/interventions/20261013T021718955895Z_arrhythmia_native_seed42_retain5_pid3905/intervention.json"
+    },
+    {
+      "intervention_id": "20261013T021721925888Z_arrhythmia_native_seed43_retain5_pid4111",
+      "dataset": "arrhythmia",
+      "seed": 43,
+      "representation": "native",
+      "retention_pct": 5,
+      "method": "ROD",
+      "reason": "ignored_signal_callback",
+      "raw_age_seconds": 1390.376,
+      "evidence_path": "watchdog/interventions/20261013T021721925888Z_arrhythmia_native_seed43_retain5_pid4111/intervention.json"
+    },
+    {
+      "intervention_id": "20261013T021725187776Z_arrhythmia_native_seed44_retain5_pid4282",
+      "dataset": "arrhythmia",
+      "seed": 44,
+      "representation": "native",
+      "retention_pct": 5,
+      "method": "ROD",
+      "reason": "ignored_signal_callback",
+      "raw_age_seconds": 1131.618,
+      "evidence_path": "watchdog/interventions/20261013T021725187776Z_arrhythmia_native_seed44_retain5_pid4282/intervention.json"
+    },
+    {
+      "intervention_id": "20261013T021728291442Z_arrhythmia_native_seed45_retain5_pid4690",
+      "dataset": "arrhythmia",
+      "seed": 45,
+      "representation": "native",
+      "retention_pct": 5,
+      "method": "ROD",
+      "reason": "ignored_signal_callback",
+      "raw_age_seconds": 771.683,
+      "evidence_path": "watchdog/interventions/20261013T021728291442Z_arrhythmia_native_seed45_retain5_pid4690/intervention.json"
+    }
+  ],
+  "historical_events_not_reused": true
+}

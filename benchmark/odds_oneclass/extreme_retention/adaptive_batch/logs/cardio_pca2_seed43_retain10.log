@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset cardio --seed 43 --representation pca2 --fraction 0.1 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/cardio_pca2_seed43_retain10.jsonl
+cardio       pca2   AutoEncoder              success            0.7354880413703944
+cardio_pca2_seed43_retain10 AutoEncoder success batches=10
+cardio       pca2   VAE                      success            0.8931049342814048
+cardio_pca2_seed43_retain10 VAE success batches=30

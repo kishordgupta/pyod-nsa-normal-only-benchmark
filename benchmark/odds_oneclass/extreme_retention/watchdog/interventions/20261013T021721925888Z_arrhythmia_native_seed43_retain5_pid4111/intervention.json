@@ -1,0 +1,86 @@
+{
+  "action": {
+    "primary_method_timeout_seconds": 15.0,
+    "runner_fds_closed_utc": "2026-10-13T02:17:22.404538+00:00",
+    "signal": "SIGTERM",
+    "signal_sent_utc": "2026-10-13T02:17:22.035526+00:00",
+    "termination_confirmed": true
+  },
+  "after": {
+    "appended_method": "ROD",
+    "appended_status": "timeout",
+    "log_sha256": "25d4f22ce85876250d633f0914b461acc2ab2ed21bb0b3c5ab41c988083aa83b",
+    "raw_record_count": 37,
+    "raw_sha256": "17671c76ba362a4977c1bf9f54d30555d1ea525cbf06f5d07d4c3d53ac087a67"
+  },
+  "appended_row_sha256": "3e2063e2e393b8961830c0e5041c48fb055c1a7fa8eeefa850d32e585c2b2e8e",
+  "before": {
+    "evidence_kind": "ignored_signal_callback",
+    "log_sha256": "25d4f22ce85876250d633f0914b461acc2ab2ed21bb0b3c5ab41c988083aa83b",
+    "log_snapshot": "log.before.log",
+    "raw_age_seconds": 1390.376,
+    "raw_record_count": 36,
+    "raw_sha256": "a74029391d08766a384368debf4b019a69a427efbf015303e08b991ad6f98447",
+    "raw_snapshot": "raw.before.jsonl",
+    "signal_evidence_excerpt": "\nException ignored in: <function BaseContext._insert_global.<locals>.on_disposal at 0x11526a840>\nTraceback (most recent call last):\n  File \"<PYTHON_ENV>/lib/python3.12/site-packages/numba/core/typing/context.py\", line 585, in on_disposal\n    def on_disposal(wr, pop=self._globals.pop):\n\n  File \"benchmark/odds_oneclass/runner.py\", line 46, in _on_alarm\n    raise FitTimeout(\"per-method wall-time budget exceeded\")\nFitTimeout: per-method wall-time budget exceeded\n"
+  },
+  "cell": {
+    "dataset": "arrhythmia",
+    "method": "ROD",
+    "name": "arrhythmia_native_seed43_retain5",
+    "representation": "native",
+    "retention_fraction": 0.05,
+    "seed": 43
+  },
+  "completed_utc": "2026-10-13T02:17:22.719494+00:00",
+  "created_utc": "2026-10-13T02:17:21.925888+00:00",
+  "intervention_id": "20261013T021721925888Z_arrhythmia_native_seed43_retain5_pid4111",
+  "public_log_digest_scope": "before snapshot is verifiable; after.log_sha256 records the original event-time log unless its full private file hash maps to the sanitized final log",
+  "resume_state": "pending_unfiltered_sweep",
+  "schema_version": 1,
+  "state": "completed",
+  "target": {
+    "fd_identity": {
+      "1w": {
+        "command": "python3.1",
+        "inode": 32613331,
+        "path": "benchmark/odds_oneclass/extreme_retention/logs/arrhythmia_native_seed43_retain5.log"
+      },
+      "2w": {
+        "command": "python3.1",
+        "inode": 32613331,
+        "path": "benchmark/odds_oneclass/extreme_retention/logs/arrhythmia_native_seed43_retain5.log"
+      },
+      "3w": {
+        "command": "python3.1",
+        "inode": 32613340,
+        "path": "benchmark/odds_oneclass/extreme_retention/raw/arrhythmia_native_seed43_retain5.jsonl"
+      }
+    },
+    "pid": 4111,
+    "runner_argv": [
+      "<PYTHON_ENV>/bin/python",
+      "benchmark/odds_oneclass/runner.py",
+      "--data-dir",
+      "vendor/pyod/notebooks/data",
+      "--dataset",
+      "arrhythmia",
+      "--results",
+      "benchmark/odds_oneclass/extreme_retention/raw/arrhythmia_native_seed43_retain5.jsonl",
+      "--seed",
+      "43",
+      "--representation",
+      "native",
+      "--train-cap",
+      "600",
+      "--test-cap",
+      "2000",
+      "--train-fraction",
+      "0.05",
+      "--method-timeout",
+      "15.0",
+      "--method-filter",
+      "all"
+    ]
+  }
+}

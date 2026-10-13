@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset mnist --seed 42 --representation pca2 --fraction 0.05 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/mnist_pca2_seed42_retain5.jsonl
+mnist        pca2   AutoEncoder              success            0.6327661128136373
+mnist_pca2_seed42_retain5 AutoEncoder success batches=10
+mnist        pca2   VAE                      success            0.6183651359892741
+mnist_pca2_seed42_retain5 VAE success batches=30

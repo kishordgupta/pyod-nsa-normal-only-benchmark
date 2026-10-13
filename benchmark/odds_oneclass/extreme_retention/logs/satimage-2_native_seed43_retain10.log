@@ -1,0 +1,196 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset satimage-2 --results benchmark/odds_oneclass/extreme_retention/raw/satimage-2_native_seed43_retain10.jsonl --seed 43 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.1 --method-timeout 15.0 --method-filter all
+satimage-2   native NSA/fixed                success            0.12759362348178138
+satimage-2   native NSA/variable             success            0.1885121457489879
+satimage-2   native NSA/coverage             success            0.1885121457489879
+satimage-2   native NSA/grid                 success            0.16453694331983806
+satimage-2   native NSA/hierarchical         success            0.004596828609986507
+satimage-2   native NSA/voronoi              requires_2d_or_3d  None
+satimage-2   native NSA/deterministic        requires_2d        None
+satimage-2   native NSA/suppressed           success            0.18798498650472334
+satimage-2   native NSA/dual                 success            0.9833417678812416
+satimage-2   native NSA/annealed             success            0.06775050607287449
+satimage-2   native NSA/binary/hamming       success            0.18170124831309042
+satimage-2   native NSA/binary/rcontiguous   success            0.7153340080971661
+satimage-2   native NSA/binary/rchunk        success            0.6768724696356274
+satimage-2   native ECOD                     success            0.9558451417004048
+satimage-2   native ABOD                     success            0.9914389338731444
+satimage-2   native COPOD                    success            0.9685602226720648
+satimage-2   native MAD                      requires_1d        None
+satimage-2   native SOS                      success            0.5545293522267206
+satimage-2   native QMCD                     success            0.2947241902834008
+satimage-2   native KDE                      success            0.9978070175438597
+satimage-2   native Sampling                 success            0.9988402496626181
+satimage-2   native GMM                      success            0.9921558704453441
+satimage-2   native PCA                      success            0.9794829622132255
+satimage-2   native KPCA                     success            0.9974696356275303
+satimage-2   native MCD                      success            0.9957405533063428
+satimage-2   native CD                       success            0.9864836369770581
+satimage-2   native OCSVM                    success            0.9967316126855601
+satimage-2   native LMDD                     timeout            None
+satimage-2   native LOF                      success            0.99382169365722
+satimage-2   native COF                      success            0.4546221322537111
+satimage-2   native CBLOF                    success            0.9974696356275303
+satimage-2   native LOCI                     timeout            None
+satimage-2   native HBOS                     success            0.9747596153846154
+satimage-2   native HDBSCAN                  success            0.8954326923076924
+satimage-2   native KNN                      success            0.9978702766531714
+Exception ignored on calling ctypes callback function: <function ExecutionEngine._raw_object_cache_notify at 0x110567d80>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/llvmlite/binding/executionengine.py", line 178, in _raw_object_cache_notify
+    def _raw_object_cache_notify(self, data):
+
+  File "benchmark/odds_oneclass/runner.py", line 46, in _on_alarm
+    raise FitTimeout("per-method wall-time budget exceeded")
+FitTimeout: per-method wall-time budget exceeded
+satimage-2   native SOD                      success            0.8249198717948718
+satimage-2   native ROD                      timeout            None
+satimage-2   native IForest                  success            0.9864203778677463
+satimage-2   native INNE                     success            0.9972271423751686
+satimage-2   native DIF                      success            0.9742535425101215
+satimage-2   native FeatureBagging           success            0.9940536437246963
+satimage-2   native LSCP                     success            0.9955086032388664
+satimage-2   native LODA                     success            0.9172992577597842
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    1.1s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.2s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+RandomForestRegressor()
+
+
+satimage-2   native SUOD                     success            0.980959008097166
+satimage-2   native XGBOD                    requires_labeled_outliers None
+satimage-2   native AutoEncoder              success            0.9894357287449392
+satimage-2   native VAE                      success            0.9792299257759784
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+satimage-2   native SO_GAAL                  success            0.9586918016194331
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+satimage-2   native MO_GAAL                  success            0.9590713562753036
+satimage-2   native DeepSVDD                 success            0.9923878205128206
+satimage-2   native AnoGAN                   success            0.9317855937921727
+satimage-2   native ALAD                     success            0.6147309379217274
+Epoch 10/50, Loss: 10.700746059417725
+Epoch 20/50, Loss: 6.953381061553955
+Epoch 30/50, Loss: 5.875503063201904
+Epoch 40/50, Loss: 6.184095621109009
+Epoch 50/50, Loss: 5.513086795806885
+satimage-2   native AE1SVM                   success            0.9806637989203779
+satimage-2   native DevNet                   requires_labeled_outliers None
+satimage-2   native RGraph                   timeout            None
+satimage-2   native LUNAR                    success            0.9982709176788124

@@ -1,0 +1,188 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset vertebral --results benchmark/odds_oneclass/extreme_retention/raw/vertebral_native_seed46_retain5.jsonl --seed 46 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.05 --method-timeout 15.0 --method-filter all
+vertebral    native NSA/fixed                success            0.5615079365079365
+vertebral    native NSA/variable             success            0.4642857142857143
+vertebral    native NSA/coverage             success            0.5694444444444444
+vertebral    native NSA/grid                 success            0.4305555555555556
+vertebral    native NSA/hierarchical         success            0.6339285714285714
+vertebral    native NSA/voronoi              requires_2d_or_3d  None
+vertebral    native NSA/deterministic        requires_2d        None
+vertebral    native NSA/suppressed           success            0.38888888888888884
+vertebral    native NSA/dual                 success            0.34325396825396826
+vertebral    native NSA/annealed             success            0.4017857142857143
+vertebral    native NSA/binary/hamming       success            0.40674603174603174
+vertebral    native NSA/binary/rcontiguous   error              None
+vertebral    native NSA/binary/rchunk        error              None
+vertebral    native ECOD                     success            0.494047619047619
+vertebral    native ABOD                     success            0.5267857142857143
+vertebral    native COPOD                    success            0.4742063492063492
+vertebral    native MAD                      requires_1d        None
+vertebral    native SOS                      success            0.5188492063492063
+vertebral    native QMCD                     success            0.6349206349206349
+vertebral    native KDE                      success            0.4563492063492064
+vertebral    native Sampling                 error              None
+vertebral    native GMM                      success            0.44841269841269843
+vertebral    native PCA                      success            0.4176587301587302
+vertebral    native KPCA                     success            0.4186507936507936
+vertebral    native MCD                      success            0.44841269841269843
+vertebral    native CD                       success            0.6617063492063492
+vertebral    native OCSVM                    success            0.3759920634920635
+vertebral    native LMDD                     success            0.39682539682539686
+vertebral    native LOF                      success            0.36607142857142855
+vertebral    native COF                      success            0.507936507936508
+vertebral    native CBLOF                    error              None
+vertebral    native LOCI                     success            0.4474206349206349
+vertebral    native HBOS                     success            0.7063492063492063
+vertebral    native HDBSCAN                  success            0.5897817460317462
+vertebral    native KNN                      success            0.41269841269841273
+vertebral    native SOD                      build_error        None
+vertebral    native ROD                      success            0.5267857142857144
+vertebral    native IForest                  success            0.6512896825396826
+vertebral    native INNE                     success            0.2648809523809524
+vertebral    native DIF                      success            0.6775793650793651
+vertebral    native FeatureBagging           success            0.382936507936508
+vertebral    native LSCP                     error              None
+vertebral    native LODA                     success            0.6180555555555556
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.3s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+RandomForestRegressor()
+
+
+vertebral    native SUOD                     success            0.6160714285714286
+vertebral    native XGBOD                    requires_labeled_outliers None
+vertebral    native AutoEncoder              error              None
+vertebral    native VAE                      error              None
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+vertebral    native SO_GAAL                  success            0.6468253968253967
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+vertebral    native MO_GAAL                  success            0.6899801587301587
+vertebral    native DeepSVDD                 success            0.33531746031746035
+vertebral    native AnoGAN                   success            0.32440476190476186
+vertebral    native ALAD                     success            0.4553571428571429
+Epoch 10/50, Loss: 4.723759651184082
+Epoch 20/50, Loss: 6.775622367858887
+Epoch 30/50, Loss: 3.587985038757324
+Epoch 40/50, Loss: 9.552727699279785
+Epoch 50/50, Loss: 9.699309349060059
+vertebral    native AE1SVM                   success            0.441468253968254
+vertebral    native DevNet                   requires_labeled_outliers None
+vertebral    native RGraph                   success            0.5213293650793651
+vertebral    native LUNAR                    success            0.2996031746031746

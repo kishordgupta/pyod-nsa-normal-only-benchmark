@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset pima --seed 42 --representation pca2 --fraction 0.1 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/pima_pca2_seed42_retain10.jsonl
+pima         pca2   AutoEncoder              success            0.5434974659413214
+pima_pca2_seed42_retain10 AutoEncoder success batches=10
+pima         pca2   VAE                      success            0.6002696796391872
+pima_pca2_seed42_retain10 VAE success batches=30

@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset pima --seed 46 --representation native --fraction 0.1 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/pima_native_seed46_retain10.jsonl
+pima         native AutoEncoder              success            0.7423629515971544
+pima_native_seed46_retain10 AutoEncoder success batches=10
+pima         native VAE                      success            0.7571953317524526
+pima_native_seed46_retain10 VAE success batches=30

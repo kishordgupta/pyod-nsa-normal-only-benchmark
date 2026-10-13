@@ -1,0 +1,45 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset arrhythmia --results benchmark/odds_oneclass/extreme_retention/raw/arrhythmia_native_seed43_retain5.jsonl --seed 43 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.05 --method-timeout 15.0 --method-filter all
+arrhythmia   native NSA/fixed                success            0.2846153846153846
+arrhythmia   native NSA/variable             success            0.281637717121588
+arrhythmia   native NSA/coverage             success            0.281637717121588
+arrhythmia   native NSA/grid                 success            0.28089330024813897
+arrhythmia   native NSA/hierarchical         success            0.28387096774193543
+arrhythmia   native NSA/voronoi              requires_2d_or_3d  None
+arrhythmia   native NSA/deterministic        requires_2d        None
+arrhythmia   native NSA/suppressed           success            0.281637717121588
+arrhythmia   native NSA/dual                 success            0.7193548387096773
+arrhythmia   native NSA/annealed             success            0.2863523573200992
+arrhythmia   native NSA/binary/hamming       success            0.3707196029776675
+arrhythmia   native NSA/binary/rcontiguous   success            0.5830024813895782
+arrhythmia   native NSA/binary/rchunk        success            0.4497518610421837
+arrhythmia   native ECOD                     success            0.7833746898263028
+arrhythmia   native ABOD                     success            0.7253101736972705
+arrhythmia   native COPOD                    success            0.7766749379652605
+arrhythmia   native MAD                      requires_1d        None
+arrhythmia   native SOS                      success            0.5312655086848636
+arrhythmia   native QMCD                     success            0.24069478908188585
+arrhythmia   native KDE                      success            0.7449131513647642
+arrhythmia   native Sampling                 error              None
+arrhythmia   native GMM                      success            0.7384615384615384
+arrhythmia   native PCA                      success            0.754590570719603
+arrhythmia   native KPCA                     success            0.7478908188585608
+arrhythmia   native MCD                      success            0.8054590570719603
+arrhythmia   native CD                       error              None
+arrhythmia   native OCSVM                    success            0.7483870967741935
+arrhythmia   native LMDD                     success            0.7517369727047145
+arrhythmia   native LOF                      success            0.7482630272952854
+arrhythmia   native COF                      success            0.5908188585607941
+arrhythmia   native CBLOF                    success            0.743424317617866
+arrhythmia   native LOCI                     success            0.7181141439205956
+arrhythmia   native HBOS                     success            0.7501240694789082
+arrhythmia   native HDBSCAN                  success            0.577667493796526
+arrhythmia   native KNN                      success            0.7578163771712159
+arrhythmia   native SOD                      build_error        None
+Exception ignored in: <function BaseContext._insert_global.<locals>.on_disposal at 0x11526a840>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/numba/core/typing/context.py", line 585, in on_disposal
+    def on_disposal(wr, pop=self._globals.pop):
+
+  File "benchmark/odds_oneclass/runner.py", line 46, in _on_alarm
+    raise FitTimeout("per-method wall-time budget exceeded")
+FitTimeout: per-method wall-time budget exceeded

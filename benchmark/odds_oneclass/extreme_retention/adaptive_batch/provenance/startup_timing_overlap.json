@@ -1,0 +1,147 @@
+{
+  "adaptive_run_manifest_created_utc": "2026-10-13T02:25:52.578847+00:00",
+  "affected_first_wave_cells": [
+    {
+      "cell": "lympho_native_seed42_retain10",
+      "method_status_and_measured_seconds": [
+        {
+          "fit_plus_score_seconds": 4.715017,
+          "method": "AutoEncoder",
+          "status": "success"
+        },
+        {
+          "fit_plus_score_seconds": 0.04397,
+          "method": "VAE",
+          "status": "success"
+        }
+      ],
+      "raw_last_write_utc": "2026-10-13T02:25:59.223180+00:00",
+      "raw_sha256": "b8a7ef498ae0fad60b8e48832c68e8070e8d1f17a1c6f3968203808fd7c22e4b"
+    },
+    {
+      "cell": "cardio_native_seed42_retain10",
+      "method_status_and_measured_seconds": [
+        {
+          "fit_plus_score_seconds": 4.818801000000001,
+          "method": "AutoEncoder",
+          "status": "success"
+        },
+        {
+          "fit_plus_score_seconds": 0.088701,
+          "method": "VAE",
+          "status": "success"
+        }
+      ],
+      "raw_last_write_utc": "2026-10-13T02:25:59.375890+00:00",
+      "raw_sha256": "16e249d49973b5028fe42525f63d8c7c07b308799ad6361f290e97dd89fabd0e"
+    },
+    {
+      "cell": "arrhythmia_native_seed42_retain10",
+      "method_status_and_measured_seconds": [
+        {
+          "fit_plus_score_seconds": 4.859523,
+          "method": "AutoEncoder",
+          "status": "success"
+        },
+        {
+          "fit_plus_score_seconds": 0.09156700000000001,
+          "method": "VAE",
+          "status": "success"
+        }
+      ],
+      "raw_last_write_utc": "2026-10-13T02:25:59.423147+00:00",
+      "raw_sha256": "4559038acb695513ec94abcee266388e26339b066b6e86bd759330f81057aac8"
+    },
+    {
+      "cell": "glass_native_seed42_retain10",
+      "method_status_and_measured_seconds": [
+        {
+          "fit_plus_score_seconds": 4.828385,
+          "method": "AutoEncoder",
+          "status": "success"
+        },
+        {
+          "fit_plus_score_seconds": 0.111376,
+          "method": "VAE",
+          "status": "success"
+        }
+      ],
+      "raw_last_write_utc": "2026-10-13T02:25:59.496554+00:00",
+      "raw_sha256": "962262e7faed9e83872e982dc7f03d4ea795fd6bb29171652b65f72d47153a77"
+    },
+    {
+      "cell": "mnist_native_seed42_retain10",
+      "method_status_and_measured_seconds": [
+        {
+          "fit_plus_score_seconds": 4.7986200000000006,
+          "method": "AutoEncoder",
+          "status": "success"
+        },
+        {
+          "fit_plus_score_seconds": 0.093126,
+          "method": "VAE",
+          "status": "success"
+        }
+      ],
+      "raw_last_write_utc": "2026-10-13T02:25:59.525662+00:00",
+      "raw_sha256": "4db0a1d592ddf7ed861ec53b82623aa13da6133ff33c256add0ca72091cc840b"
+    },
+    {
+      "cell": "letter_native_seed42_retain10",
+      "method_status_and_measured_seconds": [
+        {
+          "fit_plus_score_seconds": 4.870325,
+          "method": "AutoEncoder",
+          "status": "success"
+        },
+        {
+          "fit_plus_score_seconds": 0.08421999999999999,
+          "method": "VAE",
+          "status": "success"
+        }
+      ],
+      "raw_last_write_utc": "2026-10-13T02:25:59.555111+00:00",
+      "raw_sha256": "018713806df34e0b0f43612f9a58ee910251fe01b630c7dd1163e4bdffce2b78"
+    },
+    {
+      "cell": "ionosphere_native_seed42_retain10",
+      "method_status_and_measured_seconds": [
+        {
+          "fit_plus_score_seconds": 5.013148999999999,
+          "method": "AutoEncoder",
+          "status": "success"
+        },
+        {
+          "fit_plus_score_seconds": 0.036242,
+          "method": "VAE",
+          "status": "success"
+        }
+      ],
+      "raw_last_write_utc": "2026-10-13T02:25:59.570106+00:00",
+      "raw_sha256": "64382f84c0311ee71d013b8fe82c05961389e995977bc18c20ab1a6cb5051254"
+    },
+    {
+      "cell": "musk_native_seed42_retain10",
+      "method_status_and_measured_seconds": [
+        {
+          "fit_plus_score_seconds": 4.859255,
+          "method": "AutoEncoder",
+          "status": "success"
+        },
+        {
+          "fit_plus_score_seconds": 0.105156,
+          "method": "VAE",
+          "status": "success"
+        }
+      ],
+      "raw_last_write_utc": "2026-10-13T02:25:59.614064+00:00",
+      "raw_sha256": "8a0c3e4ffcd66d8273aeda2372c232232cb35263398ce7382d48a3350f61d909"
+    }
+  ],
+  "handling": "Original raw rows retained; no remeasurement requested because the possible brief CPU overlap creates no unresolved success/timeout eligibility boundary. Exact runtime values may reflect transient load.",
+  "independent_source_pca_audit_finished_utc": "2026-10-13T02:25:56.553392+00:00",
+  "potential_overlap": "The independent source/PCA audit could have overlapped startup or AutoEncoder fitting for the first eight adaptive worker cells; exact per-method start timestamps were not recorded.",
+  "schema_version": 1,
+  "scope": "adaptive-training-batch-v1 first-wave timing observation",
+  "strict_eligibility_observation": "All 16 recorded methods succeeded, each measured fit_seconds + score_seconds < 5.1 seconds versus the strict 15-second analysis threshold."
+}

@@ -1,0 +1,188 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset musk --results benchmark/odds_oneclass/extreme_retention/raw/musk_native_seed45_retain5.jsonl --seed 45 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.05 --method-timeout 15.0 --method-filter all
+musk         native NSA/fixed                success            6.485925541574668e-05
+musk         native NSA/variable             success            0.0
+musk         native NSA/coverage             success            0.0
+musk         native NSA/grid                 success            0.0
+musk         native NSA/hierarchical         success            0.0
+musk         native NSA/voronoi              requires_2d_or_3d  None
+musk         native NSA/deterministic        requires_2d        None
+musk         native NSA/suppressed           success            0.0
+musk         native NSA/dual                 success            1.0
+musk         native NSA/annealed             success            8.647900722099558e-05
+musk         native NSA/binary/hamming       success            0.44845851169628576
+musk         native NSA/binary/rcontiguous   success            0.4844121589484152
+musk         native NSA/binary/rchunk        success            0.5402775976131794
+musk         native ECOD                     success            0.9659056514031219
+musk         native ABOD                     success            0.9994595062048688
+musk         native COPOD                    success            0.9525230250356727
+musk         native MAD                      requires_1d        None
+musk         native SOS                      success            0.43838370735503956
+musk         native QMCD                     success            0.8620227439788991
+musk         native KDE                      success            1.0
+musk         native Sampling                 success            0.9999783802481947
+musk         native GMM                      success            0.9996757037229212
+musk         native PCA                      success            0.9996973234747265
+musk         native KPCA                     success            1.0
+musk         native MCD                      success            0.9974272495351754
+musk         native CD                       success            0.998789293898906
+musk         native OCSVM                    success            1.0
+musk         native LMDD                     timeout            None
+musk         native LOF                      success            0.999913520992779
+musk         native COF                      success            0.5926406364854931
+musk         native CBLOF                    success            1.0
+musk         native LOCI                     timeout            None
+musk         native HBOS                     success            1.0
+musk         native HDBSCAN                  success            0.21069529121805683
+musk         native KNN                      success            1.0
+musk         native SOD                      success            0.8854153154321789
+musk         native ROD                      timeout            None
+musk         native IForest                  success            0.7117654689324167
+musk         native INNE                     success            0.9983136593591906
+musk         native DIF                      success            0.8902365200847494
+musk         native FeatureBagging           success            0.9995892247157003
+musk         native LSCP                     success            1.0
+musk         native LODA                     success            0.5154797422925584
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.5s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.2s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.2s finished
+RandomForestRegressor()
+
+
+musk         native SUOD                     success            0.9616033207938773
+musk         native XGBOD                    requires_labeled_outliers None
+musk         native AutoEncoder              error              None
+musk         native VAE                      error              None
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+musk         native SO_GAAL                  success            0.2111276862541618
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+musk         native MO_GAAL                  success            0.14426860379642842
+musk         native DeepSVDD                 success            0.9917196350585895
+musk         native AnoGAN                   success            0.9972975310243438
+musk         native ALAD                     success            0.6411553595364725
+Epoch 10/50, Loss: 10.293277740478516
+Epoch 20/50, Loss: 10.951322555541992
+Epoch 30/50, Loss: 6.3047075271606445
+Epoch 40/50, Loss: 6.609241008758545
+Epoch 50/50, Loss: 12.27907657623291
+musk         native AE1SVM                   success            0.999740562978337
+musk         native DevNet                   requires_labeled_outliers None
+musk         native RGraph                   timeout            None
+musk         native LUNAR                    success            0.9995459852120898

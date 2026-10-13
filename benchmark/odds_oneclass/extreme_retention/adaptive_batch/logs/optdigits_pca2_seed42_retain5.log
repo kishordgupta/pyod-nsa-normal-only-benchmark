@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset optdigits --seed 42 --representation pca2 --fraction 0.05 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/optdigits_pca2_seed42_retain5.jsonl
+optdigits    pca2   AutoEncoder              success            0.506920930736517
+optdigits_pca2_seed42_retain5 AutoEncoder success batches=10
+optdigits    pca2   VAE                      success            0.509196305225235
+optdigits_pca2_seed42_retain5 VAE success batches=30

@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset glass --seed 44 --representation pca2 --fraction 0.1 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/glass_pca2_seed44_retain10.jsonl
+glass        pca2   AutoEncoder              success            0.7073170731707317
+glass_pca2_seed44_retain10 AutoEncoder success batches=10
+glass        pca2   VAE                      success            0.6463414634146342
+glass_pca2_seed44_retain10 VAE success batches=30

@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset vertebral --seed 45 --representation pca2 --fraction 0.1 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/vertebral_pca2_seed45_retain10.jsonl
+vertebral    pca2   AutoEncoder              success            0.47916666666666674
+vertebral_pca2_seed45_retain10 AutoEncoder success batches=10
+vertebral    pca2   VAE                      success            0.44940476190476186
+vertebral_pca2_seed45_retain10 VAE success batches=30

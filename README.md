@@ -85,6 +85,48 @@ The experiment is a bounded default-configuration benchmark, not a tuned
 comparison or a proof about every normal-only learning regime. Retention is
 relative to the capped normal training pool, rather than the full dataset.
 
+## Six-size extension: 10% and 5% normal training data
+
+The fresh 10% and 5% settings add **19,040 primary records** to the frozen four-size benchmark. The complete six-size grid has **57,120 records**: 17 datasets, five seeds, two representations, six retained fractions, and 56 configurations (13 NSA configurations from 11 strategy families plus 43 other PyOD entries). Initial model fitting and preprocessing use retained normal rows only. The mixed held-out tests are fixed within each dataset and seed. Actual training samples contain **8–60 normals at 10%** and **4–30 at 5%**.
+
+### Dual NSA's standing with the comparison roster held fixed
+
+The primary fields contain other detectors that complete all 85 cases at every one of the six sizes: 19 native-feature baselines or 25 PCA(2) baselines. Each rank inserts only the focal NSA into that field. These are ranks among the stated complete-coverage detectors, rather than all 43 attempted entries.
+
+| Features | Retained | Dual AUROC | Dual AP | Qualified cases | Fixed-field AUROC rank | Fixed-field AP rank |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Native | 10% | 0.7792 | 0.5112 | 85/85 | 14/20 | 7/20 |
+| Native | 5% | 0.7900 | 0.5066 | 85/85 | 10/20 | 4/20 |
+| PCA(2) | 100% | 0.7172 | 0.4718 | 85/85 | 13/26 | 6/26 |
+| PCA(2) | 25% | 0.7603 | 0.4699 | 85/85 | 10/26 | 3/26 |
+| PCA(2) | 10% | 0.7626 | 0.4206 | 85/85 | 6/26 | 6/26 |
+| PCA(2) | 5% | 0.7264 | 0.3755 | 85/85 | 5/26 | 5/26 |
+
+All ten continuously scored, six-size-complete NSA configurations in PCA(2) improve their AUROC ranks at both 10% and 5% relative to full retention. At 5%, only three improve their absolute AUROC, and none improves AP. Dual NSA's PCA(2) AUROC falls between 10% and 5% even as its ordinal position improves. The six complete native NSA configurations show no corresponding AUROC rank gain; native Dual is complete at the new sizes but incomplete at 100–25%, so it has no full-coverage native cross-size rank comparison.
+
+KDE has the highest fixed-field AUROC in all four new panels. The findings support conditional relative gains for some NSA strategies and representations. They do not establish broad superiority or consistency across all datasets. Dual's PCA(2) dataset ranks span 1/26 to 16/26 at 10%, and 1/26 to 24/26 at 5%.
+
+### Suitability and a neural training-batch sensitivity
+
+Every method is retained in the outcome tables. Failed or inapplicable cases are marked **unsuitable under the tested configuration**, with exact counts and reasons. Partial-case means remain available but receive no complete-coverage rank. The label covers the recorded constructor, dimensions, sample count, normal-only input, and measured 15-second budget; it does not establish family-wide incapability.
+
+XGBOD and DevNet require labeled anomalies for their intended supervised training in this pinned roster. MAD requires one-dimensional input. Voronoi and deterministic NSA have low-dimensional restrictions, and binary NSA encounters negative-detector generation errors in PCA(2). Other partial failures and timeouts are shown individually.
+
+AutoEncoder and VAE's fixed training batch of 32 with `drop_last=True` creates an empty training loop when fewer than 32 normals are available. A separate **adaptive training-batch sensitivity** has **740 fresh method attempts**, all successful within 15 seconds: all 10%/5% cells plus the affected historical 25% cells. Training batches are capped by the normal sample size; inference batches stay at 32. Successful fits have observed training-forward calls. The remaining 1,300 earlier AE/VAE records are reused with explicit lineage.
+
+The correction adds VAE to the fixed PCA(2) baseline field. Dual's AUROC and AP ranks become **6/27 at 10%** and **5/27 at 5%**; all ten continuous NSA configurations retain their AUROC rank improvement. The native fixed field is unchanged. Both neural methods become operational in all 85 cases of each new panel, so their primary unsuitability reflects the fixed batch configuration.
+
+### Evidence and interpretation limits
+
+- [Full six-size report, including suitability and adaptive sensitivity](results/pyod_nsa_extreme_retention_report.md)
+- [All detector scores, coverage, and suitability](results/pyod_nsa_extreme_retention_method_summary.csv)
+- [Fixed comparison-field ranks](results/pyod_nsa_extreme_retention_common_field_ranks.csv)
+- [Dataset-level NSA results and ranks](results/pyod_nsa_extreme_retention_dataset_nsa_ranks.csv)
+- [Relative gaps with the same comparator held fixed](results/pyod_nsa_extreme_retention_relative_change_vs_100.csv)
+- [Adaptive neural rank sensitivity](results/pyod_nsa_extreme_retention_adaptive_batch_fixed_rank_sensitivity.csv)
+
+Raw records, sanitized logs, four new ROD watchdog recoveries, split/source audits, and extension provenance accompany these tables. The original four-size records remain byte-identical. AUROC/AP reporting and bootstrap intervals are reconstructed from aggregate records; per-observation prediction vectors were not saved. Twelve implementations use the mixed query batch while scoring, and an inductive subset is reported separately. Intervals are exploratory and unadjusted for multiple comparisons. Fixed hyperparameters, refitted preprocessing, computation limits, and small samples bound the conclusions.
+
 ## Find the evidence
 
 | Path | Contents |

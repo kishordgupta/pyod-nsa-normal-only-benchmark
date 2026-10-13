@@ -1,0 +1,19 @@
+{
+  "active_monitor_mode": "execute_verified_recovery",
+  "active_recovery_permission": "recovery_enabled",
+  "execution_monitor_status": "stopped_after_primary_completion",
+  "execution_monitor_stopped_utc": "2026-10-13T02:26:21.311471+00:00",
+  "execution_monitor_exit_code": 130,
+  "execution_monitor_log": "monitor_execute.log",
+  "code_sha256": {
+    "monitor.py": "1d08f9907527a9d9377088e9b13c0fb00bc3d3db5e8b80b26438a795358988a5",
+    "watchdog_recover.py": "a40777a190fe16d9a88d22a99a8fe489e978ed161975ac8e49d1847a641a3b62"
+  },
+  "created_utc": "2026-10-13T01:18:06.056549+00:00",
+  "intervention_mode": "external verified PID/FD watchdog; snapshot before SIGTERM; append one no-score timeout; resume only on later fixed-grid sweep",
+  "minimum_log_idle_seconds": 600,
+  "minimum_raw_idle_seconds": 600,
+  "poll_seconds": 30,
+  "primary_run_manifest_sha256": "674cef15adc6490b3643729cff6e438bb4256fc2ce4bf2f72ab10c66c8a04e8d",
+  "schema_version": 1
+}

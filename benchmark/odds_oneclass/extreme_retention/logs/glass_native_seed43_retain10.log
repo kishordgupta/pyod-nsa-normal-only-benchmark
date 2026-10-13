@@ -1,0 +1,188 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset glass --results benchmark/odds_oneclass/extreme_retention/raw/glass_native_seed43_retain10.jsonl --seed 43 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.1 --method-timeout 15.0 --method-filter all
+glass        native NSA/fixed                success            0.31402439024390244
+glass        native NSA/variable             success            0.31402439024390244
+glass        native NSA/coverage             success            0.33536585365853655
+glass        native NSA/grid                 success            0.2987804878048781
+glass        native NSA/hierarchical         success            0.1951219512195122
+glass        native NSA/voronoi              requires_2d_or_3d  None
+glass        native NSA/deterministic        requires_2d        None
+glass        native NSA/suppressed           success            0.32926829268292684
+glass        native NSA/dual                 success            0.7042682926829269
+glass        native NSA/annealed             success            0.34451219512195125
+glass        native NSA/binary/hamming       success            0.4054878048780488
+glass        native NSA/binary/rcontiguous   success            0.17682926829268292
+glass        native NSA/binary/rchunk        success            0.47865853658536583
+glass        native ECOD                     success            0.6890243902439024
+glass        native ABOD                     success            0.7560975609756099
+glass        native COPOD                    success            0.6707317073170731
+glass        native MAD                      requires_1d        None
+glass        native SOS                      success            0.7530487804878049
+glass        native QMCD                     success            0.4786585365853659
+glass        native KDE                      success            0.8231707317073171
+glass        native Sampling                 error              None
+glass        native GMM                      success            0.7439024390243902
+glass        native PCA                      success            0.7652439024390244
+glass        native KPCA                     success            0.8170731707317074
+glass        native MCD                      success            0.6646341463414634
+glass        native CD                       success            0.7378048780487805
+glass        native OCSVM                    success            0.7835365853658537
+glass        native LMDD                     success            0.7179878048780488
+glass        native LOF                      success            0.6158536585365855
+glass        native COF                      success            0.8109756097560976
+glass        native CBLOF                    success            0.7926829268292683
+glass        native LOCI                     success            0.603658536585366
+glass        native HBOS                     success            0.739329268292683
+glass        native HDBSCAN                  success            0.47408536585365857
+glass        native KNN                      success            0.7865853658536586
+glass        native SOD                      success            0.8170731707317073
+glass        native ROD                      success            0.7591463414634148
+glass        native IForest                  success            0.753048780487805
+glass        native INNE                     success            0.6935975609756098
+glass        native DIF                      success            0.6128048780487805
+glass        native FeatureBagging           success            0.6189024390243902
+glass        native LSCP                     error              None
+glass        native LODA                     success            0.6371951219512195
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.4s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+RandomForestRegressor()
+
+
+glass        native SUOD                     success            0.6798780487804879
+glass        native XGBOD                    requires_labeled_outliers None
+glass        native AutoEncoder              error              None
+glass        native VAE                      error              None
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+glass        native SO_GAAL                  success            0.17682926829268292
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+glass        native MO_GAAL                  success            0.21951219512195122
+glass        native DeepSVDD                 success            0.7896341463414634
+glass        native AnoGAN                   success            0.7774390243902439
+glass        native ALAD                     success            0.6890243902439024
+Epoch 10/50, Loss: 7.7836785316467285
+Epoch 20/50, Loss: 5.013993263244629
+Epoch 30/50, Loss: 7.668318271636963
+Epoch 40/50, Loss: 8.18559741973877
+Epoch 50/50, Loss: 5.117898941040039
+glass        native AE1SVM                   success            0.7652439024390244
+glass        native DevNet                   requires_labeled_outliers None
+glass        native RGraph                   success            0.5884146341463414
+glass        native LUNAR                    success            0.7804878048780489

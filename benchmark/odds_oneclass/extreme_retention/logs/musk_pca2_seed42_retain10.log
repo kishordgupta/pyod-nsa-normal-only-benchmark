@@ -1,0 +1,188 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset musk --results benchmark/odds_oneclass/extreme_retention/raw/musk_pca2_seed42_retain10.jsonl --seed 42 --representation pca2 --train-cap 600 --test-cap 2000 --train-fraction 0.1 --method-timeout 15.0 --method-filter all
+musk         pca2   NSA/fixed                success            0.9872011069312925
+musk         pca2   NSA/variable             success            0.9673541747740735
+musk         pca2   NSA/coverage             success            0.967743330306568
+musk         pca2   NSA/grid                 success            0.9653651576079907
+musk         pca2   NSA/hierarchical         success            0.9701647425087561
+musk         pca2   NSA/voronoi              success            0.9677000908029576
+musk         pca2   NSA/deterministic        success            0.9550092964932761
+musk         pca2   NSA/suppressed           success            0.9237038958792754
+musk         pca2   NSA/dual                 success            0.9687594586414148
+musk         pca2   NSA/annealed             success            0.7769922601288538
+musk         pca2   NSA/binary/hamming       error              None
+musk         pca2   NSA/binary/rcontiguous   error              None
+musk         pca2   NSA/binary/rchunk        error              None
+musk         pca2   ECOD                     success            0.2548536342802784
+musk         pca2   ABOD                     success            0.966878540234358
+musk         pca2   COPOD                    success            0.34027327366281834
+musk         pca2   MAD                      requires_1d        None
+musk         pca2   SOS                      success            0.516647208890042
+musk         pca2   QMCD                     success            0.9561767630907597
+musk         pca2   KDE                      success            0.9674838932849051
+musk         pca2   Sampling                 success            0.9783586284429455
+musk         pca2   GMM                      success            0.24531932373416354
+musk         pca2   PCA                      success            0.37155705452501403
+musk         pca2   KPCA                     success            0.9721753794266441
+musk         pca2   MCD                      success            0.5016647208890042
+musk         pca2   CD                       success            0.11419552903532668
+musk         pca2   OCSVM                    success            0.9726077744627492
+musk         pca2   LMDD                     success            0.26319885847710467
+musk         pca2   LOF                      success            0.8032602585722316
+musk         pca2   COF                      success            0.9149046568945389
+musk         pca2   CBLOF                    success            0.9742292558481429
+musk         pca2   LOCI                     timeout            None
+musk         pca2   HBOS                     success            0.8838695031781035
+musk         pca2   HDBSCAN                  success            0.8835560167769274
+musk         pca2   KNN                      success            0.9709862930773555
+musk         pca2   SOD                      timeout            None
+musk         pca2   ROD                      success            0.35220737665931595
+musk         pca2   IForest                  success            0.7963851774981623
+musk         pca2   INNE                     success            0.9780559519176719
+musk         pca2   DIF                      success            0.8923984952652743
+musk         pca2   FeatureBagging           success            0.9878713192372552
+musk         pca2   LSCP                     success            0.9892333636009858
+musk         pca2   LODA                     success            0.9701431227569508
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.8s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.2s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+RandomForestRegressor()
+
+
+musk         pca2   SUOD                     success            0.8075625891814762
+musk         pca2   XGBOD                    requires_labeled_outliers None
+musk         pca2   AutoEncoder              success            0.35560167769274004
+musk         pca2   VAE                      success            0.20175552384658624
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+musk         pca2   SO_GAAL                  success            0.08291174817313098
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+musk         pca2   MO_GAAL                  success            0.050871275997751556
+musk         pca2   DeepSVDD                 success            0.6783629523933066
+musk         pca2   AnoGAN                   success            0.20346348423920094
+musk         pca2   ALAD                     success            0.45950620486876814
+Epoch 10/50, Loss: 9.600156307220459
+Epoch 20/50, Loss: 7.698885679244995
+Epoch 30/50, Loss: 8.125153303146362
+Epoch 40/50, Loss: 7.742886066436768
+Epoch 50/50, Loss: 8.206770896911621
+musk         pca2   AE1SVM                   success            0.35832576642020153
+musk         pca2   DevNet                   requires_labeled_outliers None
+musk         pca2   RGraph                   timeout            None
+musk         pca2   LUNAR                    success            0.919682622043499

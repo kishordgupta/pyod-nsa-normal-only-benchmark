@@ -1,0 +1,188 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset cardio --results benchmark/odds_oneclass/extreme_retention/raw/cardio_native_seed44_retain10.jsonl --seed 44 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.1 --method-timeout 15.0 --method-filter all
+cardio       native NSA/fixed                success            0.24296487825899588
+cardio       native NSA/variable             success            0.5960353372118079
+cardio       native NSA/coverage             success            0.5960353372118079
+cardio       native NSA/grid                 success            0.5610859728506787
+cardio       native NSA/hierarchical         success            0.5608058608058608
+cardio       native NSA/voronoi              requires_2d_or_3d  None
+cardio       native NSA/deterministic        requires_2d        None
+cardio       native NSA/suppressed           success            0.6188536953242836
+cardio       native NSA/dual                 success            0.9009911656970481
+cardio       native NSA/annealed             success            0.11967248437836672
+cardio       native NSA/binary/hamming       success            0.41342383107088987
+cardio       native NSA/binary/rcontiguous   success            0.5740142210730446
+cardio       native NSA/binary/rchunk        success            0.5122710622710622
+cardio       native ECOD                     success            0.9280758457229046
+cardio       native ABOD                     success            0.9482439129497953
+cardio       native COPOD                    success            0.920706744236156
+cardio       native MAD                      requires_1d        None
+cardio       native SOS                      success            0.5354449472096531
+cardio       native QMCD                     success            0.28623141564318033
+cardio       native KDE                      success            0.9441930618401208
+cardio       native Sampling                 success            0.9230122818358113
+cardio       native GMM                      success            0.9286145227321698
+cardio       native PCA                      success            0.9560224089635855
+cardio       native KPCA                     success            0.9496013790131438
+cardio       native MCD                      success            0.9244343891402715
+cardio       native CD                       success            0.901831501831502
+cardio       native OCSVM                    success            0.95830639948287
+cardio       native LMDD                     success            0.8946024563671623
+cardio       native LOF                      success            0.9530704589528121
+cardio       native COF                      success            0.573109243697479
+cardio       native CBLOF                    success            0.9485455720749838
+cardio       native LOCI                     timeout            None
+cardio       native HBOS                     success            0.8323206205559147
+cardio       native HDBSCAN                  success            0.8253501400560225
+cardio       native KNN                      success            0.9423184658478776
+cardio       native SOD                      timeout            None
+cardio       native ROD                      timeout            None
+cardio       native IForest                  success            0.9011419952596424
+cardio       native INNE                     success            0.9461969403145873
+cardio       native DIF                      success            0.9040508511096746
+cardio       native FeatureBagging           success            0.9536091359620772
+cardio       native LSCP                     success            0.9341090282266753
+cardio       native LODA                     success            0.7967248437836674
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.3s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+RandomForestRegressor()
+
+
+cardio       native SUOD                     success            0.9198448610213317
+cardio       native XGBOD                    requires_labeled_outliers None
+cardio       native AutoEncoder              success            0.9533505709976298
+cardio       native VAE                      success            0.9481361775479423
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+cardio       native SO_GAAL                  success            0.42844214608920483
+Epoch 1 of 60
+Epoch 2 of 60
+Epoch 3 of 60
+Epoch 4 of 60
+Epoch 5 of 60
+Epoch 6 of 60
+Epoch 7 of 60
+Epoch 8 of 60
+Epoch 9 of 60
+Epoch 10 of 60
+Epoch 11 of 60
+Epoch 12 of 60
+Epoch 13 of 60
+Epoch 14 of 60
+Epoch 15 of 60
+Epoch 16 of 60
+Epoch 17 of 60
+Epoch 18 of 60
+Epoch 19 of 60
+Epoch 20 of 60
+Epoch 21 of 60
+Epoch 22 of 60
+Epoch 23 of 60
+Epoch 24 of 60
+Epoch 25 of 60
+Epoch 26 of 60
+Epoch 27 of 60
+Epoch 28 of 60
+Epoch 29 of 60
+Epoch 30 of 60
+Epoch 31 of 60
+Epoch 32 of 60
+Epoch 33 of 60
+Epoch 34 of 60
+Epoch 35 of 60
+Epoch 36 of 60
+Epoch 37 of 60
+Epoch 38 of 60
+Epoch 39 of 60
+Epoch 40 of 60
+Epoch 41 of 60
+Epoch 42 of 60
+Epoch 43 of 60
+Epoch 44 of 60
+Epoch 45 of 60
+Epoch 46 of 60
+Epoch 47 of 60
+Epoch 48 of 60
+Epoch 49 of 60
+Epoch 50 of 60
+Epoch 51 of 60
+Epoch 52 of 60
+Epoch 53 of 60
+Epoch 54 of 60
+Epoch 55 of 60
+Epoch 56 of 60
+Epoch 57 of 60
+Epoch 58 of 60
+Epoch 59 of 60
+Epoch 60 of 60
+cardio       native MO_GAAL                  success            0.5205990088343029
+cardio       native DeepSVDD                 success            0.9587804352510235
+cardio       native AnoGAN                   success            0.8691445809092867
+cardio       native ALAD                     success            0.5582848524024994
+Epoch 10/50, Loss: 10.655227184295654
+Epoch 20/50, Loss: 10.664804458618164
+Epoch 30/50, Loss: 8.045976877212524
+Epoch 40/50, Loss: 8.62558126449585
+Epoch 50/50, Loss: 7.077356338500977
+cardio       native AE1SVM                   success            0.9576815341521223
+cardio       native DevNet                   requires_labeled_outliers None
+cardio       native RGraph                   timeout            None
+cardio       native LUNAR                    success            0.9537168713639301

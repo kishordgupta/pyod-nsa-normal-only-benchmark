@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset arrhythmia --seed 44 --representation native --fraction 0.05 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/arrhythmia_native_seed44_retain5.jsonl
+arrhythmia   native AutoEncoder              success            0.8401985111662531
+arrhythmia_native_seed44_retain5 AutoEncoder success batches=10
+arrhythmia   native VAE                      success            0.8382133995037221
+arrhythmia_native_seed44_retain5 VAE success batches=30

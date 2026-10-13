@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset satimage-2 --seed 43 --representation native --fraction 0.05 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/satimage-2_native_seed43_retain5.jsonl
+satimage-2   native AutoEncoder              success            0.9919239203778677
+satimage-2_native_seed43_retain5 AutoEncoder success batches=10
+satimage-2   native VAE                      success            0.9803475033738192
+satimage-2_native_seed43_retain5 VAE success batches=30

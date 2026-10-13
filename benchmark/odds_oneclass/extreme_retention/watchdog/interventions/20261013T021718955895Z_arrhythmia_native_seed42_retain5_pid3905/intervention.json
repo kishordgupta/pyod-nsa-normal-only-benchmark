@@ -1,0 +1,86 @@
+{
+  "action": {
+    "primary_method_timeout_seconds": 15.0,
+    "runner_fds_closed_utc": "2026-10-13T02:17:19.447635+00:00",
+    "signal": "SIGTERM",
+    "signal_sent_utc": "2026-10-13T02:17:19.083583+00:00",
+    "termination_confirmed": true
+  },
+  "after": {
+    "appended_method": "ROD",
+    "appended_status": "timeout",
+    "log_sha256": "ee69b30d782ccd68e0060819b9ffa367b5be853f1704869f9136ec2979e668da",
+    "raw_record_count": 37,
+    "raw_sha256": "0f9b9d65e68f5eced2053e0612575a9be8b6184777ddd3ddc809026bf3d36e37"
+  },
+  "appended_row_sha256": "469cd9ad12ff4ef79b833f5b305390184d4aead63ef9d48bea08ebfbeeb75bd1",
+  "before": {
+    "evidence_kind": "ignored_signal_callback",
+    "log_sha256": "ee69b30d782ccd68e0060819b9ffa367b5be853f1704869f9136ec2979e668da",
+    "log_snapshot": "log.before.log",
+    "raw_age_seconds": 1601.018,
+    "raw_record_count": 36,
+    "raw_sha256": "8dc70d8d129890dffc48bff4cc8c48cdd2a9fecdc30fc5b00f6a4557056f72fa",
+    "raw_snapshot": "raw.before.jsonl",
+    "signal_evidence_excerpt": "\nException ignored on calling ctypes callback function: <function ExecutionEngine._raw_object_cache_notify at 0x10df4bd80>\nTraceback (most recent call last):\n  File \"<PYTHON_ENV>/lib/python3.12/site-packages/llvmlite/binding/executionengine.py\", line 178, in _raw_object_cache_notify\n    def _raw_object_cache_notify(self, data):\n\n  File \"benchmark/odds_oneclass/runner.py\", line 46, in _on_alarm\n    raise FitTimeout(\"per-method wall-time budget exceeded\")\nFitTimeout: per-method wall-time budget exceeded\n"
+  },
+  "cell": {
+    "dataset": "arrhythmia",
+    "method": "ROD",
+    "name": "arrhythmia_native_seed42_retain5",
+    "representation": "native",
+    "retention_fraction": 0.05,
+    "seed": 42
+  },
+  "completed_utc": "2026-10-13T02:17:19.765318+00:00",
+  "created_utc": "2026-10-13T02:17:18.955895+00:00",
+  "intervention_id": "20261013T021718955895Z_arrhythmia_native_seed42_retain5_pid3905",
+  "public_log_digest_scope": "before snapshot is verifiable; after.log_sha256 records the original event-time log unless its full private file hash maps to the sanitized final log",
+  "resume_state": "pending_unfiltered_sweep",
+  "schema_version": 1,
+  "state": "completed",
+  "target": {
+    "fd_identity": {
+      "1w": {
+        "command": "python3.1",
+        "inode": 32608800,
+        "path": "benchmark/odds_oneclass/extreme_retention/logs/arrhythmia_native_seed42_retain5.log"
+      },
+      "2w": {
+        "command": "python3.1",
+        "inode": 32608800,
+        "path": "benchmark/odds_oneclass/extreme_retention/logs/arrhythmia_native_seed42_retain5.log"
+      },
+      "3w": {
+        "command": "python3.1",
+        "inode": 32608910,
+        "path": "benchmark/odds_oneclass/extreme_retention/raw/arrhythmia_native_seed42_retain5.jsonl"
+      }
+    },
+    "pid": 3905,
+    "runner_argv": [
+      "<PYTHON_ENV>/bin/python",
+      "benchmark/odds_oneclass/runner.py",
+      "--data-dir",
+      "vendor/pyod/notebooks/data",
+      "--dataset",
+      "arrhythmia",
+      "--results",
+      "benchmark/odds_oneclass/extreme_retention/raw/arrhythmia_native_seed42_retain5.jsonl",
+      "--seed",
+      "42",
+      "--representation",
+      "native",
+      "--train-cap",
+      "600",
+      "--test-cap",
+      "2000",
+      "--train-fraction",
+      "0.05",
+      "--method-timeout",
+      "15.0",
+      "--method-filter",
+      "all"
+    ]
+  }
+}

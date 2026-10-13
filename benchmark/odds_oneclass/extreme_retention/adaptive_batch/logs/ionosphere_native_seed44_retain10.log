@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset ionosphere --seed 44 --representation native --fraction 0.1 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/ionosphere_native_seed44_retain10.jsonl
+ionosphere   native AutoEncoder              success            0.9516339869281045
+ionosphere_native_seed44_retain10 AutoEncoder success batches=10
+ionosphere   native VAE                      success            0.9413943355119826
+ionosphere_native_seed44_retain10 VAE success batches=30

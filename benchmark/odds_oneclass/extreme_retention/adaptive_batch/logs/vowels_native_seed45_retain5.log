@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset vowels --seed 45 --representation native --fraction 0.05 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/vowels_native_seed45_retain5.jsonl
+vowels       native AutoEncoder              success            0.6899644760213144
+vowels_native_seed45_retain5 AutoEncoder success batches=10
+vowels       native VAE                      success            0.5753996447602132
+vowels_native_seed45_retain5 VAE success batches=30

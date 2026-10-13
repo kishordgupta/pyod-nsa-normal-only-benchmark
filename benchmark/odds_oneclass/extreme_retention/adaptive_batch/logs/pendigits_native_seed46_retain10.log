@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset pendigits --seed 46 --representation native --fraction 0.1 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/pendigits_native_seed46_retain10.jsonl
+pendigits    native AutoEncoder              success            0.9376982097186701
+pendigits_native_seed46_retain10 AutoEncoder success batches=10
+pendigits    native VAE                      success            0.878283603296391
+pendigits_native_seed46_retain10 VAE success batches=30

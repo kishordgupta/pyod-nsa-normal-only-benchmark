@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset vertebral --seed 46 --representation native --fraction 0.25 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/vertebral_native_seed46_retain25.jsonl
+vertebral    native AutoEncoder              success            0.4206349206349207
+vertebral_native_seed46_retain25 AutoEncoder success batches=10
+vertebral    native VAE                      success            0.3839285714285714
+vertebral_native_seed46_retain25 VAE success batches=30

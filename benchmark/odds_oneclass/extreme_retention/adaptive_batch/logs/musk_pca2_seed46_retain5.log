@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset musk --seed 46 --representation pca2 --fraction 0.05 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/musk_pca2_seed46_retain5.jsonl
+musk         pca2   AutoEncoder              success            0.3028927227915424
+musk_pca2_seed46_retain5 AutoEncoder success batches=10
+musk         pca2   VAE                      success            0.330176849569767
+musk_pca2_seed46_retain5 VAE success batches=30

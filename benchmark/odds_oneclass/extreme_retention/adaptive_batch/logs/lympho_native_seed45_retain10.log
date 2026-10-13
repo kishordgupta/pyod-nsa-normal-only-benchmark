@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset lympho --seed 45 --representation native --fraction 0.1 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/lympho_native_seed45_retain10.jsonl
+lympho       native AutoEncoder              success            1.0
+lympho_native_seed45_retain10 AutoEncoder success batches=10
+lympho       native VAE                      success            1.0
+lympho_native_seed45_retain10 VAE success batches=30

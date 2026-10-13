@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset letter --seed 44 --representation pca2 --fraction 0.1 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/letter_pca2_seed44_retain10.jsonl
+letter       pca2   AutoEncoder              success            0.414875
+letter_pca2_seed44_retain10 AutoEncoder success batches=10
+letter       pca2   VAE                      success            0.404
+letter_pca2_seed44_retain10 VAE success batches=30

@@ -1,0 +1,63 @@
+2026-10-13T02:17:15.421222+00:00 MONITOR root=benchmark/odds_oneclass/extreme_retention execute=True minimum_raw_and_log_idle_seconds=600.0
+2026-10-13T02:17:16.770474+00:00 ELIGIBLE {"completed_rows": 36, "dataset": "arrhythmia", "fraction": 0.05, "log_age_seconds": 1582.6, "method": "ROD", "pid": 3905, "raw_age_seconds": 1597.6, "raw_path": "benchmark/odds_oneclass/extreme_retention/raw/arrhythmia_native_seed42_retain5.jsonl", "representation": "native", "seed": 42}
+2026-10-13T02:17:19.941593+00:00 WATCHDOG exit=0 stdout={
+  "cell": {
+    "dataset": "arrhythmia",
+    "method": "ROD",
+    "name": "arrhythmia_native_seed42_retain5",
+    "representation": "native",
+    "retention_fraction": 0.05,
+    "seed": 42
+  },
+  "intervention_id": "20261013T021718955895Z_arrhythmia_native_seed42_retain5_pid3905",
+  "resume_state": "pending_unfiltered_sweep",
+  "state": "completed"
+} stderr=
+2026-10-13T02:17:19.941754+00:00 ELIGIBLE {"completed_rows": 36, "dataset": "arrhythmia", "fraction": 0.05, "log_age_seconds": 1368.9, "method": "ROD", "pid": 4111, "raw_age_seconds": 1384.0, "raw_path": "benchmark/odds_oneclass/extreme_retention/raw/arrhythmia_native_seed43_retain5.jsonl", "representation": "native", "seed": 43}
+2026-10-13T02:17:22.945951+00:00 WATCHDOG exit=0 stdout={
+  "cell": {
+    "dataset": "arrhythmia",
+    "method": "ROD",
+    "name": "arrhythmia_native_seed43_retain5",
+    "representation": "native",
+    "retention_fraction": 0.05,
+    "seed": 43
+  },
+  "intervention_id": "20261013T021721925888Z_arrhythmia_native_seed43_retain5_pid4111",
+  "resume_state": "pending_unfiltered_sweep",
+  "state": "completed"
+} stderr=
+2026-10-13T02:17:22.946087+00:00 ELIGIBLE {"completed_rows": 36, "dataset": "arrhythmia", "fraction": 0.05, "log_age_seconds": 1106.9, "method": "ROD", "pid": 4282, "raw_age_seconds": 1122.0, "raw_path": "benchmark/odds_oneclass/extreme_retention/raw/arrhythmia_native_seed44_retain5.jsonl", "representation": "native", "seed": 44}
+2026-10-13T02:17:26.196075+00:00 WATCHDOG exit=0 stdout={
+  "cell": {
+    "dataset": "arrhythmia",
+    "method": "ROD",
+    "name": "arrhythmia_native_seed44_retain5",
+    "representation": "native",
+    "retention_fraction": 0.05,
+    "seed": 44
+  },
+  "intervention_id": "20261013T021725187776Z_arrhythmia_native_seed44_retain5_pid4282",
+  "resume_state": "pending_unfiltered_sweep",
+  "state": "completed"
+} stderr=
+2026-10-13T02:17:26.196260+00:00 ELIGIBLE {"completed_rows": 36, "dataset": "arrhythmia", "fraction": 0.05, "log_age_seconds": 743.6, "method": "ROD", "pid": 4690, "raw_age_seconds": 758.9, "raw_path": "benchmark/odds_oneclass/extreme_retention/raw/arrhythmia_native_seed45_retain5.jsonl", "representation": "native", "seed": 45}
+2026-10-13T02:17:29.308883+00:00 WATCHDOG exit=0 stdout={
+  "cell": {
+    "dataset": "arrhythmia",
+    "method": "ROD",
+    "name": "arrhythmia_native_seed45_retain5",
+    "representation": "native",
+    "retention_fraction": 0.05,
+    "seed": 45
+  },
+  "intervention_id": "20261013T021728291442Z_arrhythmia_native_seed45_retain5_pid4690",
+  "resume_state": "pending_unfiltered_sweep",
+  "state": "completed"
+} stderr=
+Traceback (most recent call last):
+  File "benchmark/odds_oneclass/extreme_retention/monitor.py", line 138, in <module>
+    main()
+  File "benchmark/odds_oneclass/extreme_retention/monitor.py", line 134, in main
+    time.sleep(args.poll_seconds)
+KeyboardInterrupt

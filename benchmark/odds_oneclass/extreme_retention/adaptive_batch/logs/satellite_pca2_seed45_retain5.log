@@ -1,0 +1,5 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/extreme_retention/adaptive_batch/runner.py --manifest benchmark/odds_oneclass/extreme_retention/adaptive_batch/run_manifest.json --dataset satellite --seed 45 --representation pca2 --fraction 0.05 --results benchmark/odds_oneclass/extreme_retention/adaptive_batch/raw/satellite_pca2_seed45_retain5.jsonl
+satellite    pca2   AutoEncoder              success            0.5717739099859354
+satellite_pca2_seed45_retain5 AutoEncoder success batches=10
+satellite    pca2   VAE                      success            0.6238757495003331
+satellite_pca2_seed45_retain5 VAE success batches=30

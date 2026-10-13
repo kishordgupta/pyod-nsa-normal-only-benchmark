@@ -1,0 +1,45 @@
+COMMAND <PYTHON_ENV>/bin/python benchmark/odds_oneclass/runner.py --data-dir vendor/pyod/notebooks/data --dataset arrhythmia --results benchmark/odds_oneclass/extreme_retention/raw/arrhythmia_native_seed44_retain5.jsonl --seed 44 --representation native --train-cap 600 --test-cap 2000 --train-fraction 0.05 --method-timeout 15.0 --method-filter all
+arrhythmia   native NSA/fixed                success            0.15334987593052107
+arrhythmia   native NSA/variable             success            0.15483870967741936
+arrhythmia   native NSA/coverage             success            0.15483870967741936
+arrhythmia   native NSA/grid                 success            0.15384615384615385
+arrhythmia   native NSA/hierarchical         success            0.15285359801488835
+arrhythmia   native NSA/voronoi              requires_2d_or_3d  None
+arrhythmia   native NSA/deterministic        requires_2d        None
+arrhythmia   native NSA/suppressed           success            0.15483870967741936
+arrhythmia   native NSA/dual                 success            0.8528535980148884
+arrhythmia   native NSA/annealed             success            0.14714640198511167
+arrhythmia   native NSA/binary/hamming       success            0.5502481389578163
+arrhythmia   native NSA/binary/rcontiguous   success            0.46960297766749376
+arrhythmia   native NSA/binary/rchunk        success            0.6003722084367246
+arrhythmia   native ECOD                     success            0.8751861042183623
+arrhythmia   native ABOD                     success            0.8694789081885856
+arrhythmia   native COPOD                    success            0.8610421836228288
+arrhythmia   native MAD                      requires_1d        None
+arrhythmia   native SOS                      success            0.532258064516129
+arrhythmia   native QMCD                     success            0.08957816377171215
+arrhythmia   native KDE                      success            0.8746898263027297
+arrhythmia   native Sampling                 error              None
+arrhythmia   native GMM                      success            0.8727047146401985
+arrhythmia   native PCA                      success            0.8799007444168735
+arrhythmia   native KPCA                     success            0.874937965260546
+arrhythmia   native MCD                      success            0.8999999999999999
+arrhythmia   native CD                       error              None
+arrhythmia   native OCSVM                    success            0.876923076923077
+arrhythmia   native LMDD                     success            0.8383374689826304
+arrhythmia   native LOF                      success            0.8811414392059553
+arrhythmia   native COF                      success            0.7642679900744417
+arrhythmia   native CBLOF                    success            0.8799007444168735
+arrhythmia   native LOCI                     success            0.8749379652605459
+arrhythmia   native HBOS                     success            0.8553349875930523
+arrhythmia   native HDBSCAN                  success            0.4566997518610422
+arrhythmia   native KNN                      success            0.8781637717121589
+arrhythmia   native SOD                      build_error        None
+Exception ignored on calling ctypes callback function: <function ExecutionEngine._raw_object_cache_notify at 0x10e7efd80>
+Traceback (most recent call last):
+  File "<PYTHON_ENV>/lib/python3.12/site-packages/llvmlite/binding/executionengine.py", line 178, in _raw_object_cache_notify
+    def _raw_object_cache_notify(self, data):
+
+  File "benchmark/odds_oneclass/runner.py", line 46, in _on_alarm
+    raise FitTimeout("per-method wall-time budget exceeded")
+FitTimeout: per-method wall-time budget exceeded
